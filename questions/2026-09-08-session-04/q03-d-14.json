@@ -1,0 +1,34 @@
+{
+  "id": "q03-d-14",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "What example was given in the lecture of two skills contradicting each other?",
+  "options": [
+    {
+      "text": "A grading skill that grades leniently alongside one that grades harshly",
+      "weight": 0,
+      "feedback": "Two grading skills with different strictness was not the example given -- the lecture's example was about a formatting choice that one skill requires and another forbids."
+    },
+    {
+      "text": "A formatting skill that always specifies orange, alongside a brand skill that bans orange in favor of a fixed palette",
+      "weight": 100,
+      "feedback": "This is the example: a formatting skill that always specifies orange runs into a brand skill that bans orange for a fixed palette, and both are relevant to the same request."
+    },
+    {
+      "text": "A skill written for English output alongside one written for Spanish output",
+      "weight": 0,
+      "feedback": "A language mismatch between skills is not the example from the lecture -- the conflict described was over a color choice, not over which language to output in."
+    },
+    {
+      "text": "A skill for summarizing video alongside one for summarizing audio, both claiming the same file type",
+      "weight": 0,
+      "feedback": "Claiming the same file type is a different kind of problem than the one described. The lecture's example was two skills disagreeing on a formatting rule, not competing over what kind of file each handles."
+    }
+  ]
+}

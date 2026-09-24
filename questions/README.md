@@ -4,12 +4,12 @@
 
 Each folder holds the questions from one class session (dated the day the material was discussed) or questions added straight to this repository (dated the day they were added).
 
-| Date | Folder | Source | Questions |
-|---|---|---|---|
-| 2026-09-01 | [2026-09-01-session-02](2026-09-01-session-02/) | Quiz 1 - Sessions 1-2: The Decoder Transformer | 100 |
-| 2026-09-03 | [2026-09-03-session-03](2026-09-03-session-03/) | Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets | 100 |
-| 2026-09-08 | [2026-09-08-session-04](2026-09-08-session-04/) | Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills | 100 |
-| 2026-09-10 | [2026-09-10-session-05](2026-09-10-session-05/) | Quiz 4 - Sessions 1-5: Building and Improving Agent Skills | 100 |
-| 2026-09-15 | [2026-09-15-session-06](2026-09-15-session-06/) | Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness | 95 |
+| Date | Folder | Source | Questions | Types |
+|---|---|---|---|---|
+| 2026-09-01 | [2026-09-01-session-02](2026-09-01-session-02/) | Quiz 1 - Sessions 1-2: The Decoder Transformer | 100 | MC 100 |
+| 2026-09-03 | [2026-09-03-session-03](2026-09-03-session-03/) | Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets | 100 | MC 100 |
+| 2026-09-08 | [2026-09-08-session-04](2026-09-08-session-04/) | Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills | 100 | MC 100 |
+| 2026-09-10 | [2026-09-10-session-05](2026-09-10-session-05/) | Quiz 4 - Sessions 1-5: Building and Improving Agent Skills | 100 | MC 100 |
+| 2026-09-15 | [2026-09-15-session-06](2026-09-15-session-06/) | Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness | 95 | MC 95 |
 
 Total: 495 questions.

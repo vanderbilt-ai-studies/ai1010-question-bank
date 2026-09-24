@@ -1,0 +1,35 @@
+{
+  "id": "q01-a-20",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "pre-training",
+    "self-supervised-learning"
+  ],
+  "question": "According to the lecture, how is a language model trained?",
+  "options": [
+    {
+      "text": "Engineers write rules of grammar and lists of facts and load them into the model",
+      "weight": 0,
+      "feedback": "That is how expert systems were built, and it is not how this works. No rules or fact lists are written down; the model has to pick them up on its own in order to guess well."
+    },
+    {
+      "text": "The model reads a dictionary and a grammar book before it sees any other text",
+      "weight": 0,
+      "feedback": "There is no dictionary stage. Meaning and grammar are learned from the same next-word guessing as everything else."
+    },
+    {
+      "text": "The model memorizes the training text so that it can look passages up later",
+      "weight": 0,
+      "feedback": "The model has no stored text to consult. Training adjusts parameters after each guess; it does not file the text away."
+    },
+    {
+      "text": "The model guesses each hidden next word and is adjusted when it is wrong",
+      "weight": 100,
+      "feedback": "That loop is the whole recipe, run trillions of times: guess, compare with the word that was actually there, nudge the parameters, move on. Everything the model knows about grammar, meaning, and the world comes out of doing that at enormous scale."
+    }
+  ]
+}

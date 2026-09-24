@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-03",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "autoregression",
+    "next-token-prediction"
+  ],
+  "question": "What causes a model to stop producing tokens and end its response?",
+  "options": [
+    {
+      "text": "The app enforces a fixed number of words per reply",
+      "weight": 0,
+      "feedback": "Apps can cap a reply, but that is not how a response normally ends. The model itself decides when it is done, using a token reserved for exactly that purpose."
+    },
+    {
+      "text": "Every token's probability drops too low for one to be chosen",
+      "weight": 0,
+      "feedback": "The model always produces a full probability distribution over the vocabulary, so there is always a token to choose. Stopping is a positive choice the model makes, not a failure to find anything."
+    },
+    {
+      "text": "One of the tokens in the vocabulary means \"stop,\" and the model chooses it",
+      "weight": 100,
+      "feedback": "This is the end-of-sequence token, and picking it is a prediction like any other -- the model works out that it is finished the same way it works out any next word. That is why a reply can be one line or several paragraphs, depending only on the context."
+    },
+    {
+      "text": "The response is cut off once it reaches the length of the prompt",
+      "weight": 0,
+      "feedback": "Prompt length and response length are unrelated. A short question can get a long answer and vice versa, because the model chooses the stopping point itself with a dedicated token."
+    }
+  ]
+}

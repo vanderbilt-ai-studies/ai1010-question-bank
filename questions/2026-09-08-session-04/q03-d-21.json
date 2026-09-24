@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-21",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-structure",
+    "class-demo"
+  ],
+  "question": "Which of the following was a suggested direction for personalizing the lecture-notes skill?",
+  "options": [
+    {
+      "text": "Add self-study questions to each section, moving from easy to conceptually hard",
+      "weight": 100,
+      "feedback": "Per-section questions that build from easy to conceptually difficult were one of the suggested directions. The list works because you are shaping the notes around how you actually study from them."
+    },
+    {
+      "text": "Remove every screenshot, since a picture cannot carry conceptual detail",
+      "weight": 0,
+      "feedback": "The suggestion was to carry more screenshots or fewer, according to what you find useful. Screenshots were never described as adding nothing."
+    },
+    {
+      "text": "Cap every set of notes at a single page, whatever the session covered",
+      "weight": 0,
+      "feedback": "No length cap was among the suggestions. They concerned grounding, style, structure, and how many screenshots to include, not squeezing a session onto one page."
+    },
+    {
+      "text": "Have every set of notes translated into a second language automatically",
+      "weight": 0,
+      "feedback": "Translation was not among the directions listed. Every suggestion concerned how the notes explain the material, not what language they arrive in."
+    }
+  ]
+}

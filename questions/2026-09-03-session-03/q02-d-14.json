@@ -1,0 +1,35 @@
+{
+  "id": "q02-d-14",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "attention",
+    "decoder-stack"
+  ],
+  "question": "In the transformer pseudocode, the line that reads MHAttention(...) stands for what, and how often does it occur in the model?",
+  "options": [
+    {
+      "text": "The MLP (multi-layer perceptron), appearing once for the model as a whole",
+      "weight": 0,
+      "feedback": "The MLP is a separate piece written with its own weight matrices, and it is not what MHAttention names. Neither component appears just once -- both are repeated through the stack."
+    },
+    {
+      "text": "Multi-head attention, one per decoder stack",
+      "weight": 100,
+      "feedback": "MHAttention is multi-head attention, and it recurs once in each decoder stack rather than a single time. Notice how compact it is on the slide -- attention itself runs to about five lines."
+    },
+    {
+      "text": "The softmax over the vocabulary, applied once at the end",
+      "weight": 0,
+      "feedback": "The softmax is the final line, producing the probabilities. MHAttention sits inside the repeated block, well before any probabilities are formed."
+    },
+    {
+      "text": "The positional embedding, applied once per token",
+      "weight": 0,
+      "feedback": "Position is handled by the embedding matrix near the top of the pseudocode. MHAttention is the mechanism that moves a token's meaning using the tokens around it."
+    }
+  ]
+}

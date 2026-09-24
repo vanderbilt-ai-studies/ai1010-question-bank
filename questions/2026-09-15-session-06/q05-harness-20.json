@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-20",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "verification",
+    "permissions-and-safety"
+  ],
+  "question": "What makes verification different from permission checking?",
+  "options": [
+    {
+      "text": "Verification authorizes actions; permissions judge completed results",
+      "weight": 0,
+      "feedback": "This reverses their roles. Permissions constrain what may execute, while verification checks whether results satisfy the task."
+    },
+    {
+      "text": "Verification checks fluency; permissions check factual accuracy",
+      "weight": 0,
+      "feedback": "Fluent text can still be wrong or incomplete. Permissions govern executable actions rather than factual accuracy."
+    },
+    {
+      "text": "Verification checks model size; permissions check the task instructions",
+      "weight": 0,
+      "feedback": "Model size is not the definition of result verification. Access controls govern allowed operations, and results must be checked against the task."
+    },
+    {
+      "text": "Verification assesses results; permissions govern allowed actions",
+      "weight": 100,
+      "feedback": "An action can be permitted and still produce an incorrect or incomplete result. These checks therefore serve different purposes."
+    }
+  ]
+}

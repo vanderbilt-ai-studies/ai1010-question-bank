@@ -1,0 +1,35 @@
+{
+  "id": "q03-c-20",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "grounding",
+    "class-demo"
+  ],
+  "question": "A colleague tells you, 'oh, we already do grading with AI (artificial intelligence),' and you want to ask the one question the lecture suggests actually tests whether that grading is trustworthy. What should you ask?",
+  "options": [
+    {
+      "text": "Which company's model are you using to produce the grades?",
+      "weight": 0,
+      "feedback": "The concern raised is not about which vendor's model is involved. A confident, well-formatted grade can come from any model that is missing the right information."
+    },
+    {
+      "text": "How long does it take to generate each individual grade?",
+      "weight": 0,
+      "feedback": "Speed says nothing about whether the model had what it needed to grade accurately. That is not the test the lecture points to."
+    },
+    {
+      "text": "Does the feedback come back looking professional and well formatted?",
+      "weight": 0,
+      "feedback": "This is the trap the demo warns about -- polished formatting is what made the ungrounded first attempt look trustworthy. Presentation is not evidence of a sound grade."
+    },
+    {
+      "text": "Did the model have the rubric and assignment, or only the submission?",
+      "weight": 100,
+      "feedback": "The demo's first attempt shows what happens without them: a confident grade produced with no idea what was being rated. Whether the standards were actually in front of the model is the real test."
+    }
+  ]
+}

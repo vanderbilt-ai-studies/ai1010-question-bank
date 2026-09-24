@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-01",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "tokenization",
+    "token"
+  ],
+  "question": "What does a token ID identify?",
+  "options": [
+    {
+      "text": "An entry in the model's vocabulary",
+      "weight": 100,
+      "feedback": "The ID selects a vocabulary entry and its starting embedding. Meaning is represented by numerical vectors, not by the ID itself."
+    },
+    {
+      "text": "A coordinate describing the token's meaning",
+      "weight": 0,
+      "feedback": "This confuses an index with a representation. The token ID selects an embedding; it is not itself a semantic coordinate."
+    },
+    {
+      "text": "A weight changed during the current response",
+      "weight": 0,
+      "feedback": "Weights are learned parameters. The ID identifies the token, and ordinary response generation does not update the model's weights."
+    },
+    {
+      "text": "A score for the next possible token",
+      "weight": 0,
+      "feedback": "Scores for possible next tokens are produced near the output. An ID identifies a vocabulary entry before that scoring step."
+    }
+  ]
+}

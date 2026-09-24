@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-04",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-sharing",
+    "verification"
+  ],
+  "question": "What must you establish after saving a skill folder before relying on it in the intended host?",
+  "options": [
+    {
+      "text": "That the folder has been copied into several unrelated projects",
+      "weight": 0,
+      "feedback": "Extra copies do not establish that the intended host has discovered and enabled the skill."
+    },
+    {
+      "text": "That the host has discovered and enabled the skill",
+      "weight": 100,
+      "feedback": "Saving files and making them available for use in a host are distinct events. Check the destination environment."
+    },
+    {
+      "text": "That the agent reports successful installation in its final message",
+      "weight": 0,
+      "feedback": "A completion claim is generated text. Inspect whether the destination actually discovered and enabled the skill."
+    },
+    {
+      "text": "That its text is identical to the version on a different machine",
+      "weight": 0,
+      "feedback": "Matching text can help preserve a procedure, but does not establish that the destination can use it."
+    }
+  ]
+}

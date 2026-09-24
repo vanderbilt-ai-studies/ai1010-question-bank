@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-21",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "model-size"
+  ],
+  "question": "How does a small language model relate to a large one, according to the lecture?",
+  "options": [
+    {
+      "text": "The same architecture throughout, with fewer stacks and smaller layers inside them",
+      "weight": 100,
+      "feedback": "A small model has the same attention-plus-MLP (multi-layer perceptron) stacks, just fewer of them and smaller. Its JPEG of the world is blurrier, and the trade is that it fits on hardware you carry, such as a laptop or a phone."
+    },
+    {
+      "text": "A simpler architecture that leaves out the MLP (multi-layer perceptron) layers to save space",
+      "weight": 0,
+      "feedback": "Dropping the MLP would drop the model's world knowledge entirely, and no model does that. Small models keep every part of the architecture; each part is just smaller."
+    },
+    {
+      "text": "The same model with its vocabulary cut down to the most common words",
+      "weight": 0,
+      "feedback": "The vocabulary is not where the size lives. What shrinks in a small model is the parameter count in the MLPs (multi-layer perceptrons) and the number of decoder stacks."
+    },
+    {
+      "text": "A large model with most of its decoder stacks skipped at run time to save memory",
+      "weight": 0,
+      "feedback": "A small model is built and trained small; it is not a large one with parts switched off mid-run. It has fewer stacks and smaller MLPs (multi-layer perceptrons) from the start."
+    }
+  ]
+}

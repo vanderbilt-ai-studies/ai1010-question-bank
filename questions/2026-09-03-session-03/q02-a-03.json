@@ -1,0 +1,34 @@
+{
+  "id": "q02-a-03",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-selection"
+  ],
+  "question": "Which Claude tier is the default you get without changing anything, described in the picker as the efficient choice for everyday tasks?",
+  "options": [
+    {
+      "text": "Haiku 4.5",
+      "weight": 0,
+      "feedback": "Haiku is the tier below the default, and the picker sells it on speed for quick answers. Fast is not the same claim as efficient for everyday work."
+    },
+    {
+      "text": "Opus 5",
+      "weight": 0,
+      "feedback": "Opus is positioned for complex tasks, which is a step above ordinary use. Making it the default would mean spending its capability on work that does not need it."
+    },
+    {
+      "text": "Sonnet 5",
+      "weight": 100,
+      "feedback": "Sonnet sits in the middle of the ladder, which is why it is the sensible thing to hand someone who has not chosen. It is capable enough for most work without the cost of the tiers above it."
+    },
+    {
+      "text": "Fable 5.1",
+      "weight": 0,
+      "feedback": "Fable requires usage credits and is reserved for the hardest problems. Nothing that expensive would be handed to you as a default."
+    }
+  ]
+}

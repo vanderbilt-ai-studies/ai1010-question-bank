@@ -1,0 +1,35 @@
+{
+  "id": "q02-a-18",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-size",
+    "inference-speed"
+  ],
+  "question": "Asked which of two model tiers is faster and which is less capable, the class named the smaller one both times. Why is the same answer right twice?",
+  "options": [
+    {
+      "text": "Because the smaller tier skips stages of the pipeline that the larger one runs.",
+      "weight": 0,
+      "feedback": "Both tiers run the same pipeline end to end; a tier is that architecture built bigger, not a stripped-down version of it. What differs is how big each piece is."
+    },
+    {
+      "text": "Because the smaller tier is given a shorter thinking budget by default.",
+      "weight": 0,
+      "feedback": "The thinking budget is a separate dial you set yourself, and it is not what makes a small model quick. Size alone explains both the speed and the ceiling."
+    },
+    {
+      "text": "Because vendors deliberately slow the larger tier to encourage upgrades.",
+      "weight": 0,
+      "feedback": "No throttling is needed. A bigger model genuinely has more numbers to push every token through, so it is really slower and really more capable."
+    },
+    {
+      "text": "Because both follow from size -- fewer numbers to run and to hold.",
+      "weight": 100,
+      "feedback": "A tier is the same architecture built bigger, so speed and capability move together in opposite directions. One is paid for with the other."
+    }
+  ]
+}

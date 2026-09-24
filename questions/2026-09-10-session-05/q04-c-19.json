@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-19",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification",
+    "task-specification"
+  ],
+  "question": "Why must a course-support workflow resolve the intended section before applying a familiar repair?",
+  "options": [
+    {
+      "text": "A familiar symptom proves that every section has the same current problem.",
+      "weight": 0,
+      "feedback": "Sections can have different current states. The workflow needs evidence about the intended target, not only a familiar symptom."
+    },
+    {
+      "text": "The section can be inferred from whichever course object is easiest to edit.",
+      "weight": 0,
+      "feedback": "Convenience does not identify the intended target. Resolve the course and section from the report and available evidence."
+    },
+    {
+      "text": "The same repair could otherwise change the wrong course area.",
+      "weight": 100,
+      "feedback": "A repair can be technically familiar yet affect the wrong target. Section identification is part of establishing that the authorized procedure fits."
+    },
+    {
+      "text": "Checking the section after a response gives the recipient stronger evidence.",
+      "weight": 0,
+      "feedback": "A later check cannot justify an earlier claim about the target. Resolve the section before changing anything and verify before responding."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-10",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "agi"
+  ],
+  "question": "What problem is Google DeepMind's Levels of AGI (artificial general intelligence) framework, mentioned in the lecture, designed to address?",
+  "options": [
+    {
+      "text": "It provides a single yes-or-no test any model can be run through once.",
+      "weight": 0,
+      "feedback": "This is the opposite of the framework's purpose. A single pass/fail threshold is precisely the thing it was built to replace, because that threshold kept being redrawn."
+    },
+    {
+      "text": "It replaces a single yes/no threshold with graded levels of performance and generality.",
+      "weight": 100,
+      "feedback": "Grading performance and generality against what a model actually does gives you something checkable, instead of one label that gets redefined every time it is met."
+    },
+    {
+      "text": "It certifies which company may use the term AGI in its marketing.",
+      "weight": 0,
+      "feedback": "The notes describe no certification or naming-rights function. The framework is a way of measuring capability, not of policing who may use a word."
+    },
+    {
+      "text": "It counts a model's parameters to decide whether it qualifies as general.",
+      "weight": 0,
+      "feedback": "Parameter count is not what the framework grades. It looks at levels of performance and generality in a model's actual behavior."
+    }
+  ]
+}

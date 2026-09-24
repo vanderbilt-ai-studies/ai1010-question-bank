@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-21",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "training-vs-inference",
+    "context"
+  ],
+  "question": "You add a paragraph to a conversation, and the model uses it to improve an explanation. The system reports that no parameters changed. What best explains the improvement?",
+  "options": [
+    {
+      "text": "Inference used the new context with existing learned weights",
+      "weight": 100,
+      "feedback": "Supplying relevant material can change performance during inference. The model can use the paragraph without changing its underlying weights."
+    },
+    {
+      "text": "Pre-training learned a new set of weights from the paragraph",
+      "weight": 0,
+      "feedback": "The scenario states that parameters did not change. The improvement is explained by using relevant context, rather than a foundational learning update."
+    },
+    {
+      "text": "Supervised fine-tuning trained the model on a desired answer",
+      "weight": 0,
+      "feedback": "The paragraph was supplied in the conversation, and there was no weight update. That differs from training on demonstrations of desired responses."
+    },
+    {
+      "text": "Reward-model training learned which explanation people prefer",
+      "weight": 0,
+      "feedback": "The scenario provides contextual information, not human comparisons used to train a reward model. Better performance alone does not establish such training."
+    }
+  ]
+}

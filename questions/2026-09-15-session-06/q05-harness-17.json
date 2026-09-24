@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-17",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "permissions-and-safety",
+    "verification"
+  ],
+  "question": "Why do access controls fail to guarantee that a model's written answer is accurate?",
+  "options": [
+    {
+      "text": "They constrain actions without checking each claim",
+      "weight": 100,
+      "feedback": "The harness can limit what the system executes while the model can still generate a mistaken statement. Output verification addresses a separate concern."
+    },
+    {
+      "text": "They make permitted sources automatically trustworthy",
+      "weight": 0,
+      "feedback": "Permission to access a source is not a judgment that its content or the resulting answer is accurate."
+    },
+    {
+      "text": "They turn successful tool use into proof of correctness",
+      "weight": 0,
+      "feedback": "An operation can be allowed and successfully executed while the resulting answer is incomplete or incorrect."
+    },
+    {
+      "text": "They supply missing evidence through the permission decision",
+      "weight": 0,
+      "feedback": "A permission decision determines whether an action may run. It does not itself supply the task evidence the model needs."
+    }
+  ]
+}

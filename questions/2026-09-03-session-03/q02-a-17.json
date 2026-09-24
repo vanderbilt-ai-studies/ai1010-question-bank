@@ -1,0 +1,35 @@
+{
+  "id": "q02-a-17",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "chat-vs-agent",
+    "agent"
+  ],
+  "question": "You switch from Chat to Cowork in Claude and leave the same model selected. What has changed?",
+  "options": [
+    {
+      "text": "The model is the same; it now has a file system, memory, and task tracking around it",
+      "weight": 100,
+      "feedback": "An agent has the large language model inside it, so you can still converse with it exactly as before. What is added sits around the model -- somewhere to keep files, memory that persists, a way of tracking what it is doing, and skills -- and that is what lets it carry work out rather than only discuss it."
+    },
+    {
+      "text": "The model is swapped for a larger tier that can handle tools",
+      "weight": 0,
+      "feedback": "Which tier you are running stays your choice in either mode, and an agent works perfectly well with a small one. The step from chat to agent is a step up in equipment, not in model size."
+    },
+    {
+      "text": "The model now thinks before every reply, whatever the effort setting",
+      "weight": 0,
+      "feedback": "Thinking is a separate dial and it stays wherever you put it. Rolling it together with the chat-versus-agent question makes it impossible to say what an agent actually adds."
+    },
+    {
+      "text": "The model generates its answers in parallel rather than one token at a time",
+      "weight": 0,
+      "feedback": "Generation is one token at a time wherever the model runs -- each token has to be produced and fed back in before the next. An agent changes what surrounds the model, not how a token is produced."
+    }
+  ]
+}

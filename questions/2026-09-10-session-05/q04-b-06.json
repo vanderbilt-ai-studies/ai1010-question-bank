@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-06",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "What is the role of a skill's scripts/ folder?",
+  "options": [
+    {
+      "text": "Holding prose about when to select the skill",
+      "weight": 0,
+      "feedback": "Selection guidance belongs in SKILL.md and its description. Scripts provide executable operations."
+    },
+    {
+      "text": "Holding code for repeatable operations",
+      "weight": 100,
+      "feedback": "A skill can include executable routines for operations such as extraction that recur across tasks."
+    },
+    {
+      "text": "Holding the finished documents from every run",
+      "weight": 0,
+      "feedback": "Finished documents are outputs of particular tasks. Scripts contain code used to perform recurring operations."
+    },
+    {
+      "text": "Holding blank layouts for future documents",
+      "weight": 0,
+      "feedback": "Blank layouts are reusable assets. Scripts instead supply executable steps."
+    }
+  ]
+}

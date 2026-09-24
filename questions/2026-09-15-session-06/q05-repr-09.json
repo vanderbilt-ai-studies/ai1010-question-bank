@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-09",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "parameter",
+    "learned-knowledge"
+  ],
+  "question": "What does the model program specify in the lecture's distinction between code and learned parameters?",
+  "options": [
+    {
+      "text": "Operations applied to numerical representations",
+      "weight": 100,
+      "feedback": "The program specifies the computation. Training determines many of the numerical parameter values used in that computation."
+    },
+    {
+      "text": "A written rule for each answer the model may give",
+      "weight": 0,
+      "feedback": "A particular answer can arise from learned parameters interacting with context. It need not have a corresponding hand-written rule."
+    },
+    {
+      "text": "The correct factual answer to each possible prompt",
+      "weight": 0,
+      "feedback": "The computation can generate mistaken claims. Inspectable software does not imply a programmed correct answer for every prompt."
+    },
+    {
+      "text": "A record of the text used to train the model",
+      "weight": 0,
+      "feedback": "The notes distinguish the program from the data and learned numbers. The program describes operations rather than serving as a transcript of training text."
+    }
+  ]
+}

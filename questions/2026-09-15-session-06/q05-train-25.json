@@ -1,0 +1,34 @@
+{
+  "id": "q05-train-25",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "alignment"
+  ],
+  "question": "A model trained to favor refusals of harmful requests usually declines them, but a misleadingly framed version receives a harmful answer. Which conclusion best follows from the notes?",
+  "options": [
+    {
+      "text": "Training has encouraged a behavior that remains unreliable in some contexts",
+      "weight": 100,
+      "feedback": "A preferred refusal can be learned without becoming an inviolable rule. The changed framing exposes a limit in behavioral reliability."
+    },
+    {
+      "text": "The initial refusals prove the later answer must be harmless in effect",
+      "weight": 0,
+      "feedback": "Earlier refusals do not establish the safety of a different response. The notes emphasize that behavior may change with framing."
+    },
+    {
+      "text": "The changed wording proves that the model updated its weights during the request",
+      "weight": 0,
+      "feedback": "Different inputs can lead to different outputs using existing weights. A behavioral change under new framing is not evidence of a training update."
+    },
+    {
+      "text": "The later answer proves that post-training cannot influence model behavior",
+      "weight": 0,
+      "feedback": "An imperfect result does not show that training has no influence. Post-training can encourage preferred responses while leaving reliability gaps."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "q02-d-08",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "inference-speed",
+    "agent",
+    "model-size"
+  ],
+  "question": "The lecture argued that a small model on very fast hardware might match a much larger model on some work, then said the full case could not be made yet. What was the argument, and what was missing?",
+  "options": [
+    {
+      "text": "A small model carries the same world knowledge as a large one; the case waits until training is covered.",
+      "weight": 0,
+      "feedback": "World knowledge is exactly what a smaller model gives up -- that is the trade you make when you go smaller. The argument for small models has to come from somewhere else than pretending the gap is not there."
+    },
+    {
+      "text": "Speed makes each individual token more accurate; the case waits until hardware is covered in depth.",
+      "weight": 0,
+      "feedback": "Running faster does not change what any single token is -- one token is one token either way. The gain from speed is that a great deal of work becomes cheap in time, not that the work becomes better per token."
+    },
+    {
+      "text": "Cheap speed lets a small model work at length; the full case needs agents and the harness.",
+      "weight": 100,
+      "feedback": "If working through a problem costs almost nothing in time, a small model can afford a great deal of it, and on some tasks that closes the gap to a very large model. The reason the argument is incomplete is that what a model can do with all that cheap work depends on the agent and its harness, which come later in the course."
+    },
+    {
+      "text": "Open-weight models are consistently larger than hosted ones; the case waits on the licensing question.",
+      "weight": 0,
+      "feedback": "Openly available models are generally in the small-to-medium range, which is the reason fast chips suit them. Licensing was not the gap in the argument -- the missing piece was agents."
+    }
+  ]
+}

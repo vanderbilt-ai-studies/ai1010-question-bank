@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-13",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "hallucination",
+    "next-token-prediction"
+  ],
+  "question": "Why can a fluent model response contain an incorrect factual claim?",
+  "options": [
+    {
+      "text": "A false answer shows the model failed to select its highest-probability token.",
+      "weight": 0,
+      "feedback": "A high-probability continuation can itself contain an error. Selecting the most probable text does not verify its factual claims."
+    },
+    {
+      "text": "Sampling replaces learned probabilities with unrelated random words.",
+      "weight": 0,
+      "feedback": "Sampling uses a distribution related to the model's scores. A false claim can still be a plausible continuation under that distribution."
+    },
+    {
+      "text": "Predicting plausible text differs from checking a claim's truth.",
+      "weight": 100,
+      "feedback": "Next-token prediction can support fluent and useful answers, but fluency is not a verification step. Check important factual claims against evidence."
+    },
+    {
+      "text": "A false answer means the relevant fact was absent from training.",
+      "weight": 0,
+      "feedback": "Learned representations can be imperfect, and generation is not a factual guarantee. An error alone does not show that the fact was missing from training."
+    }
+  ]
+}

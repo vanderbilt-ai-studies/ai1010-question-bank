@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-23",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "parameter",
+    "model-size"
+  ],
+  "question": "You see two model implementations with similar processing steps, but one uses much larger parameter arrays. What conclusion is supported?",
+  "options": [
+    {
+      "text": "Larger parameter arrays must contain more hand-written answer rules",
+      "weight": 0,
+      "feedback": "Parameters are learned numerical values. Their larger size does not mean programmers wrote a separate rule for every possible answer."
+    },
+    {
+      "text": "Larger parameter arrays make context unnecessary for interpretation",
+      "weight": 0,
+      "feedback": "Context still influences representations through attention. Parameter size does not remove the value of relevant task information."
+    },
+    {
+      "text": "Similar operations can work with very different learned models",
+      "weight": 100,
+      "feedback": "The notes separate the broad algorithm from parameter size and values. Similar processing steps do not make the models identical."
+    },
+    {
+      "text": "Similar processing steps require the same parameter values",
+      "weight": 0,
+      "feedback": "The algorithm specifies operations, while training determines many values. Matching broad steps does not establish identical learned numbers."
+    }
+  ]
+}

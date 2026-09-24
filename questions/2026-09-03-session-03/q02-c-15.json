@@ -1,0 +1,34 @@
+{
+  "id": "q02-c-15",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-budget"
+  ],
+  "question": "Why does a large thinking budget only pay off when the task is described well?",
+  "options": [
+    {
+      "text": "A vague task makes the model stop thinking early and return an error instead",
+      "weight": 0,
+      "feedback": "Vagueness does not stop the model; it will proceed confidently on whatever reading of your request it settled on. The failure is silent, which is what makes it costly."
+    },
+    {
+      "text": "A vague task lets the model spend the budget going the wrong way",
+      "weight": 100,
+      "feedback": "The budget buys work, not correctness, so an unclear target just means more work aimed off to one side. That is the wandering off in the wilderness the lecture described."
+    },
+    {
+      "text": "Long budgets are only unlocked once a prompt is specific enough",
+      "weight": 0,
+      "feedback": "The setting is yours to choose regardless of how you worded the request -- nothing inspects your prompt first. The risk is what you get for the money, not whether you can spend it."
+    },
+    {
+      "text": "Thinking tokens are discarded unless the prompt is specific",
+      "weight": 0,
+      "feedback": "The thinking tokens become the model's own context either way and shape the answer that follows. When the task is vague, they shape it toward the wrong thing."
+    }
+  ]
+}

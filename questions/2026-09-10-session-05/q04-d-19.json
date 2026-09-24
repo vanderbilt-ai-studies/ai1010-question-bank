@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-19",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-sharing"
+  ],
+  "question": "Why can a skill written in a portable instruction format still fail after being copied to another host?",
+  "options": [
+    {
+      "text": "The copied instructions retrain the destination model with different weights",
+      "weight": 0,
+      "feedback": "A skill supplies task guidance; loading its instructions does not retrain the model. Check the destination environment and performance."
+    },
+    {
+      "text": "The destination may lack required programs or permissions",
+      "weight": 100,
+      "feedback": "Portable instructions do not ensure portable executable dependencies or access. Inspect the new environment and run a representative task."
+    },
+    {
+      "text": "The copied folder moves the original computer's permissions to the new host",
+      "weight": 0,
+      "feedback": "Permissions belong to the operating environment. Copying instructions does not transfer or grant the access required in another host."
+    },
+    {
+      "text": "The destination uses the original run's output in place of the new task input",
+      "weight": 0,
+      "feedback": "The reusable procedure, each run's input, and its output have different roles. Transferring a skill does not make an earlier output the new input."
+    }
+  ]
+}

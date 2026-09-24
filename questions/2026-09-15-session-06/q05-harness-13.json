@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-13",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "permissions-and-safety",
+    "verification"
+  ],
+  "question": "Why can a denied tool request be followed by a normal-looking written answer?",
+  "options": [
+    {
+      "text": "Text generation can continue after a denial",
+      "weight": 100,
+      "feedback": "The requested external operation can remain blocked while the model generates an explanation or other textual response."
+    },
+    {
+      "text": "A fluent answer establishes that the action succeeded",
+      "weight": 0,
+      "feedback": "Fluency is a property of generated text. It does not prove that an external operation occurred."
+    },
+    {
+      "text": "The model performs the action internally after denial",
+      "weight": 0,
+      "feedback": "The model can reason about the denied action, but generating text does not carry out the blocked external operation."
+    },
+    {
+      "text": "The skill supplies temporary access after the denial",
+      "weight": 0,
+      "feedback": "A skill's instructions do not grant a missing permission or override the surrounding access controls."
+    }
+  ]
+}

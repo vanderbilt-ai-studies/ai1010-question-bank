@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-15",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "semantic-space",
+    "token-embedding"
+  ],
+  "question": "In the model's embedding space, which tokens would you expect to find in the neighborhood of \"king\"?",
+  "options": [
+    {
+      "text": "Words that rhyme with it, such as \"ring\" and \"sing\"",
+      "weight": 0,
+      "feedback": "Sound is not what organizes the space. The dimensions capture meaning, so a rhyme with nothing in common semantically sits far away."
+    },
+    {
+      "text": "Words that commonly follow it, such as \"of\" and \"me\"",
+      "weight": 0,
+      "feedback": "Next-word probability is produced at the end of the pipeline, not encoded in the embedding's location. Neighbors in the space share meaning, not sentence position."
+    },
+    {
+      "text": "Words with related meanings, such as \"queen\" and \"monarch\"",
+      "weight": 100,
+      "feedback": "The space is arranged so that similar meanings sit near each other. \"Ruler,\" \"crown,\" \"royalty,\" and \"tsar\" are all in the same region, which is what makes arithmetic on meaning possible."
+    },
+    {
+      "text": "Words that begin with the same letter, such as \"kitchen\" and \"kite\"",
+      "weight": 0,
+      "feedback": "Spelling plays no part in where a token lands. \"Kitchen\" and \"king\" share a first letter and nothing else, so they sit in unrelated parts of the space."
+    }
+  ]
+}

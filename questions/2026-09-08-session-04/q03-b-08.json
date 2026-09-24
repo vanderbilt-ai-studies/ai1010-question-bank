@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-08",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "agi"
+  ],
+  "question": "By the original working definition described in the lecture, roughly when did the instructor argue the field actually crossed the AGI (artificial general intelligence) threshold?",
+  "options": [
+    {
+      "text": "At the moment Astra was released, during this class session.",
+      "weight": 0,
+      "feedback": "The argument placed the crossing well before this release. Astra came up as the occasion for revisiting the definition, not as the moment the bar was met."
+    },
+    {
+      "text": "It has not been crossed yet by any released model.",
+      "weight": 0,
+      "feedback": "This is the opposite of the argument made in class, which was that the line had already been passed under the older definition and simply went unremarked."
+    },
+    {
+      "text": "Sometime in the era of expert systems, decades ago.",
+      "weight": 0,
+      "feedback": "The notes place the crossing far more recently -- about a year and a half before this lecture -- not in an earlier era of AI."
+    },
+    {
+      "text": "Roughly 18 months before this lecture, largely unnoticed.",
+      "weight": 100,
+      "feedback": "That is the claim made in class, under the older and more modest definition of AGI. It is offered as the instructor's own reading of the timeline rather than a settled finding in the field."
+    }
+  ]
+}

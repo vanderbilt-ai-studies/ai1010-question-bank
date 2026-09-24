@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-17",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "recurrent-depth",
+    "autoregression"
+  ],
+  "question": "What distinguishes hidden recurrence from the autoregressive output loop?",
+  "options": [
+    {
+      "text": "Hidden recurrence trains weights; autoregression trains embeddings.",
+      "weight": 0,
+      "feedback": "Both can describe inference with already trained weights. Their distinction concerns internal processing versus growth of the output sequence."
+    },
+    {
+      "text": "Hidden recurrence refines vectors; autoregression extends the sequence.",
+      "weight": 100,
+      "feedback": "A recurrent pass can refine numerical representations before selection. Autoregression adds a selected token that shapes subsequent generation."
+    },
+    {
+      "text": "Hidden recurrence selects full answers; autoregression selects paragraphs.",
+      "weight": 0,
+      "feedback": "Neither mechanism requires selecting a complete answer or paragraph at once. The generation process studied here advances by tokens."
+    },
+    {
+      "text": "Hidden recurrence enlarges context limits; autoregression enlarges layers.",
+      "weight": 0,
+      "feedback": "Those are capacity and architecture changes. The two loops instead describe what is repeated during processing."
+    }
+  ]
+}

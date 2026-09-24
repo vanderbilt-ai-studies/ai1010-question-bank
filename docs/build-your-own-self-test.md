@@ -25,28 +25,40 @@ You need:
 ## The one file your skill should read
 
 [`data/questions.json`](../data/questions.json) holds every question as
-structured data. One entry looks like this (shortened):
+structured data. A multiple-choice entry looks like this (shortened):
 
 ```json
 {
   "id": "q02-a-01",
+  "type": "MC",
   "date": "2026-09-03",
   "date_basis": "discussed",
   "session": 3,
   "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
   "concepts": ["model-selection"],
+  "points": 1,
   "question": "Claude's four model tiers, listed from the smallest to the largest, are:",
   "options": [
-    {"letter": "A", "text": "Sonnet 5, Haiku 4.5, Opus 5, Fable 5.1", "correct": false, "explanation": "Not quite. ..."},
-    {"letter": "B", "text": "Haiku 4.5, Sonnet 5, Opus 5, Fable 5.1", "correct": true,  "explanation": "Correct. ..."}
+    {"text": "Sonnet 5, Haiku 4.5, Opus 5, Fable 5.1", "weight": 0,   "correct": false, "feedback": "Sonnet is the tier you land on by default..."},
+    {"text": "Haiku 4.5, Sonnet 5, Opus 5, Fable 5.1", "weight": 100, "correct": true,  "feedback": "The ladder runs from the quick, small tier..."}
   ],
-  "answer": "B",
-  "path": "questions/2026-09-03-session-03/q02-a-01.md"
+  "path": "questions/2026-09-03-session-03/q02-a-01.json"
 }
 ```
 
+**Questions come in ten types** -- the auto-graded types Brightspace uses:
+true or false, multiple choice, multi-select, short answer, multi-short
+answer, fill in the blanks, matching, ordering, arithmetic and significant
+figures. Each `type` stores its answer differently: `options` for multiple
+choice, `accepted` answers for typed ones, `pairs` for matching, `items` in
+order for ordering, and so on. Right now the bank is all multiple choice, but
+other types are coming. Point Skill Creator at
+[question-format.md](question-format.md) and the worked
+[examples of every type](examples/) so your skill handles them all from the
+start.
+
 The same file also lists every concept, with its definition, under
-`"concepts"`. The full format is in [question-format.md](question-format.md).
+`"concepts"`.
 
 ## Decide what you want before you open Skill Creator
 
@@ -85,21 +97,25 @@ in brackets to match your decisions:
 >
 > It quizzes me from the AI 1010 question bank at
 > `[/Users/you/Documents/ai1010-question-bank]`. It reads
-> `data/questions.json` there; each question has an id, a date, concept tags,
-> lettered options, the correct answer and an explanation for every option.
+> `data/questions.json` there; each question has an id, a type, a date,
+> concept tags, the answer and explanations. Read `docs/question-format.md`
+> and `docs/examples/` there first: it must handle all ten question types,
+> including how typed answers are checked (case, regular expressions, partial
+> credit) and how multi-select, matching and ordering are scored.
 >
 > When I say things like "quiz me on attention" or "review this week", it
 > should: [pick 10 questions on the concepts or dates I name, favoring ones I
 > have missed before]; show one question at a time **without revealing the
-> answer**; wait for my letter; then tell me if I was right and show
+> answer**; wait for my answer; then tell me if I was right and show
 > [the explanation for my choice and for the correct answer].
 >
 > Keep my history in `[~/ai1010-self-test/progress.json]` (outside the bank
 > folder): for each question id, when I saw it and whether I got it right.
 > At the end of a session, show my score and my three weakest concepts.
 >
-> Use a small Python script for choosing questions and updating my history,
-> so that part is exact; use the model for conversation and explanations.
+> Use a small Python script for choosing questions, scoring my answers and
+> updating my history, so those parts are exact; use the model for
+> conversation and explanations.
 
 Skill Creator will ask follow-up questions, draft the skill, and offer to test
 it. Let it.
@@ -123,6 +139,13 @@ it. Let it.
   description. Revise it with Skill Creator's description-tuning step.
 - **Old questions after a pull.** Your skill should re-read the file each
   session rather than caching a copy.
+- **It grades typed answers by eye.** For short answer and fill in the
+  blanks, "Autoregression." with a period or a capital letter should still
+  count if the question says so. Have the script apply each accepted answer's
+  `evaluation` rule rather than letting the model decide loosely.
+- **It breaks on a new type.** Test it now on the files in
+  [`examples/`](examples/) -- one of every type -- so the first matching
+  question in the real bank does not surprise it.
 
 ## Test it like you learned to
 
@@ -131,7 +154,8 @@ Session 5 was about evaluating skills. Apply it here:
 1. **Decide what "working" means first.** For example: never shows the
    answer early; only uses bank questions; the progress file is correct after
    a session; the weakest-concept report matches the history.
-2. **Try a few different requests:** a single concept, a date range, "my
+2. **Try a few different requests:** each example type in
+   [`examples/`](examples/), a single concept, a date range, "my
    weakest stuff", a concept with only a handful of questions (the counts are in
    [CONCEPTS.md](../CONCEPTS.md)).
 3. **Check the evidence yourself.** Open the progress file. Look up a

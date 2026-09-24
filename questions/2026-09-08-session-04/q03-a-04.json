@@ -1,0 +1,35 @@
+{
+  "id": "q03-a-04",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "task-specification",
+    "class-demo"
+  ],
+  "question": "Why does it matter that seat-minder began with a problem statement (the North Star) rather than a technical specification?",
+  "options": [
+    {
+      "text": "Technical specifications are not allowed when you are directing an agent",
+      "weight": 0,
+      "feedback": "Nothing in the notes bans a technical spec. Implementation guidance, like the airline seat-reservation analogy, arrived later, layered on top of the North Star."
+    },
+    {
+      "text": "It fixed what the software had to accomplish before any implementation detail",
+      "weight": 100,
+      "feedback": "The North Star was the thing the software actually had to do. Only after that came implementation guidance, and the agent picked the technologies from there."
+    },
+    {
+      "text": "It was necessary because the instructor could not have written a specification",
+      "weight": 0,
+      "feedback": "Requirements and guidance were given confidently throughout the build. The point is sequencing the goal ahead of the details, not an inability to specify anything."
+    },
+    {
+      "text": "It guaranteed that the finished software would ship without any bugs",
+      "weight": 0,
+      "feedback": "A real concurrency risk still had to be named and guarded against, so starting from a problem statement did not remove the correctness work."
+    }
+  ]
+}

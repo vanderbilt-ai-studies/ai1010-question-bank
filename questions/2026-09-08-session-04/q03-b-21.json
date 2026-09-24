@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-21",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "thinking-reasoning"
+  ],
+  "question": "The lecture compares a model's reasoning trace to a person explaining how they solved a math problem. What point does this comparison make?",
+  "options": [
+    {
+      "text": "A stated reasoning process is a good proxy for what happened, not a complete record.",
+      "weight": 100,
+      "feedback": "People often describe solving a problem in a way their own errors contradict -- not lying, just without full access to their process. A model's reasoning trace has the same limit."
+    },
+    {
+      "text": "People and models describe their reasoning with complete accuracy.",
+      "weight": 0,
+      "feedback": "The comparison was drawn to make the opposite point: a stated explanation can diverge from what actually produced the answer."
+    },
+    {
+      "text": "Only models give unreliable explanations of their reasoning; people are accurate.",
+      "weight": 0,
+      "feedback": "People were used as the parallel case, not the contrast. The unreliability shows up on both sides."
+    },
+    {
+      "text": "A person who cannot explain their reasoning is lying about how they solved it.",
+      "weight": 0,
+      "feedback": "The lecture rejected this reading directly. An explanation that does not match the errors made is not a lie; the person simply does not know their own process."
+    }
+  ]
+}

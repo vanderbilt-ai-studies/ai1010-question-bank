@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-14",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "pre-training",
+    "post-training"
+  ],
+  "question": "Why might a base model continue a request as part of a document instead of answering helpfully?",
+  "options": [
+    {
+      "text": "A base model has already optimized each reply for a user preference score",
+      "weight": 0,
+      "feedback": "Optimizing with a reward signal is part of a classic post-training pipeline. It does not describe a base model after foundational prediction training."
+    },
+    {
+      "text": "Its objective teaches continuation, not reliable assistance",
+      "weight": 100,
+      "feedback": "Predicting what text comes next can support document continuation. Further training helps shape reliable assistant-style responses."
+    },
+    {
+      "text": "Its foundational objective teaches refusal instead of language prediction",
+      "weight": 0,
+      "feedback": "Refusal of harmful requests is an example of preferred behavior encouraged later. The foundational text-model objective is prediction."
+    },
+    {
+      "text": "A base model lacks learned patterns needed to produce connected text",
+      "weight": 0,
+      "feedback": "Pre-training can build extensive language patterns. The issue is the style and purpose of the continuation, not an absence of language learning."
+    }
+  ]
+}

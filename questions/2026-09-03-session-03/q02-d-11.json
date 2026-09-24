@@ -1,0 +1,36 @@
+{
+  "id": "q02-d-11",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "self-supervised-learning",
+    "pre-training",
+    "next-token-prediction"
+  ],
+  "question": "A student asked how a model learns, given that it is not a brain. What did the lecture say actually happens?",
+  "options": [
+    {
+      "text": "It predicts the next piece of the signal and is corrected -- backpropagation.",
+      "weight": 100,
+      "feedback": "An architecture is designed, a capability is provided, and then the whole of training is that one instruction: predict the next piece of the signal, and be corrected. Nothing about language is stated in advance."
+    },
+    {
+      "text": "Linguists write the rules of grammar into the model before training begins.",
+      "weight": 0,
+      "feedback": "No logic and no rules are programmed in at any point. Whatever the model represents about grammar is worked out from the signal it was asked to predict, which is a genuinely different kind of system."
+    },
+    {
+      "text": "It searches a stored collection of example sentences at the moment you ask it something.",
+      "weight": 0,
+      "feedback": "That describes a lookup system, not a trained model. There is no collection of sentences to consult -- there are weights, and they were arrived at by repeated correction during training."
+    },
+    {
+      "text": "Its logic is designed by hand, then tuned by engineers across successive releases.",
+      "weight": 0,
+      "feedback": "Hand-designed logic is exactly what this family of models does without. Engineers design the architecture and the training setup; the content of what the model knows comes from the training procedure."
+    }
+  ]
+}

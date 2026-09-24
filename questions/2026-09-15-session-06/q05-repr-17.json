@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-17",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "learned-knowledge",
+    "parameter"
+  ],
+  "question": "Why might an unwanted model answer have no single hand-written rule you can edit?",
+  "options": [
+    {
+      "text": "Learned values interact with the current context",
+      "weight": 100,
+      "feedback": "The program specifies computation, while learned parameter values help determine behavior. A particular answer need not correspond to a single written rule."
+    },
+    {
+      "text": "Training stores a separate source-code rule for each answer",
+      "weight": 0,
+      "feedback": "Training updates numerical parameters. It does not establish that each resulting answer has a separate hand-written rule."
+    },
+    {
+      "text": "Understanding the program identifies each answer's cause directly",
+      "weight": 0,
+      "feedback": "You can inspect the software, but the algorithm alone does not explain every behavior arising from learned parameters and context."
+    },
+    {
+      "text": "The written explanation supplies the rule that generated the answer",
+      "weight": 0,
+      "feedback": "An explanation is generated output. It does not establish that the model has a matching hand-written source-code rule for the answer."
+    }
+  ]
+}

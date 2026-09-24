@@ -1,0 +1,37 @@
+{
+  "id": "q02-d-21",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "agent",
+    "chat-vs-agent",
+    "file-system",
+    "memory"
+  ],
+  "question": "What does an agent have that a plain chat does not?",
+  "options": [
+    {
+      "text": "A bigger LLM (large language model) inside it, carrying far more parameters than chat uses",
+      "weight": 0,
+      "feedback": "The same model can sit inside either one -- you can converse with an agent just as you would in chat. What is added is around the model, not a bigger model."
+    },
+    {
+      "text": "A longer context window, letting it take in much more of your prompt at one time",
+      "weight": 0,
+      "feedback": "Context length belongs to the model, and agents do not change it by themselves. What an agent adds is places to put things other than the context window."
+    },
+    {
+      "text": "A dedicated inference chip, so that it produces its tokens several times more quickly",
+      "weight": 0,
+      "feedback": "Speed comes from the hardware a model runs on, and that is a separate question from whether you are in chat or in an agent. An agent is not faster; it is better equipped."
+    },
+    {
+      "text": "A file system it can write to, memory, task tracking, and skills",
+      "weight": 100,
+      "feedback": "Chat is context in and tokens out. An agent has the model inside it plus somewhere to keep files, memory that persists, a way of tracking what it is doing, and skills -- which is why it can carry out work rather than only discuss it."
+    }
+  ]
+}

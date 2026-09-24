@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-18",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "thinking-reasoning",
+    "recurrent-depth"
+  ],
+  "question": "Why is the length of a displayed reasoning explanation an incomplete measure of internal computation?",
+  "options": [
+    {
+      "text": "Internal vector processing need not appear as additional displayed tokens.",
+      "weight": 100,
+      "feedback": "A system can perform numerical work without printing a corresponding sequence of words. The displayed explanation is therefore an incomplete measurement."
+    },
+    {
+      "text": "The displayed steps report new weights learned during the current reply.",
+      "weight": 0,
+      "feedback": "The notes distinguish inference computation from learning parameters. A written explanation does not report a sequence of training updates during the reply."
+    },
+    {
+      "text": "The explanation describes context capacity rather than the work performed.",
+      "weight": 0,
+      "feedback": "A written explanation is generated output, not a measure of the context limit. Its incompleteness comes from hidden processing that may not be displayed."
+    },
+    {
+      "text": "The displayed words record the original embeddings before model processing.",
+      "weight": 0,
+      "feedback": "Embeddings are numerical representations transformed inside the model. The explanation is generated after model processing, not a printout of those initial vectors."
+    }
+  ]
+}

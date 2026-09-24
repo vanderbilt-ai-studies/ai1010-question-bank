@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-07",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "probability-distribution-over-tokens",
+    "transformer-pipeline"
+  ],
+  "question": "What is the role of the output projection described in the notes?",
+  "options": [
+    {
+      "text": "It executes a tool request through its permissions",
+      "weight": 0,
+      "feedback": "Tool execution belongs to the surrounding harness and tools. Output projection produces token scores inside the model."
+    },
+    {
+      "text": "It changes learned weights using the current prompt",
+      "weight": 0,
+      "feedback": "Producing token scores is part of inference. It does not itself train new weights on the prompt."
+    },
+    {
+      "text": "It maps the final representation to token scores",
+      "weight": 100,
+      "feedback": "After the blocks transform representations, the output stage produces scores for possible next tokens. A token can then be selected."
+    },
+    {
+      "text": "It retrieves an initial embedding from a token ID",
+      "weight": 0,
+      "feedback": "Initial lookup happens before the transformer blocks. Output projection acts on the representation after processing."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q03-c-24",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality"
+  ],
+  "question": "Why does the lecture treat GPT-style and Anthropic-style image handling as two genuinely different approaches, rather than saying one is simply better across the board?",
+  "options": [
+    {
+      "text": "Because one approach gives a model image understanding and the other does not",
+      "weight": 0,
+      "feedback": "Both approaches end up with a model that understands images. What the lecture contrasts is how each one got there."
+    },
+    {
+      "text": "Because the two approaches train the same way but run on different hardware",
+      "weight": 0,
+      "feedback": "The difference is in the training process itself -- images learned jointly from the start versus added through a later projection step -- not in the hardware."
+    },
+    {
+      "text": "Because the difference shows up in training but not in what a model can do",
+      "weight": 0,
+      "feedback": "This is the tempting reading, but the lecture ties the training difference to real downstream consequences rather than treating it as an implementation detail."
+    },
+    {
+      "text": "Because joint training and a later projection step lead to different capabilities",
+      "weight": 100,
+      "feedback": "How a model learned to see shapes what it is good at afterward: the lecture links the difference to strength at generating images and at operating software visually."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-02",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "Which file should you ask the agent to locate when you want to inspect a skill's main instructions?",
+  "options": [
+    {
+      "text": "The newest output report",
+      "weight": 0,
+      "feedback": "A report shows what a run produced. To inspect the procedure that guided the run, ask for the skill's instruction file."
+    },
+    {
+      "text": "The skill's SKILL.md file",
+      "weight": 100,
+      "feedback": "SKILL.md contains the skill's instructions. Open it and inspect the supporting files to understand the procedure you are using."
+    },
+    {
+      "text": "The current conversation export",
+      "weight": 0,
+      "feedback": "The conversation can describe a run, but the notes direct you to inspect the reusable instructions themselves in SKILL.md."
+    },
+    {
+      "text": "The model's parameter file",
+      "weight": 0,
+      "feedback": "Parameters belong to the trained model. Editing a skill means inspecting its instructions, rather than inspecting learned model numbers."
+    }
+  ]
+}

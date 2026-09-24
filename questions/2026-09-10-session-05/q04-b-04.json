@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-04",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "Where would detailed writing guidance commonly belong in a skill folder?",
+  "options": [
+    {
+      "text": "A completed document in the output folder",
+      "weight": 0,
+      "feedback": "A finished result shows what one run produced. Detailed reusable guidance is better organized as a reference."
+    },
+    {
+      "text": "An executable operation in scripts/",
+      "weight": 0,
+      "feedback": "Scripts hold code for repeatable operations. Prose guidance about writing belongs in a referenced document."
+    },
+    {
+      "text": "The current transcript in the task workspace",
+      "weight": 0,
+      "feedback": "The transcript is the content to process for one task, rather than reusable guidance for writing."
+    },
+    {
+      "text": "A linked document in references/",
+      "weight": 100,
+      "feedback": "References hold detailed guidance that can be opened when the main procedure calls for it."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "example-arith",
+  "type": "ARITH",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "inference-speed",
+    "token"
+  ],
+  "question": "A model writes {rate} tokens per second. How many seconds does a {n}-token answer take?",
+  "formula": "{n} / {rate}",
+  "variables": [
+    {
+      "name": "rate",
+      "min": 20,
+      "max": 80,
+      "step": 10
+    },
+    {
+      "name": "n",
+      "min": 300,
+      "max": 900,
+      "step": 100
+    }
+  ],
+  "decimals": 1,
+  "tolerance": {
+    "value": 0.1,
+    "mode": "units"
+  },
+  "units": "seconds",
+  "feedback": "Divide the number of tokens by the tokens produced per second."
+}

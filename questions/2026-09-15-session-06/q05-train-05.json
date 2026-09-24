@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-05",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "pre-training",
+    "post-training"
+  ],
+  "question": "Which description best fits a base model after next-token pre-training?",
+  "options": [
+    {
+      "text": "A model with text patterns but uncertain assistant behavior",
+      "weight": 100,
+      "feedback": "Prediction can build language patterns and world associations. It does not by itself guarantee reliable conversational helpfulness."
+    },
+    {
+      "text": "A model whose helpful conversational responses are already assured",
+      "weight": 0,
+      "feedback": "Prediction training provides a foundation, but it does not guarantee helpful assistant behavior. Further training can shape that behavior, while suitable patterns can also elicit answers from a base model."
+    },
+    {
+      "text": "A model whose learned statements have already been checked for truth",
+      "weight": 0,
+      "feedback": "Learning to predict likely text does not verify each learned claim. A base model can acquire associations without guaranteeing their accuracy."
+    },
+    {
+      "text": "A model whose replies are selected directly by human evaluators",
+      "weight": 0,
+      "feedback": "People may provide examples or preferences during post-training. A base model produces text using its learned parameters, rather than having humans choose each reply."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-24",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-scope",
+    "skill-sharing"
+  ],
+  "question": "You have a writing procedure that depends on one project's unusual document conventions. You want it available where those conventions apply. Which arrangement fits best?",
+  "options": [
+    {
+      "text": "Make it personal and describe it as suitable for every project",
+      "weight": 0,
+      "feedback": "That broad claim would hide its specific assumptions. Personal reuse requires assumptions appropriate to the other projects."
+    },
+    {
+      "text": "Replace its instructions with the latest finished project document",
+      "weight": 0,
+      "feedback": "An example output does not replace the reusable method that applies the project's conventions."
+    },
+    {
+      "text": "Remove its description and rely on a distinctive template filename",
+      "weight": 0,
+      "feedback": "A template filename does not supply the required description or clearly explain when the skill should be selected."
+    },
+    {
+      "text": "Keep it as a project-local skill",
+      "weight": 100,
+      "feedback": "The procedure's assumptions are tied to that project, which is the use case for project-local scope."
+    }
+  ]
+}

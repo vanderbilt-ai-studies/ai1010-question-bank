@@ -1,0 +1,35 @@
+{
+  "id": "q03-c-09",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality",
+    "verification"
+  ],
+  "question": "A classmate says the research papers cited alongside the lecture's multimodal discussion prove exactly how GPT works inside. What is the best correction?",
+  "options": [
+    {
+      "text": "They are checkable examples of the general approach, not descriptions of GPT's internals",
+      "weight": 100,
+      "feedback": "The lecture is explicit that neither cited paper reveals the internals of GPT or Claude, which are undisclosed. Each one is offered as a real, independently verifiable example of the kind of approach -- joint training, or projection -- being discussed."
+    },
+    {
+      "text": "They are the technical reports the model vendors published about their own systems",
+      "weight": 0,
+      "feedback": "This is the misconception to repair. The cited work is independent research, and the lecture says plainly that the internals of these products are not public."
+    },
+    {
+      "text": "They were assigned reading earlier in the course and are unrelated to the topic",
+      "weight": 0,
+      "feedback": "The papers are directly relevant, since they illustrate the two approaches under discussion. The trouble with the claim is not relevance; it is treating an example as proof of one product's internals."
+    },
+    {
+      "text": "They show that GPT and Claude use identical architectures underneath",
+      "weight": 0,
+      "feedback": "This overstates in the other direction. The lecture treats the two styles of image handling as different approaches, and in neither case as a confirmed account of a specific product."
+    }
+  ]
+}

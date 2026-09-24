@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-16",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "context"
+  ],
+  "question": "Ten messages into a conversation, the model correctly refers back to something you mentioned at the start. What explains this?",
+  "options": [
+    {
+      "text": "The token encodings remember earlier turns of the chat",
+      "weight": 0,
+      "feedback": "Encoding is a stateless lookup that turns a token into a number. It has no memory of what came before."
+    },
+    {
+      "text": "The model saved its token probabilities from the earlier messages",
+      "weight": 0,
+      "feedback": "Probabilities are computed fresh on each run and are not stored between messages. The model does not carry them forward."
+    },
+    {
+      "text": "Attention kept your earlier remark in memory between the turns",
+      "weight": 0,
+      "feedback": "Attention has no memory of its own; on each run it works only over the tokens in front of the model. Your remark is available because the whole conversation is sent again as context, not because anything was held over."
+    },
+    {
+      "text": "The conversation so far is part of the context sent to the model",
+      "weight": 100,
+      "feedback": "Context is not just your latest message; it includes the whole conversation to that point. Your earlier remark went into the model along with the newest message, so the model could work from it."
+    }
+  ]
+}

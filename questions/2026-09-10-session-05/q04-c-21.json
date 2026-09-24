@@ -1,0 +1,34 @@
+{
+  "id": "q04-c-21",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification"
+  ],
+  "question": "You ask an agent to fix a reading link. The new link opens a document with the expected title, but two documents share that title. What should you check next?",
+  "options": [
+    {
+      "text": "Read the destination and compare it with the intended reading.",
+      "weight": 100,
+      "feedback": "The title is ambiguous, so content readback is the evidence that can identify the intended document. A successful click alone does not settle the issue."
+    },
+    {
+      "text": "Accept the repair because a successful click establishes the right content.",
+      "weight": 0,
+      "feedback": "A successful click shows that something opened. It does not distinguish between two documents with the same title."
+    },
+    {
+      "text": "Check the operation log for a completed update and accept that as verification.",
+      "weight": 0,
+      "feedback": "A log showing an update establishes that an operation was attempted or executed. It does not establish that the saved link reaches the intended content."
+    },
+    {
+      "text": "Compare the displayed title again and omit reading either document itself.",
+      "weight": 0,
+      "feedback": "Repeating an ambiguous title check cannot resolve which document is linked. The content must be inspected."
+    }
+  ]
+}

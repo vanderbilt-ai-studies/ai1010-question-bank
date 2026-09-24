@@ -1,0 +1,36 @@
+{
+  "id": "q01-c-01",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "attention",
+    "mlp",
+    "decoder-stack"
+  ],
+  "question": "According to the lecture, what are the two components found inside every decoder stack?",
+  "options": [
+    {
+      "text": "A token encoder and a table of token embeddings",
+      "weight": 0,
+      "feedback": "Encoding and embedding happen before the stacks, turning text into numbers and numbers into locations in semantic space. The stacks take those embeddings as input and work on them."
+    },
+    {
+      "text": "An attention layer and an MLP (multi-layer perceptron)",
+      "weight": 100,
+      "feedback": "Attention uses the surrounding words to move each token's meaning into context, and the MLP then nudges it further using what the model learned about the world. Every stack has both, and a model has many stacks in a row."
+    },
+    {
+      "text": "An attention layer and a temperature setting",
+      "weight": 0,
+      "feedback": "Temperature is the noise added at the very end, when one token is picked from the probabilities; it does not live inside the stacks. The second half of each stack is the MLP (multi-layer perceptron), which carries world knowledge."
+    },
+    {
+      "text": "An embedding layer and a next-token probability layer",
+      "weight": 0,
+      "feedback": "Embeddings come in at the front of the pipeline and probabilities come out the back, so it is tempting to put them inside the stacks. What actually sits in each stack is attention plus an MLP (multi-layer perceptron)."
+    }
+  ]
+}

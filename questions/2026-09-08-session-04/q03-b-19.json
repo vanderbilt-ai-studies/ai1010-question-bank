@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-19",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "recurrent-depth",
+    "activation-space"
+  ],
+  "question": "Why does running a representation through the same decoder stack a second time tend to make it more stable, according to the lecture?",
+  "options": [
+    {
+      "text": "A second pass erases the first pass, so the representation starts over.",
+      "weight": 0,
+      "feedback": "Looping refines what is already there rather than discarding it. Starting over would throw away the work the first pass did."
+    },
+    {
+      "text": "The second pass uses a different, unrelated stack with entirely fresh weights.",
+      "weight": 0,
+      "feedback": "Reusing the same stack and the same weights is what makes it a loop. Routing to a different stack is just continuing forward through the pipeline."
+    },
+    {
+      "text": "A single pass can leave a representation unstable, and a second pass lets it settle.",
+      "weight": 100,
+      "feedback": "One trip through a stack can leave a representation easily pushed around by small changes elsewhere. Running it through the same stack again lets it settle into a more solid state -- enriched, but stable."
+    },
+    {
+      "text": "The second pass shrinks the embedding space, which is easier to stabilize.",
+      "weight": 0,
+      "feedback": "Nothing about the representation's size changes. The same-sized representation is simply run through the same stack again."
+    }
+  ]
+}

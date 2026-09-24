@@ -1,0 +1,35 @@
+{
+  "id": "q02-a-04",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-selection",
+    "cost-and-usage"
+  ],
+  "question": "Which Claude tier does the picker flag as requiring usage credits, and offer for the toughest challenges?",
+  "options": [
+    {
+      "text": "Haiku 4.5",
+      "weight": 0,
+      "feedback": "Haiku is the smallest and quickest tier. Being cheap to run is the whole point of it, so it is not the one behind a credit gate."
+    },
+    {
+      "text": "Sonnet 5",
+      "weight": 0,
+      "feedback": "Sonnet is the everyday default. A default cannot sit behind an extra payment, or most people would never reach a working model at all."
+    },
+    {
+      "text": "Opus 5",
+      "weight": 0,
+      "feedback": "Opus is where cost starts to be something you have to manage, which is why the take-home guidance was to keep its effort setting at High or below. A credit gate is a stronger measure than that, and the picker puts it only where a single answer costs a great deal more compute than Opus does."
+    },
+    {
+      "text": "Fable 5.1",
+      "weight": 100,
+      "feedback": "Fable is enormous, and every answer it produces costs a great deal of compute. The credit requirement is the interface making that cost visible before you spend it."
+    }
+  ]
+}

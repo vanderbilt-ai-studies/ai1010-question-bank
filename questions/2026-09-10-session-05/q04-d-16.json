@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-16",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "Why do positive results for curated skills in a benchmark leave the value of your new skill uncertain?",
+  "options": [
+    {
+      "text": "The benchmark makes polished instructions sufficient evidence of a useful new skill",
+      "weight": 0,
+      "feedback": "A polished file does not establish performance. The benchmark supports evaluating guidance rather than judging it by appearance."
+    },
+    {
+      "text": "The benchmark lets you infer your skill's value from who helped write it",
+      "weight": 0,
+      "feedback": "The notes treat skill quality as an evaluation question. Human authorship or artificial intelligence assistance does not establish your procedure's performance."
+    },
+    {
+      "text": "Your procedure and task still require their own evaluation",
+      "weight": 100,
+      "feedback": "Evidence from tested curated skills does not establish that every new skill improves results."
+    },
+    {
+      "text": "The benchmark lets you select a cheaper execution model without testing your task",
+      "weight": 0,
+      "feedback": "A cheaper model may execute a well-developed skill adequately, but you must evaluate the cost-quality tradeoff on your requirements."
+    }
+  ]
+}

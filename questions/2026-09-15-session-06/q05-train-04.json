@@ -1,0 +1,34 @@
+{
+  "id": "q05-train-04",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "pre-training"
+  ],
+  "question": "What is pre-training in the text-model example?",
+  "options": [
+    {
+      "text": "Behavioral learning by comparing preferred assistant responses",
+      "weight": 0,
+      "feedback": "Response comparisons are used in preference-based post-training. They build on a base model rather than describe the foundational prediction stage."
+    },
+    {
+      "text": "Response generation by running a model with fixed weights",
+      "weight": 0,
+      "feedback": "Running an already-trained model describes ordinary inference. Pre-training changes weights through a learning process."
+    },
+    {
+      "text": "Instruction learning by imitating example assistant responses",
+      "weight": 0,
+      "feedback": "Example responses are used in supervised fine-tuning. The foundational text-model example instead predicts the next token from existing text."
+    },
+    {
+      "text": "Foundational learning by predicting tokens in text",
+      "weight": 100,
+      "feedback": "The model learns broad language patterns and associations through prediction over large datasets. Later training can shape how it responds as an assistant."
+    }
+  ]
+}

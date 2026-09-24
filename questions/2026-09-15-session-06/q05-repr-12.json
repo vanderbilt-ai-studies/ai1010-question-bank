@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-12",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "attention",
+    "activation-space"
+  ],
+  "question": "Why can the phrase about a cruel trainer angering a cat change how you interpret cat?",
+  "options": [
+    {
+      "text": "The vocabulary needs a new entry for an angry cat",
+      "weight": 0,
+      "feedback": "A token's representation can shift with context while its vocabulary ID stays the same. A separate entry is not needed for each interpretation."
+    },
+    {
+      "text": "The prompt immediately retrains the model's parameters",
+      "weight": 0,
+      "feedback": "Using the sentence as context can change its interpretation during inference. That is different from updating weights through training."
+    },
+    {
+      "text": "The model has already selected the final answer word",
+      "weight": 0,
+      "feedback": "The example concerns how representations develop inside the blocks. Token selection happens after those transformations."
+    },
+    {
+      "text": "The surrounding words shape the representation",
+      "weight": 100,
+      "feedback": "Attention brings relevant context into the token's representation. The trainer and anger context can make a large, angry animal more plausible."
+    }
+  ]
+}

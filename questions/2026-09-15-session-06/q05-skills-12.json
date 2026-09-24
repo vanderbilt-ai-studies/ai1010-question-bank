@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-12",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-evaluation",
+    "verification"
+  ],
+  "question": "Why should you compare a skill's test output with your original task criteria?",
+  "options": [
+    {
+      "text": "The test output establishes what the task should have been",
+      "weight": 0,
+      "feedback": "This reverses the comparison. Your intended task and criteria provide the standard for deciding whether the produced output is useful."
+    },
+    {
+      "text": "The criteria determine which model parameters were changed",
+      "weight": 0,
+      "feedback": "Skill testing checks the result of reusable instructions. It does not require treating an instruction edit as a model-weight update."
+    },
+    {
+      "text": "The criteria replace the need to open the output artifact",
+      "weight": 0,
+      "feedback": "Criteria tell you what to look for, but you still need to inspect the actual output to see whether it meets them."
+    },
+    {
+      "text": "A finished run may still omit required work",
+      "weight": 100,
+      "feedback": "Completing a run and satisfying the task are different checks. Evaluate the actual output against what you asked the skill to accomplish."
+    }
+  ]
+}

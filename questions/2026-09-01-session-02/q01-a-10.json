@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-10",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "transformer-pipeline"
+  ],
+  "question": "Claude, ChatGPT, and Gemini are made by three different companies. What does the lecture's single pipeline picture claim about all three?",
+  "options": [
+    {
+      "text": "Each one adds its own extra stage, which is why their answers differ",
+      "weight": 0,
+      "feedback": "The differences you notice come from size, training, and the product built around the model. The stages themselves, from context through to one chosen token, are the same in each."
+    },
+    {
+      "text": "They can share one picture because they were trained on the same text",
+      "weight": 0,
+      "feedback": "Training text differs from company to company, and it is not what the picture is about. What the three share is the architecture: each is a decoder transformer."
+    },
+    {
+      "text": "All three are decoder transformers, so one picture describes each of them",
+      "weight": 100,
+      "feedback": "The decoder transformer is the architecture behind every modern chat model. Read the pipeline once and you have read all of them; what differs is scale, training, and the product wrapped around the model."
+    },
+    {
+      "text": "Only Claude matches the picture, since the lecture drew its examples from it",
+      "weight": 0,
+      "feedback": "Claude turns up in the examples, but the picture was offered as the shape of a generative model in general. Every current chat model is built this way."
+    }
+  ]
+}

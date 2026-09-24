@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-03",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-structure",
+    "context-management"
+  ],
+  "question": "You have dozens of skills installed, yet a conversation that uses none of them is no more crowded than before. What explains that, per the lecture?",
+  "options": [
+    {
+      "text": "Each skill is compressed into a much shorter summary before it is stored",
+      "weight": 0,
+      "feedback": "Compression is not the mechanism. The instruction body is not shrunk at all -- it is simply left out of context until a request needs it."
+    },
+    {
+      "text": "The harness unloads and deletes any skill that has not been used for a while",
+      "weight": 0,
+      "feedback": "Deleting unused skills was not part of the explanation given, and it would mean losing a skill rather than simply not paying its context cost yet."
+    },
+    {
+      "text": "Only a skill's name and description stay in context; the rest loads when it triggers",
+      "weight": 100,
+      "feedback": "An idle skill costs almost nothing, because only its short name and description are resident. The body, the scripts, and the reference files enter context only once a request actually matches it."
+    },
+    {
+      "text": "Every skill is capped at the same fixed token length no matter what it does",
+      "weight": 0,
+      "feedback": "A cap would not distinguish an idle skill from an active one. The point was about when a skill's content loads, not how long any one skill is allowed to be."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-07",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "harness",
+    "tool"
+  ],
+  "question": "Which sequence describes the agent loop after the model requests an action?",
+  "options": [
+    {
+      "text": "Tool acts, harness checks, observation returns",
+      "weight": 0,
+      "feedback": "This puts execution before the permission check. The harness must check and route a request before the allowed tool operation."
+    },
+    {
+      "text": "Harness checks, model guesses, tool result is omitted",
+      "weight": 0,
+      "feedback": "Checking a request does not supply its outcome. The tool must execute, and its observation returns to the model."
+    },
+    {
+      "text": "Harness checks, tool acts, observation returns",
+      "weight": 100,
+      "feedback": "The harness checks and routes the request. The resulting observation informs the model's next decision."
+    },
+    {
+      "text": "Model reports success, tool acts, harness checks",
+      "weight": 0,
+      "feedback": "A success statement does not establish execution. The request must pass through the harness before the allowed operation runs."
+    }
+  ]
+}

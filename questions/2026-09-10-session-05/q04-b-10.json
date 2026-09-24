@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-10",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-scope",
+    "skill-structure"
+  ],
+  "question": "Which scope best suits a skill that follows conventions specific to one project?",
+  "options": [
+    {
+      "text": "Personal scope with the project conventions applied everywhere",
+      "weight": 0,
+      "feedback": "Personal reuse is suitable when assumptions fit the receiving projects. Applying unusual conventions everywhere ignores that condition."
+    },
+    {
+      "text": "Project-local scope where those conventions apply",
+      "weight": 100,
+      "feedback": "A skill tied to a project's assumptions fits project-local scope. It remains reusable across tasks in that project."
+    },
+    {
+      "text": "Personal scope with project-specific selection guidance removed",
+      "weight": 0,
+      "feedback": "Removing the guidance makes its assumptions harder to recognize. Broader availability does not make those assumptions broadly appropriate."
+    },
+    {
+      "text": "Project-local scope with its reusable procedure removed",
+      "weight": 0,
+      "feedback": "Local placement is useful, but removing the procedure discards the reusable expertise. Location and instructions serve different purposes."
+    }
+  ]
+}

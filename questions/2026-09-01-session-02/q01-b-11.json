@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-11",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "autoregression",
+    "context"
+  ],
+  "question": "Partway through an answer, a model picks a slightly unusual word. Why does that one choice matter for everything the model writes afterward?",
+  "options": [
+    {
+      "text": "The word joins the context, so every later token is predicted with it in view",
+      "weight": 100,
+      "feedback": "Nothing the model produces is thrown away. Each chosen token is appended and fed back, so an unusual word early on tilts every prediction that follows it."
+    },
+    {
+      "text": "It does not matter, because each token is predicted from the original prompt alone",
+      "weight": 0,
+      "feedback": "If tokens were predicted from the prompt alone, the response could not stay coherent with itself. The model sees its own earlier output every time it runs, which is what autoregression means."
+    },
+    {
+      "text": "The model goes back and revises the earlier word if later tokens do not fit it",
+      "weight": 0,
+      "feedback": "There is no going back. Once a token is produced it is part of the context for good, so the model has to make the rest of the response fit the word, not the other way round."
+    },
+    {
+      "text": "The model restarts from the prompt whenever it produces a word it did not expect",
+      "weight": 0,
+      "feedback": "The model does not judge its own output as expected or unexpected. It simply appends whatever it chose and keeps walking from there."
+    }
+  ]
+}

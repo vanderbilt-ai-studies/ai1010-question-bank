@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-04",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-structure",
+    "tool"
+  ],
+  "question": "The lecture-recording-to-lecture-notes skill bundles real Python scripts, such as one that pulls frames out of a video, rather than asking the model to extract frames on its own. Why does this design make sense?",
+  "options": [
+    {
+      "text": "Because Python is the language a skill's bundled code has to be written in",
+      "weight": 0,
+      "feedback": "Skills are not tied to one language. Python shows up here because it fits the job of pulling frames out of a video file, not because the skill format demands it."
+    },
+    {
+      "text": "Because a bundled script handles the whole job, leaving the model nothing to interpret",
+      "weight": 0,
+      "feedback": "The skill still needs the model to work out what a phrase like \"as you can see\" is pointing at. The script covers one mechanical step; it does not cover the task."
+    },
+    {
+      "text": "Because a script written once will not need revising as the rest of the skill changes",
+      "weight": 0,
+      "feedback": "Nothing suggests a script is frozen once written. A skill's code can be revised like any other part of it, the way the class proposed revising its narrative-versus-expository instruction."
+    },
+    {
+      "text": "Because code does the mechanical extraction reliably, leaving the model to interpret what it means",
+      "weight": 100,
+      "feedback": "Ordinary software handles the reliable, mechanical step of grabbing a frame at a given timestamp, while the model supplies the judgment about what that material means in context. Each side does the part it is actually good at."
+    }
+  ]
+}

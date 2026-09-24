@@ -1,0 +1,34 @@
+{
+  "id": "q02-c-02",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-budget"
+  ],
+  "question": "If you never open the effort menu in Claude, where is your conversation running?",
+  "options": [
+    {
+      "text": "At Low, since a conversation starts as cheaply as it can",
+      "weight": 0,
+      "feedback": "Low is a setting you pick deliberately when you want an answer with very little deliberation behind it. The menu does not open at the bottom of the range; the five levels run Low, Medium, High, Extra, Max."
+    },
+    {
+      "text": "At High, with a generous thinking budget",
+      "weight": 0,
+      "feedback": "High was named as the ceiling for the take-home work on Opus, which tells you it is a level you move up to when the problem earns it. Opening there would spend the larger budget on every trivial message you send."
+    },
+    {
+      "text": "At Medium, one step up from the lowest level",
+      "weight": 100,
+      "feedback": "Medium is the default -- where the menu sits until you move it, which is why most people never notice the setting at all. The levels run Low, Medium, High, Extra, Max, with a separate on/off toggle for thinking beside them."
+    },
+    {
+      "text": "At Max, thinking for as long as it needs",
+      "weight": 0,
+      "feedback": "Max does mean as long as the model needs, and the interface warns it can consume 3.5 times or more the usage of High. That is a cost you opt into, not one you inherit by leaving a menu alone."
+    }
+  ]
+}

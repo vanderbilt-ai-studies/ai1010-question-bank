@@ -1,0 +1,34 @@
+{
+  "id": "q04-c-07",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "subagent"
+  ],
+  "question": "What is a suitable task for a fresh subagent in a long project?",
+  "options": [
+    {
+      "text": "Infer a missing acceptance decision from the project title.",
+      "weight": 0,
+      "feedback": "A title helps identify a project but does not supply its decisions. Give the subagent relevant decision evidence for its bounded question."
+    },
+    {
+      "text": "Expand a document check into completing the remaining project.",
+      "weight": 0,
+      "feedback": "A fresh subagent is useful for a bounded question. Expanding the assignment adds scope beyond the focused check it was meant to perform."
+    },
+    {
+      "text": "Investigate a bounded question with relevant context.",
+      "weight": 100,
+      "feedback": "A focused task lets a subagent work with the information it needs and return a concise finding. Fresh context does not remove the need to check the answer."
+    },
+    {
+      "text": "Certify a proposed repair from its description before it runs.",
+      "weight": 0,
+      "feedback": "A proposed repair describes an intended action, not an observed outcome. A subagent still needs evidence and its finding still needs checking."
+    }
+  ]
+}

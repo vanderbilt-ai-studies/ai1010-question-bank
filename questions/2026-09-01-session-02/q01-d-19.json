@@ -1,0 +1,35 @@
+{
+  "id": "q01-d-19",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "grounding",
+    "context"
+  ],
+  "question": "A student gets an answer that sounds right but turns out to be wrong. According to the lecture, what should they try first?",
+  "options": [
+    {
+      "text": "Switch to a larger model, since more parameters is what fixes wrong answers",
+      "weight": 0,
+      "feedback": "The lecture does list a model that is not strong enough as one of the two possible causes, but calls it the far less likely one. Before changing models, check whether you gave the model any evidence to work from."
+    },
+    {
+      "text": "Put more evidence into the context, such as the relevant document",
+      "weight": 100,
+      "feedback": "A wrong-but-plausible answer usually means the model was drawing on its fuzzy JPEG because the answer was not in the context. Attention can draw on anything you put there, and what is in the context can override what the model half-remembers."
+    },
+    {
+      "text": "Ask the model whether it is sure, so that it can check its facts",
+      "weight": 0,
+      "feedback": "The model has no facts to check and no way to verify its own output; asking again produces another plausible continuation. The remedy is to give it the evidence, not to ask it to look inward."
+    },
+    {
+      "text": "Turn the temperature down so the model stops guessing",
+      "weight": 0,
+      "feedback": "Temperature only affects which plausible path is taken; every path is a guess in the sense that matters. A lower temperature makes the same wrong answer more repeatable, not more correct."
+    }
+  ]
+}

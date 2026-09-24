@@ -1,0 +1,35 @@
+{
+  "id": "q01-c-13",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp",
+    "learned-knowledge"
+  ],
+  "question": "What does the MLP (multi-layer perceptron) in a decoder stack contribute?",
+  "options": [
+    {
+      "text": "What the model learned about the world during training",
+      "weight": 100,
+      "feedback": "The MLP is where world knowledge lives: it is what knows that you king someone in checkers, not chess, and that \"king me\" is said when winning. It applies that knowledge by nudging the embedding attention handed it."
+    },
+    {
+      "text": "A weighted average of the earlier words in the context",
+      "weight": 0,
+      "feedback": "That is attention, the first half of the stack. The MLP takes attention's output and adds what the model already knew before it read this context."
+    },
+    {
+      "text": "The random noise that varies the model's answers",
+      "weight": 0,
+      "feedback": "Noise enters once, at the end, when one token is picked from the probabilities, and it is set by temperature. The MLP is deterministic and runs inside every stack."
+    },
+    {
+      "text": "The number assigned to each token in the vocabulary",
+      "weight": 0,
+      "feedback": "Assigning numbers is token encoding, which happens before anything else. The MLP works far downstream, on embeddings that attention has already shaped."
+    }
+  ]
+}

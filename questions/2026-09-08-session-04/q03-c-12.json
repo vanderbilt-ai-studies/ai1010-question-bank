@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-12",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "memory",
+    "file-system",
+    "harness"
+  ],
+  "question": "How does an agent solve the same problem the 'no pencils or pens' analogy describes for a plain chat session?",
+  "options": [
+    {
+      "text": "By using a much larger context window that is big enough never to fill up",
+      "weight": 0,
+      "feedback": "A bigger window only delays the same problem. The fix the lecture describes is not about window size at all."
+    },
+    {
+      "text": "By compressing the earlier conversation so it takes less room in the window",
+      "weight": 0,
+      "feedback": "Compression is not the mechanism pointed to. The fix is about having somewhere outside the conversation to put things, not about squeezing more into the same space."
+    },
+    {
+      "text": "By training the underlying model to memorize more facts before it is deployed",
+      "weight": 0,
+      "feedback": "This confuses what the model learned in training with what happens during one task. The problem in the analogy is about a single ongoing conversation, which pretraining cannot fix."
+    },
+    {
+      "text": "By writing what it learns into files, memory, and task lists it can read back",
+      "weight": 100,
+      "feedback": "Rather than holding everything in one memory the way the student in the analogy must, an agent puts things outside itself and picks them up again later -- even in a fresh context or a new subagent."
+    }
+  ]
+}

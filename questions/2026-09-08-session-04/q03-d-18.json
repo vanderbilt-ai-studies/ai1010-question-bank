@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-18",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-structure",
+    "context-management"
+  ],
+  "question": "A student asked whether writing several detailed paragraphs of instruction into a skill risks the same context problems as an overloaded chat conversation. What was the answer?",
+  "options": [
+    {
+      "text": "Yes, so skill instructions should always be kept to one paragraph or less",
+      "weight": 0,
+      "feedback": "No length limit was set. The answer turned on where instructions sit relative to the task, not on capping how many paragraphs they run to."
+    },
+    {
+      "text": "No, because a skill's instructions sit right next to the work they govern",
+      "weight": 100,
+      "feedback": "The instructions arrive attached to the specific task at hand rather than competing for attention against a long, wandering chat history, which is what makes an overloaded conversation lose the thread in the first place."
+    },
+    {
+      "text": "Yes, but only for skills that also include scripts or other runnable code",
+      "weight": 0,
+      "feedback": "The answer carved out no exception for code-bearing skills. Instructions sitting next to the relevant task holds whether or not the skill bundles scripts."
+    },
+    {
+      "text": "No, because skill instructions are processed by a completely separate model from chat",
+      "weight": 0,
+      "feedback": "Nothing suggests a second model handles skill instructions. The same model reads them -- just without the competing clutter of a long conversation around them."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-11",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "sampling-and-temperature"
+  ],
+  "question": "A student asks a chatbot the same question in two fresh chats and gets different answers. They conclude that the model must be broken, or else remembering them from the first chat. What is actually going on?",
+  "options": [
+    {
+      "text": "The model is comparing the two chats and deliberately varying its wording",
+      "weight": 0,
+      "feedback": "Fresh chats share nothing; the second run sees only its own context. The variation is not a deliberate comparison but the ordinary effect of noise at each token choice."
+    },
+    {
+      "text": "Noise at each token choice sends the model down a different path each time",
+      "weight": 100,
+      "feedback": "Up to the probabilities the model is deterministic, and then temperature adds a little noise before choosing. That is intended, so that output is not flat and repetitive, and it means two runs of the same prompt normally differ."
+    },
+    {
+      "text": "The model's parameters shifted slightly as it learned from the first chat",
+      "weight": 0,
+      "feedback": "The parameters are fixed once training ends; a chat does not teach the model anything that survives into the next one. What differs between the two runs is the path taken through the same probabilities, not the model itself."
+    },
+    {
+      "text": "A glitch in the decoder stacks produced slightly different probabilities",
+      "weight": 0,
+      "feedback": "The decoder stacks give the same probabilities for the same context every time; there is no glitch to find there. The difference enters after the stacks, at the moment a token is chosen with a little noise."
+    }
+  ]
+}

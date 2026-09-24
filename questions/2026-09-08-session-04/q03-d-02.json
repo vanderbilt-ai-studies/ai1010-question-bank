@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-02",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-structure",
+    "skill-selection"
+  ],
+  "question": "Which part of a skill stays loaded in an agent's context even when the skill is not currently being used?",
+  "options": [
+    {
+      "text": "Its name and description",
+      "weight": 100,
+      "feedback": "The name and description are what let the model recognize a matching request before anything else about the skill has loaded, so those two pieces stay resident even when the skill is idle."
+    },
+    {
+      "text": "The full body of its instructions",
+      "weight": 0,
+      "feedback": "The instruction body is exactly the part that loads only on demand, once the skill is actually triggered by a matching request. Keeping it resident all the time is what the on-demand design avoids."
+    },
+    {
+      "text": "Any scripts it bundles, such as a frame-extraction script",
+      "weight": 0,
+      "feedback": "Scripts are among the heaviest parts of a skill, which is why they load only when the skill actually runs, not just because the skill exists in the library."
+    },
+    {
+      "text": "Its reference files and output-format examples",
+      "weight": 0,
+      "feedback": "Reference files and output-format examples are useful once the skill is in use, but loading them permanently for every skill in a library would recreate the exact bloat the on-demand pattern is built to prevent."
+    }
+  ]
+}

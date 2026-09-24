@@ -1,0 +1,36 @@
+{
+  "id": "q02-a-11",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "cost-and-usage",
+    "model-selection",
+    "course-logistics"
+  ],
+  "question": "The weekend exercise asks you to solve one problem with Haiku, Sonnet, Opus, and Fable. What instruction was attached to Fable?",
+  "options": [
+    {
+      "text": "Start with it, so you have a best answer to compare the others against.",
+      "weight": 0,
+      "feedback": "A best answer would make a useful yardstick, but running the largest tier first risks spending your usage before you have tried the other three. Finishing the comparison is the point."
+    },
+    {
+      "text": "Save it for last, because it can eat through your usage.",
+      "weight": 100,
+      "feedback": "Fable is enormous, so a single run costs far more usage than the tiers below it. Going last means the other three comparisons are already in hand if your limit runs out."
+    },
+    {
+      "text": "Skip it entirely unless the first three tiers all fail.",
+      "weight": 0,
+      "feedback": "The exercise wants all four, not a fallback chain. You are meant to see what the top tier looks like even when a smaller one already did fine -- just not first."
+    },
+    {
+      "text": "Run it twice, once with thinking turned off.",
+      "weight": 0,
+      "feedback": "Thinking settings are a separate dial from which tier you pick, and they were not what the Fable instruction was about. That instruction concerned the order you run the four in."
+    }
+  ]
+}

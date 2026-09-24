@@ -1,0 +1,34 @@
+{
+  "id": "q05-train-16",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "post-training"
+  ],
+  "question": "How do demonstrations and preference comparisons supply different training information?",
+  "options": [
+    {
+      "text": "Demonstrations rank alternatives; comparisons provide the full desired answer",
+      "weight": 0,
+      "feedback": "This reverses the roles described in the notes. Demonstrations supply example responses, while comparisons identify a preferred alternative."
+    },
+    {
+      "text": "Demonstrations measure truth; comparisons guarantee future helpful behavior",
+      "weight": 0,
+      "feedback": "Neither training input guarantees those outcomes. The notes distinguish example responses from relative preferences and emphasize the limits of behavioral training."
+    },
+    {
+      "text": "Demonstrations change conversation history; comparisons leave parameters fixed",
+      "weight": 0,
+      "feedback": "These are sources of training information in this question. Using them in training differs from adding material to a current inference context."
+    },
+    {
+      "text": "Demonstrations give examples; comparisons express relative preference",
+      "weight": 100,
+      "feedback": "An example answer illustrates what to produce. Comparing alternatives expresses relative preference, which can train a reward model in the classic pipeline."
+    }
+  ]
+}

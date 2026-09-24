@@ -1,0 +1,35 @@
+{
+  "id": "q02-a-07",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-size",
+    "learned-knowledge"
+  ],
+  "question": "Dropping to a smaller model tier costs you something. According to the lecture, what do you give up?",
+  "options": [
+    {
+      "text": "Access to the tools and features that surround the model",
+      "weight": 0,
+      "feedback": "Tooling is the part that mostly survives a drop in tier. A smaller model still reaches the same kinds of tools; what thins out is something else."
+    },
+    {
+      "text": "Room in the prompt for a long document",
+      "weight": 0,
+      "feedback": "Nothing ties a model's tier to how much material you can hand it. The trade named in the lecture is about what the model holds and how well it thinks, not about how much you can give it."
+    },
+    {
+      "text": "Fluent, readable prose in the answers it writes",
+      "weight": 0,
+      "feedback": "Fluency survives the drop -- small models still write clean prose, which is part of why the gap between tiers is hard to spot. The losses show up elsewhere."
+    },
+    {
+      "text": "Depth of world knowledge, and usually the quality of its reasoning",
+      "weight": 100,
+      "feedback": "A smaller model holds less of the world in fewer numbers, so gaps in what it knows appear first, and weaker reasoning on demanding problems follows."
+    }
+  ]
+}

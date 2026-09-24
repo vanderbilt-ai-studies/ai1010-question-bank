@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-23",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "recurrent-depth",
+    "parameter"
+  ],
+  "question": "You run a trained recurrent block four times instead of twice, using the same weights and input. What resource change is most directly supported?",
+  "options": [
+    {
+      "text": "Twice as many independent weights have been learned.",
+      "weight": 0,
+      "feedback": "Applying weights more times does not create additional independent parameters. Learning new weights would require a different operation."
+    },
+    {
+      "text": "More block computations occur without adding independent weights.",
+      "weight": 100,
+      "feedback": "The shared block is applied twice more. That increases processing work even though the trained parameter set is unchanged."
+    },
+    {
+      "text": "The maximum number of input tokens has doubled.",
+      "weight": 0,
+      "feedback": "Recurrent depth and context capacity are separate resources. More passes do not establish a larger context window."
+    },
+    {
+      "text": "The number of displayed reasoning tokens must double.",
+      "weight": 0,
+      "feedback": "Hidden processing operates on vectors. More recurrent passes do not require a proportional increase in displayed text."
+    }
+  ]
+}

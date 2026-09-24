@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-25",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "You request a particular notes skill by name. The task matches its purpose, but your request lacks the keyword used in its description. How should that affect selection?",
+  "options": [
+    {
+      "text": "The explicit request can still activate the relevant skill",
+      "weight": 100,
+      "feedback": "The notes allow users to request a skill directly. Activation is based on relevance rather than a mandatory magic word."
+    },
+    {
+      "text": "The skill must be ignored until the keyword appears exactly",
+      "weight": 0,
+      "feedback": "This treats activation as a rigid text match. An explicit request for a relevant skill is another way to select it."
+    },
+    {
+      "text": "Every available skill must be activated to resolve the wording",
+      "weight": 0,
+      "feedback": "An explicit request and a matching purpose already identify the relevant procedure. Loading unrelated skills does not resolve a keyword issue."
+    },
+    {
+      "text": "The skill's current outputs must replace its detailed instructions",
+      "weight": 0,
+      "feedback": "Naming a skill selects its procedure; it does not change prior outputs into the instructions needed for this run."
+    }
+  ]
+}

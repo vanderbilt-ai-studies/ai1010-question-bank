@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-12",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "next-token-prediction"
+  ],
+  "question": "The lecture opened the pipeline with a fact it called counterintuitive. After all of the context goes into the model, how much comes out?",
+  "options": [
+    {
+      "text": "One complete sentence",
+      "weight": 0,
+      "feedback": "A sentence is what you see on screen, so it is natural to assume that is the unit of output. It is not: a sentence is assembled from many separate runs of the model."
+    },
+    {
+      "text": "The whole response at once",
+      "weight": 0,
+      "feedback": "The response you read was never produced in one piece. The entire context is processed for every single token of it."
+    },
+    {
+      "text": "One token for every token in the context",
+      "weight": 0,
+      "feedback": "The input and output are not matched one to one. However long the context is, the model's job on each run is to produce just the next token."
+    },
+    {
+      "text": "Exactly one token",
+      "weight": 100,
+      "feedback": "All of that input, your prompt, attachments, and conversation, is processed to produce a single next token. That is the whole job of one pass through the model."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-10",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "sampling-and-temperature"
+  ],
+  "question": "A student is using a model to fill in a standard form letter and wants the output to be as predictable and repeatable as possible. What should they do with the temperature?",
+  "options": [
+    {
+      "text": "Raise it, so the model is more confident in each choice",
+      "weight": 0,
+      "feedback": "Temperature does not change the model's confidence; the probabilities are fixed before it acts. Raising it adds more noise to the choice, which makes the output wander more, the opposite of what this student wants."
+    },
+    {
+      "text": "Lower it, so less noise is added and the top token wins more often",
+      "weight": 100,
+      "feedback": "Noise at the choice step is what lets the model walk a different path through the same probabilities. With less of it the top token wins nearly every time and the model retraces its route, so the flat, repetitive output the lecture describes is exactly what a form letter wants."
+    },
+    {
+      "text": "Leave it alone, since the same prompt already produces the same text every run",
+      "weight": 0,
+      "feedback": "The probabilities are the same every run, but the choice is not: noise is added before a token is picked, so the same prompt normally gives differently worded answers. That is the variation this student is trying to reduce."
+    },
+    {
+      "text": "Lower it, so the model spends longer checking each answer",
+      "weight": 0,
+      "feedback": "Nothing in the pipeline checks an answer, and temperature does not change how long the model runs; each token takes a full pass through the stacks either way. Lowering it changes which token wins the choice, not how carefully anything is done."
+    }
+  ]
+}

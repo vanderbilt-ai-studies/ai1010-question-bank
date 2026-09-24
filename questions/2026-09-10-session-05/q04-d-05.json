@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-05",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "What comparison is central to evaluating whether a skill improves task performance?",
+  "options": [
+    {
+      "text": "Matched tasks with and without the skill",
+      "weight": 100,
+      "feedback": "Keeping inputs and relevant settings comparable helps you interpret differences in the resulting artifacts."
+    },
+    {
+      "text": "Different tasks using unrelated models and instructions",
+      "weight": 0,
+      "feedback": "Several factors change at once, so the resulting difference gives weak evidence about the skill itself."
+    },
+    {
+      "text": "The lengths of the skill file and the generated answer",
+      "weight": 0,
+      "feedback": "Length does not measure whether the output meets the task requirements."
+    },
+    {
+      "text": "The confidence of the author before and after editing",
+      "weight": 0,
+      "feedback": "Confidence can change without performance improving. Evaluate actual outputs against defined criteria."
+    }
+  ]
+}

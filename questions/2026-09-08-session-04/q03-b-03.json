@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-03",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "post-training",
+    "thinking-reasoning"
+  ],
+  "question": "Why might a model's post-training on a strongly reasoning-oriented predecessor's traces make the model dependent on reasoning to sound like itself?",
+  "options": [
+    {
+      "text": "Because reasoning traces permanently rewire which words the model's tokenizer can produce.",
+      "weight": 0,
+      "feedback": "Tokenization is fixed independently of what post-training contains. The lecture's point was about the model's learned style and standard of quality, not about its vocabulary."
+    },
+    {
+      "text": "Because reasoning traces cost more to generate, which the model was trained to avoid.",
+      "weight": 0,
+      "feedback": "Compute cost is not the mechanism the lecture described. The explanation was about what behavior the model learned to imitate, not about efficiency."
+    },
+    {
+      "text": "Because the model absorbed its standard for a good answer from reasoning-heavy examples.",
+      "weight": 100,
+      "feedback": "The model's sense of what a good response looks like was built on reasoning-heavy output, so skipping reasoning can mean skipping the behavior it learned to reproduce well. The lecture offered this as an interpretation, not a disclosed fact."
+    },
+    {
+      "text": "Because a model can only imitate text it saw during pre-training, not post-training.",
+      "weight": 0,
+      "feedback": "Post-training is exactly the stage that shapes how a model uses what pre-training gave it, including whether and how it reasons. That is where the lecture placed this effect."
+    }
+  ]
+}

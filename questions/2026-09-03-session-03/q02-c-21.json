@@ -1,0 +1,35 @@
+{
+  "id": "q02-c-21",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-budget",
+    "task-specification"
+  ],
+  "question": "You type a one-line request -- \"tidy up my project\" -- with effort set to Max. A long wait later you get back a careful, thoroughly reasoned piece of work aimed at something you never asked for. Which idea from the lecture explains this best?",
+  "options": [
+    {
+      "text": "The temperature was too high, so unlikely tokens crept in",
+      "weight": 0,
+      "feedback": "High temperature produces varied or odd choices, not a coherent long effort pointed at the wrong goal. What you got was well reasoned -- just about the wrong task."
+    },
+    {
+      "text": "The model ran past its budget and answered with partial thinking",
+      "weight": 0,
+      "feedback": "Hitting the ceiling gives you an answer built on unfinished reasoning, usually shallow rather than elaborate. Here the model had plenty of budget; the trouble was where it spent it."
+    },
+    {
+      "text": "A large budget on a vague request buys time to go the wrong way",
+      "weight": 100,
+      "feedback": "The budget guarantees work, not that the work is aimed where you wanted -- this is the intern who never comes back for directions. Describe the task properly, or probe with a small budget first and check the direction."
+    },
+    {
+      "text": "The model tier was too small for a request of this kind",
+      "weight": 0,
+      "feedback": "A bigger model would likely have guessed your intent better, but the root problem is that you never said what you meant. Moving up a tier is an expensive way to avoid writing a clearer request."
+    }
+  ]
+}

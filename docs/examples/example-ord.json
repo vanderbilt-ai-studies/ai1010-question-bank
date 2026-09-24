@@ -1,0 +1,19 @@
+{
+  "id": "example-ord",
+  "type": "ORD",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "transformer-pipeline"
+  ],
+  "question": "Put the stages of the decoder transformer pipeline in order.",
+  "grading": "equally_weighted",
+  "items": [
+    "Tokenization",
+    "Token embedding",
+    "Decoder stacks",
+    "Probability distribution over tokens",
+    "Sampling the next token"
+  ],
+  "feedback": "Text becomes tokens, tokens become embeddings, the stacks refine them, the model outputs probabilities, and one token is sampled."
+}

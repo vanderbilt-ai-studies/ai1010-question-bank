@@ -1,0 +1,35 @@
+{
+  "id": "q02-c-25",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "sampling-and-temperature",
+    "thinking-reasoning"
+  ],
+  "question": "You send exactly the same prompt twice to a reasoning model with temperature turned up. The two replies differ -- and so do the steps the model took to get to them. What explains the difference in the steps, not just in the wording?",
+  "options": [
+    {
+      "text": "The thinking budget is drawn at random for each request",
+      "weight": 0,
+      "feedback": "The budget is whatever you set it to and does not vary between requests. Two runs at the same effort setting have the same ceiling."
+    },
+    {
+      "text": "Temperature only comes into play once the visible answer begins",
+      "weight": 0,
+      "feedback": "If that were true the reasoning would be identical each time and only the phrasing would move -- which is not what you saw. Thinking is generated the same way the answer is, so the same setting applies to it."
+    },
+    {
+      "text": "Temperature is in force during the thinking steps as well",
+      "weight": 100,
+      "feedback": "Thinking is ordinary next-token generation that happens to be hidden, so every thinking step is sampled with your temperature in force. One low-probability token early on sends the model down a different path, and the answer is built on that path."
+    },
+    {
+      "text": "The model was swapped for a different tier between the two requests",
+      "weight": 0,
+      "feedback": "The tier is a dial you set and does not change on its own between messages. Two runs of the same model can still diverge, because the sampling is not deterministic once temperature is up."
+    }
+  ]
+}

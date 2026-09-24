@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-03",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "pre-training",
+    "self-supervised-learning"
+  ],
+  "question": "In next-token pre-training, where does the prediction target come from?",
+  "options": [
+    {
+      "text": "A person who ranks several assistant replies",
+      "weight": 0,
+      "feedback": "Ranking replies is a preference-feedback example from post-training. Next-token pre-training obtains its target from the training text."
+    },
+    {
+      "text": "The reply preferred by a trained reward model",
+      "weight": 0,
+      "feedback": "A reward model can supply a signal in a classic human-feedback pipeline. The next-token target instead comes directly from the text."
+    },
+    {
+      "text": "The next token already found in the text",
+      "weight": 100,
+      "feedback": "The text supplies both the preceding context and the token that follows it. This provides a learning target without hand-labeling every continuation."
+    },
+    {
+      "text": "A person who labels each possible continuation",
+      "weight": 0,
+      "feedback": "People need not label each continuation in this example. The next token in the existing text supplies the target."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-14",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "file-system",
+    "context-management"
+  ],
+  "question": "Why can an agent work with a large project without reading every file into its current context?",
+  "options": [
+    {
+      "text": "Accessible files are already fully represented in every model input.",
+      "weight": 0,
+      "feedback": "Access means material can be retrieved, not that its contents have already been loaded. The current input may contain only a small selection."
+    },
+    {
+      "text": "It can search for and read material relevant to the current step.",
+      "weight": 100,
+      "feedback": "Useful organization and file tools support selective retrieval. This keeps the current context focused while retaining access to other sources."
+    },
+    {
+      "text": "Filenames contain enough detail to replace the original source evidence.",
+      "weight": 0,
+      "feedback": "Names help locate material but do not prove its contents. The agent still needs to open the relevant sources."
+    },
+    {
+      "text": "A long conversation automatically copies every project file into memory.",
+      "weight": 0,
+      "feedback": "Conversation history and available files are different sources of information. File contents need to be retrieved through available tools."
+    }
+  ]
+}

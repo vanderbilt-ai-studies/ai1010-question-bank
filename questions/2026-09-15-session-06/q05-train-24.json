@@ -1,0 +1,34 @@
+{
+  "id": "q05-train-24",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "post-training"
+  ],
+  "question": "People compare two explanations of photosynthesis and prefer the one suited to a young learner. What information does this comparison provide for post-training?",
+  "options": [
+    {
+      "text": "A guarantee that the model will explain every topic appropriately",
+      "weight": 0,
+      "feedback": "One preferred response provides useful training information, not a guarantee across topics and contexts. Behavioral reliability still needs attention."
+    },
+    {
+      "text": "The next token that originally followed a passage in the training text",
+      "weight": 0,
+      "feedback": "That would be a self-supervised prediction target. This comparison instead expresses a judgment about alternative responses."
+    },
+    {
+      "text": "Evidence that the current comparison has already updated the assistant weights",
+      "weight": 0,
+      "feedback": "A human judgment can supply information for training. The judgment alone does not demonstrate that the subsequent training update has occurred."
+    },
+    {
+      "text": "A preference about which response better fits the intended audience",
+      "weight": 100,
+      "feedback": "The comparison identifies a response that better serves the task. Preferences can guide behavioral training, including reward-model learning in the classic pipeline."
+    }
+  ]
+}

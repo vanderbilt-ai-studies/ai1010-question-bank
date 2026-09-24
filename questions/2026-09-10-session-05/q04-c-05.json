@@ -1,0 +1,34 @@
+{
+  "id": "q04-c-05",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "context-management"
+  ],
+  "question": "What does conversation compaction do during a long task?",
+  "options": [
+    {
+      "text": "Summarizes earlier conversation for a smaller active context.",
+      "weight": 100,
+      "feedback": "Compaction makes it possible to continue with less conversation in the active input. The summary can omit details, so important original evidence should remain available."
+    },
+    {
+      "text": "Copies every available project file into the next model input.",
+      "weight": 0,
+      "feedback": "Compaction reduces the active conversation through summarization. Reading all project files would instead add material to the input."
+    },
+    {
+      "text": "Preserves every original detail in a shorter lossless transcript.",
+      "weight": 0,
+      "feedback": "A summary is selective and can omit details that later matter. You should retain access to the original evidence."
+    },
+    {
+      "text": "Turns the current project record into a permanent personal preference.",
+      "weight": 0,
+      "feedback": "Compaction summarizes task history. Changing project facts and recurring personal preferences have different roles."
+    }
+  ]
+}

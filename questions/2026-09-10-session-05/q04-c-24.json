@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-24",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "task-specification",
+    "verification"
+  ],
+  "question": "A support report describes a familiar broken link, but you cannot establish which of two course sections the sender means. What should the workflow do?",
+  "options": [
+    {
+      "text": "Repair both sections so that one of the changes will reach the intended target.",
+      "weight": 0,
+      "feedback": "Changing both expands the intervention without resolving the target. The workflow first needs to establish the intended section."
+    },
+    {
+      "text": "Repair the first section listed because the symptom matches a known case.",
+      "weight": 0,
+      "feedback": "A known symptom does not identify the correct course area. Acting on list order risks changing the wrong target."
+    },
+    {
+      "text": "Choose the section with the most familiar title and report a verified repair.",
+      "weight": 0,
+      "feedback": "A plausible title is not sufficient target evidence. Reporting verification would also be premature before checking the affected result."
+    },
+    {
+      "text": "Resolve the section or escalate the ambiguity before repairing.",
+      "weight": 100,
+      "feedback": "The repair boundary includes a known target as well as a known procedure. Preserve the collected evidence and escalate if the section remains uncertain."
+    }
+  ]
+}

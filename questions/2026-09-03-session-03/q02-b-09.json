@@ -1,0 +1,35 @@
+{
+  "id": "q02-b-09",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-reasoning",
+    "autoregression"
+  ],
+  "question": "You ask a reasoning model a hard question. It sits silent for about forty seconds and then produces a three-sentence answer. A classmate says the timing makes no sense for so short a reply. What explains it?",
+  "options": [
+    {
+      "text": "The interface held the finished answer back until the whole reply was ready",
+      "weight": 0,
+      "feedback": "Buffering would mean the text already existed while you were waiting. During the silence your answer had not been started -- the model was producing other tokens first."
+    },
+    {
+      "text": "The question was hard, so each token of the answer took longer to produce",
+      "weight": 0,
+      "feedback": "One token costs the same work whatever the question is; difficulty does not slow the pipeline down. Elapsed time tracks how many tokens were produced, and most of these were never shown to you."
+    },
+    {
+      "text": "The model was choosing between several answers it had drafted",
+      "weight": 0,
+      "feedback": "There is no set of drafts to choose between, because the model only ever extends one sequence. Those forty seconds went into extending that single sequence out of sight."
+    },
+    {
+      "text": "Most of the tokens produced in those forty seconds were hidden thinking tokens",
+      "weight": 100,
+      "feedback": "The length of the visible reply tells you nothing about how much was generated. Hidden tokens come out of the same pipeline one at a time, so they cost the same time each as the visible ones."
+    }
+  ]
+}

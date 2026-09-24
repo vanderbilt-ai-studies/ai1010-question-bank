@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-21",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "token-embedding",
+    "semantic-space"
+  ],
+  "question": "To build intuition for embeddings, the lecture asked how you would specify where you are standing in the classroom: distance from one wall, distance from another, and height. How does that picture scale up to a token embedding?",
+  "options": [
+    {
+      "text": "The token gets thousands of coordinates rather than three",
+      "weight": 100,
+      "feedback": "Three numbers pin down one spot in a room. A token embedding pins down one spot in a space with thousands of dimensions, and that spot is what the token means."
+    },
+    {
+      "text": "The three numbers become the token's id, length, and frequency",
+      "weight": 0,
+      "feedback": "Those are facts about the token, not coordinates of meaning. The embedding's numbers are coordinates, and it takes thousands of them to place a word among its neighbors."
+    },
+    {
+      "text": "Each token gets three numbers, for grammar, meaning, and style",
+      "weight": 0,
+      "feedback": "Three labeled dimensions would be far too few, and the dimensions are not hand-labeled. The space has thousands of dimensions, learned during training."
+    },
+    {
+      "text": "Each number records the distance to one specific other token",
+      "weight": 0,
+      "feedback": "Dimensions are not distances to particular words. They are coordinates, like distance from a wall; distances between tokens are computed from those coordinates afterward."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-14",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "hallucination"
+  ],
+  "question": "The lecture says the bad news about hallucination is that hallucinating is all the model ever does. What point is being made?",
+  "options": [
+    {
+      "text": "That the model cannot be trusted for any task and should not be used",
+      "weight": 0,
+      "feedback": "The line is not a warning against using models; the rest of the course is about using them well. It is a description of the mechanism: the output is always a plausible continuation, so getting truth out of it depends on what you put in."
+    },
+    {
+      "text": "That the model hallucinates far more often than most people notice",
+      "weight": 0,
+      "feedback": "The claim is not about frequency at all. It is that there is no second mode the model switches into when it is right; the process that produces a wrong answer is the same one that produces a right one."
+    },
+    {
+      "text": "That a right answer and a wrong one come from the identical process, with no truth mode",
+      "weight": 100,
+      "feedback": "The model always produces a probable continuation; that is its whole job. A correct answer is the case where the plausible thing happened to be true, usually because the context or a sharp part of the JPEG supplied it."
+    },
+    {
+      "text": "That the model produces random text and only sometimes lands on sense",
+      "weight": 0,
+      "feedback": "The output is far from random; it is the most probable continuation with a little noise added. The point is that probable is not the same as true, not that the model is guessing blindly."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q02-b-08",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-reasoning",
+    "probability-distribution-over-tokens"
+  ],
+  "question": "A student asks whether a reasoning model contains an extra layer of attention and MLP (multi-layer perceptron) whose job is to pick the best of several possible responses. Which description matches the lecture's answer?",
+  "options": [
+    {
+      "text": "The model produces a probability distribution over the next token and steps forward, nothing more",
+      "weight": 100,
+      "feedback": "At the basic level that is all there is: probabilities over the vocabulary, one token taken, then forward again. Thinking looks like deliberation, but it is the same walk with the tokens hidden."
+    },
+    {
+      "text": "The think token switches on a selection stage that scores the response as it forms",
+      "weight": 0,
+      "feedback": "The think token opens a mode of hidden generation, not a selection stage. Nothing new is switched on; the same components keep doing what they always do."
+    },
+    {
+      "text": "The largest models add such a stage, where the extra compute is worth spending",
+      "weight": 0,
+      "feedback": "Size buys wider matrices and more layers of the same kind, not a component of a new kind. Even the largest model here is still generating one token at a time."
+    },
+    {
+      "text": "The model forms several candidate answers side by side and returns the highest-scoring one",
+      "weight": 0,
+      "feedback": "This is a very natural picture and it is the one the lecture rejected. There are no candidate answers sitting side by side to be scored, because the model never has more than one running sequence."
+    }
+  ]
+}

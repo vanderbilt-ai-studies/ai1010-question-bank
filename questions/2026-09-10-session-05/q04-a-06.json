@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-06",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "probability-distribution-over-tokens",
+    "next-token-prediction"
+  ],
+  "question": "Immediately before next-token selection, what does the decoder pipeline provide?",
+  "options": [
+    {
+      "text": "A set of independently verified sentences to copy.",
+      "weight": 0,
+      "feedback": "The decoder calculates token scores or probabilities. Their calculation is different from verifying sentences against evidence."
+    },
+    {
+      "text": "A replacement vocabulary trained on the latest prompt.",
+      "weight": 0,
+      "feedback": "Ordinary generation uses the trained vocabulary and weights. A prompt does not train a replacement vocabulary."
+    },
+    {
+      "text": "A distribution assigning probabilities to vocabulary tokens.",
+      "weight": 100,
+      "feedback": "The output stage gives the probabilities used to choose the next token. Selection then extends the generated sequence."
+    },
+    {
+      "text": "A complete response with every later token already fixed.",
+      "weight": 0,
+      "feedback": "The next token is selected from the current distribution. Later distributions depend on the sequence as it develops."
+    }
+  ]
+}

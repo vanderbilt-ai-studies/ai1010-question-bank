@@ -1,0 +1,35 @@
+{
+  "id": "q01-c-17",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp",
+    "learned-knowledge"
+  ],
+  "question": "The MLP (multi-layer perceptron) was described as a picture that is sharp in some places and blurry in others. According to the lecture, what decides which parts are sharp?",
+  "options": [
+    {
+      "text": "How heavily a topic appeared in the training text",
+      "weight": 100,
+      "feedback": "Topics the model saw again and again during training end up sharply rendered in the weights; topics it saw rarely end up fuzzy. The rules of checkers are sharp; the details of one historical checkers match are not."
+    },
+    {
+      "text": "How recently the topic appeared in the news or online",
+      "weight": 0,
+      "feedback": "Recency does not enter the picture; what matters is how much of the training text was about the topic. A very old but much-discussed subject can be sharp while a recent obscure one is blurry."
+    },
+    {
+      "text": "How long and detailed the user's prompt is",
+      "weight": 0,
+      "feedback": "The prompt is read through attention and can add detail the MLP lacks, but it does not change what is in the MLP. Sharp and blurry describe the weights fixed at training time."
+    },
+    {
+      "text": "How confidently the model words its answer on that topic",
+      "weight": 0,
+      "feedback": "Fluent, confident wording is what the model produces everywhere, blurry regions included, so it tells you nothing about how much it holds. Sharpness is set by how much of the training text covered the topic."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-25",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification",
+    "task-specification"
+  ],
+  "question": "A known, authorized repair has been applied to the intended course section. The agent has not read back the object and has two possible recipient addresses. What should happen before a success message is sent?",
+  "options": [
+    {
+      "text": "Verify the repaired behavior and establish the intended recipient.",
+      "weight": 100,
+      "feedback": "An applied operation is not yet a verified outcome, and recipient ambiguity remains unresolved. Check both before communicating success and identify the automated responder."
+    },
+    {
+      "text": "Use the first address and describe the attempted change as a verified result.",
+      "weight": 0,
+      "feedback": "List order does not establish the intended recipient. The claimed result also needs evidence from the affected object."
+    },
+    {
+      "text": "Send the same success message to both addresses to cover the uncertainty.",
+      "weight": 0,
+      "feedback": "Broad delivery does not resolve who should receive the result. The workflow restricts the recipient and validates the repair before responding."
+    },
+    {
+      "text": "Ask the agent to confirm its confidence and reuse the most plausible address.",
+      "weight": 0,
+      "feedback": "Confidence cannot substitute for inspecting the repaired behavior. A plausible address also needs to be established as the intended destination."
+    }
+  ]
+}

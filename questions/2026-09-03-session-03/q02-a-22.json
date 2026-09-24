@@ -1,0 +1,35 @@
+{
+  "id": "q02-a-22",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "cost-and-usage",
+    "model-selection"
+  ],
+  "question": "A classmate wants to reduce the environmental footprint of her AI (artificial intelligence) use but still get her work done. Following the lecture, what should she do?",
+  "options": [
+    {
+      "text": "Try the smallest tier first and move up only when it falls short.",
+      "weight": 100,
+      "feedback": "This gets both halves: the work still has to come out right, and anything above the tier that achieves that is compute spent for nothing. Testing from the bottom finds that line."
+    },
+    {
+      "text": "Use the largest tier so she gets it right first time and avoids retries.",
+      "weight": 0,
+      "feedback": "It sounds efficient, but nothing about a larger model guarantees a first-time answer -- and the footprint tracks the size of the model that ran, not the number of tries. A big model that gets it right once has still spent a great deal of compute."
+    },
+    {
+      "text": "Keep her chats short, since session length is where the cost sits.",
+      "weight": 0,
+      "feedback": "Chat length is not the main lever, and a short chat with an enormous model is still expensive. Which model is running is what drives the compute."
+    },
+    {
+      "text": "Pick whichever vendor's model name sounds smallest, whatever the work.",
+      "weight": 0,
+      "feedback": "Names are labels a vendor chose, and they vary between lineups. What matters is the smallest rung that actually does your work correctly."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q01-c-25",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp",
+    "learned-knowledge"
+  ],
+  "question": "A friend says a model must have a copy of Wikipedia stored inside it, since it can answer so many of the questions Wikipedia answers. Based on the lecture, what is the more accurate picture?",
+  "options": [
+    {
+      "text": "It compressed everything it read into weights: a lossy picture, not stored text",
+      "weight": 100,
+      "feedback": "The MLP (multi-layer perceptron) holds no articles, only weights shaped by training. That is why the model is sharp on widely covered subjects and blurry on obscure ones, which a stored copy would never be."
+    },
+    {
+      "text": "It contains the text, but zipped, so it can be unpacked exactly whenever it is needed",
+      "weight": 0,
+      "feedback": "A zip file is lossless, and the lecture's metaphor is deliberately a JPEG, which is not. If the model could unpack its training text exactly, it would never be fuzzy on rare details, and it is."
+    },
+    {
+      "text": "It stores only the articles people ask about most often",
+      "weight": 0,
+      "feedback": "Nothing is stored article by article, and the model keeps no record of what it was asked. What varies is how sharply a topic is rendered in the weights, set by how much training text covered it."
+    },
+    {
+      "text": "It fetches the relevant article through attention each time it is asked a question",
+      "weight": 0,
+      "feedback": "Attention reaches only what is in the context in front of the model. Unless you paste the article in, it is not there to fetch, and the answer comes from the weights instead."
+    }
+  ]
+}

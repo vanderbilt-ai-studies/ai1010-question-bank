@@ -1,0 +1,36 @@
+{
+  "id": "q04-a-19",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "grounding",
+    "context",
+    "training-vs-inference"
+  ],
+  "question": "Why can supplying an extra document change an answer without changing the model's learned weights?",
+  "options": [
+    {
+      "text": "The document temporarily replaces the decoder with a search database.",
+      "weight": 0,
+      "feedback": "A document can inform the decoder through context. Its presence does not imply the model has been replaced by a database."
+    },
+    {
+      "text": "The document increases the number of independently trained layers.",
+      "weight": 0,
+      "feedback": "Adding context is not an architectural change. The same model can process different evidence without adding layers."
+    },
+    {
+      "text": "The document changes the input used by the existing transformations.",
+      "weight": 100,
+      "feedback": "Ordinary inference applies trained weights to the current context. New evidence can change representations and next-token probabilities without a weight update."
+    },
+    {
+      "text": "The document turns its sentences into permanent model parameters.",
+      "weight": 0,
+      "feedback": "Contextual use and training are different processes. Reading a document in a run does not by itself store it permanently in the weights."
+    }
+  ]
+}

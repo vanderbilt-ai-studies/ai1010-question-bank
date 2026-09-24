@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-10",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "harness",
+    "skill-sharing"
+  ],
+  "question": "What execution resource does a persistent automatic agent need?",
+  "options": [
+    {
+      "text": "A phone connection to a local computer that may be sleeping",
+      "weight": 0,
+      "feedback": "Remote control does not make an unavailable local machine an always-on service."
+    },
+    {
+      "text": "An available host on which its operations can run",
+      "weight": 100,
+      "feedback": "Persistent operation depends on an execution environment being available when work is triggered."
+    },
+    {
+      "text": "A saved skill folder on a laptop that is disconnected during scheduled runs",
+      "weight": 0,
+      "feedback": "Saved instructions remain available as files, but scheduled operations still need a running, available execution environment."
+    },
+    {
+      "text": "A working installation on a computer used during the initial demonstration",
+      "weight": 0,
+      "feedback": "An earlier demonstration shows past availability. Persistent work needs the execution host available when later work is triggered."
+    }
+  ]
+}

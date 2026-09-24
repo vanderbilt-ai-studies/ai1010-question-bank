@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-02",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "agent-skill",
+    "skill-evaluation"
+  ],
+  "question": "How can you directly change the behavior specified by an existing skill?",
+  "options": [
+    {
+      "text": "Edit its instructions and test the revised procedure",
+      "weight": 100,
+      "feedback": "You can revise the document yourself, then inspect results to see whether the change helped."
+    },
+    {
+      "text": "Retrain the model before changing the procedure",
+      "weight": 0,
+      "feedback": "A skill is editable guidance. Changing its instructions does not require changing the model through training."
+    },
+    {
+      "text": "Rename the output without changing the instructions",
+      "weight": 0,
+      "feedback": "Changing an output name does not revise the procedure that produces it."
+    },
+    {
+      "text": "Correct one generated answer without updating the saved skill",
+      "weight": 0,
+      "feedback": "Repairing one output can improve that artifact, but it does not change the reusable instructions that govern later runs."
+    }
+  ]
+}

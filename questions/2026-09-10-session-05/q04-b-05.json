@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-05",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "Where would a reusable blank notes template commonly belong?",
+  "options": [
+    {
+      "text": "The skill's assets/ folder",
+      "weight": 100,
+      "feedback": "Assets can supply reusable inputs such as templates that support the procedure."
+    },
+    {
+      "text": "The skill's executable scripts/ folder",
+      "weight": 0,
+      "feedback": "Scripts provide repeatable code operations. A blank document template is an asset rather than an executable routine."
+    },
+    {
+      "text": "The latest run's completed notes document",
+      "weight": 0,
+      "feedback": "Completed notes are a task output. A template is a reusable starting structure for many outputs."
+    },
+    {
+      "text": "The latest run's source transcript file",
+      "weight": 0,
+      "feedback": "A transcript supplies the content for a particular run. A reusable template instead supplies structure."
+    }
+  ]
+}

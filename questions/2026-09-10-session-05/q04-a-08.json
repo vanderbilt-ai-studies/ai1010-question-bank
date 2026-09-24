@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-08",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "parameter"
+  ],
+  "question": "What does a model parameter count measure?",
+  "options": [
+    {
+      "text": "The number of tokens in the current conversation.",
+      "weight": 0,
+      "feedback": "That is a measure of context length. Parameter count describes the trained model rather than the current conversation."
+    },
+    {
+      "text": "The number of learned numerical values in the model.",
+      "weight": 100,
+      "feedback": "Parameters are learned numbers such as weights. Reusing those numbers during inference does not create additional independent parameters."
+    },
+    {
+      "text": "The number of intermediate steps in the current reply.",
+      "weight": 0,
+      "feedback": "A reply can use more computation with the same parameter set. Steps during inference and learned values are different counts."
+    },
+    {
+      "text": "The number of factual statements guaranteed to be correct.",
+      "weight": 0,
+      "feedback": "Parameters are not a catalog of guaranteed facts. A model can generate factual errors regardless of its parameter count."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-03",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection",
+    "skill-structure"
+  ],
+  "question": "What should a skill's description communicate?",
+  "options": [
+    {
+      "text": "Its folder size and creation time",
+      "weight": 0,
+      "feedback": "Those details describe a saved folder, but they do not explain whether its procedure fits your task."
+    },
+    {
+      "text": "Its complete procedure and every example",
+      "weight": 0,
+      "feedback": "The full procedure belongs in the instructions loaded after selection. The description offers a shorter basis for choosing."
+    },
+    {
+      "text": "Its outcome and when it applies",
+      "weight": 100,
+      "feedback": "The description helps connect a requested task with an appropriate reusable procedure."
+    },
+    {
+      "text": "Its latest input and generated output",
+      "weight": 0,
+      "feedback": "Those describe one run. The description should characterize the recurring work the skill handles."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-17",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "Why can two skills with vague, overlapping descriptions lead to poor selection?",
+  "options": [
+    {
+      "text": "Their descriptions fail to distinguish the intended uses",
+      "weight": 100,
+      "feedback": "Selection begins with compact guidance about relevance. Similar vague descriptions can make different procedures appear interchangeable."
+    },
+    {
+      "text": "Their latest modification dates determine which procedure fits",
+      "weight": 0,
+      "feedback": "Modification dates do not establish task fit. Clear differences in purpose and applicability are more useful selection evidence."
+    },
+    {
+      "text": "Their overlapping words prove the procedures are interchangeable",
+      "weight": 0,
+      "feedback": "Similar wording can hide different procedures. The overlap creates ambiguity rather than proving the skills do the same work."
+    },
+    {
+      "text": "Their shared vocabulary makes the full instructions unnecessary",
+      "weight": 0,
+      "feedback": "A description supports initial selection. Overlapping vocabulary does not replace the detailed instructions for carrying out the work."
+    }
+  ]
+}

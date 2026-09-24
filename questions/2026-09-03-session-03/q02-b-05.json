@@ -1,0 +1,35 @@
+{
+  "id": "q02-b-05",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-reasoning",
+    "context"
+  ],
+  "question": "The lecture summed up thinking in one idea. Which statement captures it?",
+  "options": [
+    {
+      "text": "The model is writing its own context before it writes to you",
+      "weight": 100,
+      "feedback": "Thinking gives the model more relevant material to condition on. Every thinking token it produces is in its context when the answer begins."
+    },
+    {
+      "text": "The model is retrieving stored answers to similar questions it has seen",
+      "weight": 0,
+      "feedback": "Nothing is being retrieved. A model does not keep a file of past questions to consult, and thinking produces new text rather than fetching old text."
+    },
+    {
+      "text": "The model is running its architecture at a higher precision for hard problems",
+      "weight": 0,
+      "feedback": "The architecture does not change gear. The same decoder stack does the same arithmetic; only the destination of the tokens differs."
+    },
+    {
+      "text": "The model is checking its planned answer against its training data",
+      "weight": 0,
+      "feedback": "The training data is not there to be checked against -- what training left behind are the weights. Thinking adds new tokens to the context, which is a different thing entirely."
+    }
+  ]
+}

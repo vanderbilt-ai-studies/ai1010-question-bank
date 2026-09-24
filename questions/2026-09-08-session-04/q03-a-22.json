@@ -1,0 +1,35 @@
+{
+  "id": "q03-a-22",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "post-training",
+    "thinking-reasoning"
+  ],
+  "question": "The lecture stresses that a reasoning model generates tokens one at a time in exactly the same way a non-reasoning model does. Where, then, does its ability to check itself before answering come from?",
+  "options": [
+    {
+      "text": "From post-training, very likely a form of reinforcement learning",
+      "weight": 100,
+      "feedback": "Nothing about token-by-token generation changes. What post-training adds is the habit of spending some of those tokens on a private scratch space -- restating the problem, trying answers, weighing them against each other -- before committing to a reply."
+    },
+    {
+      "text": "From a separate verification model that checks each draft answer",
+      "weight": 0,
+      "feedback": "It is tempting to picture a second model marking the first one's work, but the lecture describes one model producing one stream of tokens. The checking happens inside that stream, not in a reviewer standing beside it."
+    },
+    {
+      "text": "From a wider embedding space in the larger model tiers",
+      "weight": 0,
+      "feedback": "Width is one of the levers that makes a model tier bigger, but the lecture keeps raw size separate from whether a model reasons. Reasoning is a behaviour training installs, not a size a model grows into."
+    },
+    {
+      "text": "From pre-training on a corpus made up mostly of step-by-step explanations",
+      "weight": 0,
+      "feedback": "Pre-training is where a model picks up what it knows about the world. The lecture puts this capability one stage later, in the training that shapes how a model uses what it already knows."
+    }
+  ]
+}

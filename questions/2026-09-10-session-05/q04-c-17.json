@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-17",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "memory",
+    "verification"
+  ],
+  "question": "Why should you correct a remembered preference that came from a role-play example?",
+  "options": [
+    {
+      "text": "The example may not represent your actual preference.",
+      "weight": 100,
+      "feedback": "A system can mistake an imagined role for a fact about you. Inspecting and correcting that memory prevents later work from inheriting the mistaken preference."
+    },
+    {
+      "text": "A preference mentioned in role-play is evidence of a lasting personal choice.",
+      "weight": 0,
+      "feedback": "An example can describe an imagined role rather than you. Its appearance in conversation does not establish a recurring personal preference."
+    },
+    {
+      "text": "The stored version should take priority because it came from an earlier message.",
+      "weight": 0,
+      "feedback": "Earlier context can be misinterpreted. Inspecting and correcting the memory helps it represent your actual preference."
+    },
+    {
+      "text": "The remembered preference can be treated as a record of completed project work.",
+      "weight": 0,
+      "feedback": "A preference guides recurring choices; project state tracks changing facts and operations. Neither role turns a fictional example into a fact about you."
+    }
+  ]
+}

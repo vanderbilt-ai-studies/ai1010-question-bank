@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-01",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "agent-skill"
+  ],
+  "question": "What does an agent skill provide for your work?",
+  "options": [
+    {
+      "text": "Reusable guidance and supporting resources",
+      "weight": 100,
+      "feedback": "A skill packages instructions and resources so you can reuse and revise a procedure across tasks."
+    },
+    {
+      "text": "A trained model with replacement parameters",
+      "weight": 0,
+      "feedback": "This confuses changing a procedure with changing the model. You can revise a skill without training a replacement model."
+    },
+    {
+      "text": "A finished report containing the task results",
+      "weight": 0,
+      "feedback": "A report can be an output of using a skill. The skill supplies the reusable guidance that helps produce that output."
+    },
+    {
+      "text": "A conversation recording the agent's decisions",
+      "weight": 0,
+      "feedback": "A conversation records an interaction. A skill is a reusable package that you can inspect and edit for later work."
+    }
+  ]
+}

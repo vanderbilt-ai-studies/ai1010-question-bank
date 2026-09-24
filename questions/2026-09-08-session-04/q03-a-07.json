@@ -1,0 +1,36 @@
+{
+  "id": "q03-a-07",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "task-specification",
+    "agent",
+    "class-demo"
+  ],
+  "question": "The instructor said about seat-minder: 'Yes, I used AI to help me solve that problem. Also, yes, technically I created the software. But what I was really doing was using AI to create a solution.' What distinction is this drawing?",
+  "options": [
+    {
+      "text": "Free consumer AI tools versus paid professional ones",
+      "weight": 0,
+      "feedback": "Cost is not the contrast here. The quote is about what role a person plays in a build, not about what the tools charge."
+    },
+    {
+      "text": "Frontend web programming versus backend server programming",
+      "weight": 0,
+      "feedback": "That split is a detail of the stack seat-minder ended up with, not the thing this quote sets against itself."
+    },
+    {
+      "text": "Writing the code yourself versus directing an agent to build it",
+      "weight": 100,
+      "feedback": "The quote separates literal authorship of the code from what actually happened: a problem and a set of requirements were specified, and the agent did the engineering that turned them into software."
+    },
+    {
+      "text": "Reasoning models versus non-reasoning models on hard tasks",
+      "weight": 0,
+      "feedback": "That distinction belongs to the Lab 1 debrief later in the session, not to this quote about how the software came to exist."
+    }
+  ]
+}

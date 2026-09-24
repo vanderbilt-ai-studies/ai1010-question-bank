@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-19",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "tokenization",
+    "cost-and-usage"
+  ],
+  "question": "Two prompts contain the same number of words, but one is everyday English and the other is dense chemistry vocabulary. The chemistry prompt is billed for many more tokens. What explains the difference?",
+  "options": [
+    {
+      "text": "Longer words cost more, because billing counts letters",
+      "weight": 0,
+      "feedback": "Nothing is priced by the letter. The unit being counted is the token, so the question is how many tokens each word turns into."
+    },
+    {
+      "text": "Technical prompts are routed to a larger model, which charges a higher rate",
+      "weight": 0,
+      "feedback": "The count does not depend on which model reads the text. The same passage breaks into the same pieces either way, and it is those pieces that are counted."
+    },
+    {
+      "text": "Unfamiliar words take the model longer to read, and cost follows time",
+      "weight": 0,
+      "feedback": "Cost is counted in tokens, not seconds. A rare word is not read slowly; it simply arrives as several pieces instead of one."
+    },
+    {
+      "text": "Rare words are split into several sub-word pieces, and each piece is a token",
+      "weight": 100,
+      "feedback": "Common words get a token to themselves, while rare ones are assembled from fragments shared with other words. The same number of words can be a very different number of tokens, and tokens are what limits and costs count."
+    }
+  ]
+}

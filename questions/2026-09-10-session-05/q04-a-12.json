@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-12",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "sampling-and-temperature",
+    "autoregression"
+  ],
+  "question": "How can identical prompts produce different responses when the trained weights stay fixed?",
+  "options": [
+    {
+      "text": "Each response trains a different set of weights before starting.",
+      "weight": 0,
+      "feedback": "Ordinary generation uses trained weights. Different samples can produce different text without an additional training step."
+    },
+    {
+      "text": "Sampling can choose different tokens and change later context.",
+      "weight": 100,
+      "feedback": "A different early token creates a different continuation context. Later token choices can then follow another path."
+    },
+    {
+      "text": "Each prompt causes the model to create a different vocabulary.",
+      "weight": 0,
+      "feedback": "A new vocabulary is not required for variation. Selection among the existing vocabulary can lead to different responses."
+    },
+    {
+      "text": "Attention randomly selects a complete response from a database.",
+      "weight": 0,
+      "feedback": "Attention combines contextual information. It does not retrieve one complete answer from a response database."
+    }
+  ]
+}

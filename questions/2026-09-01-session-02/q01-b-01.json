@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-01",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "autoregression",
+    "next-token-prediction"
+  ],
+  "question": "A decoder transformer produces exactly one token each time it runs. How does a chat model use that to write a whole paragraph?",
+  "options": [
+    {
+      "text": "The new token is added to the end of the context, and the full model runs again on that longer context",
+      "weight": 100,
+      "feedback": "The output token becomes part of everything that came before, and that slightly longer context goes back through the whole pipeline to produce the next token. A paragraph is that loop repeated a few hundred times."
+    },
+    {
+      "text": "The whole paragraph is produced in a single pass and then revealed a token at a time so it is easier to read",
+      "weight": 0,
+      "feedback": "The word-by-word display is not a presentation trick. Each new token really is the result of a fresh run of the model, which is why there is nothing to reveal until that run finishes."
+    },
+    {
+      "text": "A full sentence is predicted at a time, and then the model starts on the next sentence",
+      "weight": 0,
+      "feedback": "It is tempting to think the unit of output is a sentence, since that is how we plan speech. But the model has no notion of a sentence as a unit; it produces one token, feeds it back, and produces the next."
+    },
+    {
+      "text": "A separate copy of the model runs for each sentence, and the results are joined together",
+      "weight": 0,
+      "feedback": "There is only one model, and it runs many times in sequence rather than as several copies side by side. Each run sees everything produced so far, which is what keeps the paragraph coherent."
+    }
+  ]
+}

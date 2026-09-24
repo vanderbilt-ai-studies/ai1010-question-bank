@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-16",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "alignment",
+    "permissions-and-safety"
+  ],
+  "question": "Why is a well-aligned answer insufficient evidence for granting unrestricted tool access?",
+  "options": [
+    {
+      "text": "One good answer establishes reliable choices on later tasks",
+      "weight": 0,
+      "feedback": "A useful response does not demonstrate how the model will behave in every later context. Access still needs to fit the task."
+    },
+    {
+      "text": "A helpful explanation establishes that broad access is needed",
+      "weight": 0,
+      "feedback": "Helpfulness describes a response. It does not show that the requested work requires unrestricted tools or resources."
+    },
+    {
+      "text": "Aligned responses make tool results reliable without inspection",
+      "weight": 0,
+      "feedback": "Behavioral training does not remove the need to inspect whether an operation and its result satisfy the task."
+    },
+    {
+      "text": "Good behavior does not establish the need for broad access",
+      "weight": 100,
+      "feedback": "Alignment addresses the model's choices, while permissions constrain executable actions. A good answer does not establish that unrestricted authority is appropriate."
+    }
+  ]
+}

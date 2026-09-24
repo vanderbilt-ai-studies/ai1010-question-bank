@@ -1,0 +1,36 @@
+{
+  "id": "q01-b-13",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp",
+    "model-size",
+    "learned-knowledge"
+  ],
+  "question": "A large language model (LLM) has bigger MLPs (multi-layer perceptrons) and more decoder stacks than a small one. According to the lecture, what do those extra parameters buy you?",
+  "options": [
+    {
+      "text": "Room to hold a longer conversation before the context fills up",
+      "weight": 0,
+      "feedback": "Context length is a separate matter, and the lecture treats it as the other half of the picture. Extra parameters do not lengthen what the model can read in one go."
+    },
+    {
+      "text": "Room for a sharper, more detailed picture of the world",
+      "weight": 100,
+      "feedback": "More parameters mean more room to hold what training taught the model, so fewer topics sit in the blurry part of the picture. That is why the largest models are steadier on obscure subjects."
+    },
+    {
+      "text": "A larger vocabulary, so fewer words have to be split into pieces",
+      "weight": 0,
+      "feedback": "Vocabulary size is settled when the tokenizer is built, not by the parameter count. A small model and a large one can split words in exactly the same way."
+    },
+    {
+      "text": "A checking step that catches wrong answers before they are shown",
+      "weight": 0,
+      "feedback": "No model of any size has such a step; the pipeline ends with a token chosen from probabilities. A larger model is wrong less often on well-covered topics, but nothing verifies what it says."
+    }
+  ]
+}

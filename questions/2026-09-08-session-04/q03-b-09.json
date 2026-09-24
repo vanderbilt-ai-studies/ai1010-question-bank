@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-09",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "agi"
+  ],
+  "question": "Why does the lecture suggest the AGI (artificial general intelligence) milestone passed quietly, without much public agreement that it had happened?",
+  "options": [
+    {
+      "text": "The definition of AGI itself shifts each time a capability threshold is reached.",
+      "weight": 100,
+      "feedback": "This is the moving-goalposts problem: the bar keeps being redrawn as models improve, so clearing the original bar never registered as a single, agreed-upon event."
+    },
+    {
+      "text": "The companies that build these models suppress announcements about AGI.",
+      "weight": 0,
+      "feedback": "The notes describe no concealment. The explanation offered is about the definition moving over time, not about anyone hiding a result."
+    },
+    {
+      "text": "No model has reached average human performance on ordinary tasks.",
+      "weight": 0,
+      "feedback": "This contradicts the argument in the notes, which was that average-human performance across most tasks had in fact been reached under the older definition."
+    },
+    {
+      "text": "AGI was redefined as a legal term with no technical meaning.",
+      "weight": 0,
+      "feedback": "The shifting described in the notes happens in how the field informally talks about capability thresholds, not in law or regulation."
+    }
+  ]
+}

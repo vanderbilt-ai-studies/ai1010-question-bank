@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-10",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "agent",
+    "harness"
+  ],
+  "question": "Which statement best explains why an agent's usefulness depends on the whole system?",
+  "options": [
+    {
+      "text": "The model's language ability determines whether file actions are available",
+      "weight": 0,
+      "feedback": "A capable model can propose useful actions, but the surrounding system must provide tools and access to carry them out."
+    },
+    {
+      "text": "The model, tools, and guidance work within the harness",
+      "weight": 100,
+      "feedback": "The lecture describes capability as a property of the parts working together. The surrounding environment affects what the model can accomplish."
+    },
+    {
+      "text": "A detailed skill supplies both a procedure and the access it requires",
+      "weight": 0,
+      "feedback": "A skill supplies guidance. Tools and permissions must also exist for its steps to execute."
+    },
+    {
+      "text": "A connector supplies both service access and the complete task procedure",
+      "weight": 0,
+      "feedback": "A connector exposes an integration. The instructions for using it toward your goal are a separate part of the system."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-09",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "context-length"
+  ],
+  "question": "What does a model's context window describe?",
+  "options": [
+    {
+      "text": "The size of the matrices learned during model training.",
+      "weight": 0,
+      "feedback": "Matrix sizes help determine parameter count. The context window instead concerns the sequence available during a run."
+    },
+    {
+      "text": "The speed at which the model selects output tokens.",
+      "weight": 0,
+      "feedback": "Generation speed measures throughput. Context capacity measures how much sequence material can be considered."
+    },
+    {
+      "text": "The maximum sequence material the model can consider per run.",
+      "weight": 100,
+      "feedback": "Context includes supplied and generated material within the system's capacity. It is distinct from parameter count."
+    },
+    {
+      "text": "The count of times a recurrent block is reused per token.",
+      "weight": 0,
+      "feedback": "Recurrent passes describe computation on representations. They do not define the capacity of the context window."
+    }
+  ]
+}

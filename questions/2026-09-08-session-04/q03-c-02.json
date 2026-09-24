@@ -1,0 +1,34 @@
+{
+  "id": "q03-c-02",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality"
+  ],
+  "question": "The lecture describes an Anthropic-style approach to giving a model vision, distinct from GPT-style native multimodal training. Which of these best describes it?",
+  "options": [
+    {
+      "text": "Images and text are trained together in one self-supervised process from the very first step",
+      "weight": 0,
+      "feedback": "That is the GPT-style, native multimodal approach the lecture contrasts this one with. The Anthropic-style approach adds vision in a separate, later step instead."
+    },
+    {
+      "text": "The model is pretrained on text first, and a separate later step maps image features into the representation space the model already learned for words",
+      "weight": 100,
+      "feedback": "This is the projection-based approach: a vision encoder's features get mapped, through a projection layer, into a language model that was already fully trained on text before images ever entered the picture."
+    },
+    {
+      "text": "The model generates images the same way it generates words, as a sequence of sampled tokens",
+      "weight": 0,
+      "feedback": "The lecture connects this image-as-tokens behavior to the native multimodal approach's strength at generation, not to the projection-based approach, which was described mainly in terms of understanding images."
+    },
+    {
+      "text": "The model matches an incoming image against a fixed dictionary of known images to find the closest caption",
+      "weight": 0,
+      "feedback": "That describes a lookup or retrieval system, not what either approach in the lecture does. Both methods build a learned representation of the image rather than matching it against a stored dictionary."
+    }
+  ]
+}

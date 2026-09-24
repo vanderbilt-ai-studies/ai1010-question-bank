@@ -1,0 +1,34 @@
+{
+  "id": "q05-harness-08",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "connector"
+  ],
+  "question": "What does a connector contribute to an agent system?",
+  "options": [
+    {
+      "text": "A replacement for the model's learned parameters",
+      "weight": 0,
+      "feedback": "An integration gives access to a resource; it does not replace the numerical parameters of the model."
+    },
+    {
+      "text": "A preferred answer learned during post-training",
+      "weight": 0,
+      "feedback": "Post-training shapes behavior. A connector supplies a route to an external service or resource."
+    },
+    {
+      "text": "A self-contained set of grading criteria",
+      "weight": 0,
+      "feedback": "Criteria belong in the task or reusable instructions. A connector provides an integration rather than those criteria."
+    },
+    {
+      "text": "An integration with a service or resource",
+      "weight": 100,
+      "feedback": "A connector exposes an integration that an agent can use when the surrounding system permits it."
+    }
+  ]
+}

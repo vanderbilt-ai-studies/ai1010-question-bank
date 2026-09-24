@@ -1,0 +1,32 @@
+{
+  "id": "example-sigfig",
+  "type": "SIGFIG",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "parameter",
+    "model-size"
+  ],
+  "question": "A model has {layers} decoder stacks with {per} parameters each. Give the total in scientific notation to 2 significant figures.",
+  "formula": "{layers} * {per}",
+  "variables": [
+    {
+      "name": "layers",
+      "min": 20,
+      "max": 90,
+      "step": 1
+    },
+    {
+      "name": "per",
+      "min": 100000000,
+      "max": 900000000,
+      "step": 100000000
+    }
+  ],
+  "significant_figures": 2,
+  "tolerance": {
+    "value": 1,
+    "mode": "percent"
+  },
+  "feedback": "Multiply stacks by parameters per stack, then round to two significant figures."
+}

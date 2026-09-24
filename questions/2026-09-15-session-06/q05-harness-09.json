@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-09",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "agent",
+    "harness"
+  ],
+  "question": "What is the model's role in the agent system described in the lecture?",
+  "options": [
+    {
+      "text": "Interpreting context and proposing next steps",
+      "weight": 100,
+      "feedback": "The model contributes language understanding and decisions. The harness routes its proposed actions, and tools execute permitted operations."
+    },
+    {
+      "text": "Authorizing access to the project's resources",
+      "weight": 0,
+      "feedback": "Permission checks belong to the surrounding controls. The model's judgment that access would help does not grant it."
+    },
+    {
+      "text": "Executing the requested external file operations",
+      "weight": 0,
+      "feedback": "The model proposes operations. Tools carry out those external actions when the harness allows and routes them."
+    },
+    {
+      "text": "Supplying the connection to an external service",
+      "weight": 0,
+      "feedback": "A connector exposes an integration with a service or resource. The model can use available capabilities as it decides what to do."
+    }
+  ]
+}

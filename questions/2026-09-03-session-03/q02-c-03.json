@@ -1,0 +1,34 @@
+{
+  "id": "q02-c-03",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-budget"
+  ],
+  "question": "Apart from choosing a level on the effort menu, what else can you do with thinking in Claude?",
+  "options": [
+    {
+      "text": "Switch thinking off altogether",
+      "weight": 100,
+      "feedback": "There is an on/off toggle beside the levels, so a task that needs no deliberation can skip the thinking phase entirely. That is useful when you want a fast answer that leans on the model's world knowledge."
+    },
+    {
+      "text": "Carry any unused budget over into your next message",
+      "weight": 0,
+      "feedback": "The budget is a ceiling for the current request, not a balance that accumulates. Unused tokens are simply tokens the model did not need this time."
+    },
+    {
+      "text": "Set a separate budget for each paragraph of the answer",
+      "weight": 0,
+      "feedback": "The budget governs the hidden thinking that happens before the reply begins, so it is not divided up across the visible answer. There is one ceiling per request."
+    },
+    {
+      "text": "Type a temperature value into the same menu",
+      "weight": 0,
+      "feedback": "Temperature is a different control and is not what the effort menu offers. In a chat setup the two things you are choosing are the model and the size of the thinking budget."
+    }
+  ]
+}

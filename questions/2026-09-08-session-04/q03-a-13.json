@@ -1,0 +1,35 @@
+{
+  "id": "q03-a-13",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "task-specification",
+    "class-demo"
+  ],
+  "question": "What lesson does the seat-minder build illustrate about directing an agent to write software, according to the notes?",
+  "options": [
+    {
+      "text": "Moving the typing to an agent does not remove the need to state requirements",
+      "weight": 100,
+      "feedback": "Correctness, concurrency, and privacy still have to be asked for out loud. The seat-minder concurrency risk is the same category of bug a hand-written system would have to guard against."
+    },
+    {
+      "text": "An agent finds and fixes every bug in a build without being asked to",
+      "weight": 0,
+      "feedback": "The notes show the opposite: defensive, non-blocking code had to be requested explicitly rather than turning up unprompted."
+    },
+    {
+      "text": "Agents can only build software that has no database behind it at all",
+      "weight": 0,
+      "feedback": "Seat-minder runs on a Postgres-compatible database, so the notes contradict this one directly."
+    },
+    {
+      "text": "Directing an agent removes the need for a clear problem statement first",
+      "weight": 0,
+      "feedback": "The sequence runs the other way: the North Star problem statement came first, and the agent-directed build followed from it."
+    }
+  ]
+}

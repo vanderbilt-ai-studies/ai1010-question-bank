@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-23",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "recurrent-depth"
+  ],
+  "question": "The addendum describes a more recent line of work that studies looping under a specific name. What is that architecture called?",
+  "options": [
+    {
+      "text": "A wide-embedding architecture.",
+      "weight": 0,
+      "feedback": "Width -- bigger embeddings and wider matrices -- is the Session 3 lever for model size, not the addendum's line of work on reusing one block."
+    },
+    {
+      "text": "A fixed-depth architecture.",
+      "weight": 0,
+      "feedback": "This is close to the opposite. The architecture in the addendum is defined by unrolling a shared block to an arbitrary depth at inference, not a depth fixed in advance."
+    },
+    {
+      "text": "A recurrent-depth architecture.",
+      "weight": 100,
+      "feedback": "The block is shared and unrolled as many times as needed at inference time, so depth becomes something you can spend more of on a hard problem instead of a fixed property of the model."
+    },
+    {
+      "text": "A projection-based architecture.",
+      "weight": 0,
+      "feedback": "Projection describes how image understanding gets added to a model pretrained on text, discussed elsewhere in this session, not the looping work in the addendum."
+    }
+  ]
+}

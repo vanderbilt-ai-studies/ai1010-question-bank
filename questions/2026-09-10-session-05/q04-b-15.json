@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-15",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "How should a skill's relevance be judged when a request uses different wording from its description?",
+  "options": [
+    {
+      "text": "Require the description's exact words before selecting the skill",
+      "weight": 0,
+      "feedback": "Different wording can express the same task. The notes describe relevance-based activation rather than a mandatory magic word."
+    },
+    {
+      "text": "Choose the skill used most recently for any document task",
+      "weight": 0,
+      "feedback": "Recent use does not establish a match to the current request. The procedure's intended outcome and conditions matter."
+    },
+    {
+      "text": "Compare the requested work with the skill's intended purpose",
+      "weight": 100,
+      "feedback": "A semantic match can make a skill relevant even when the request uses different words from the description."
+    },
+    {
+      "text": "Prefer the broadest skill because it mentions more task types",
+      "weight": 0,
+      "feedback": "A broad description can obscure task boundaries. Mentioning more categories does not establish the best fit for this request."
+    }
+  ]
+}

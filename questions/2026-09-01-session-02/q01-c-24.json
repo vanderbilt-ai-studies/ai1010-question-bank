@@ -1,0 +1,35 @@
+{
+  "id": "q01-c-24",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp",
+    "attention"
+  ],
+  "question": "In \"She looked across the board and said, triumphantly, 'King me,'\" the model works out that this is a checkers move made by someone who is winning. Which part of that came from the MLP (multi-layer perceptron) rather than from attention?",
+  "options": [
+    {
+      "text": "That \"board\" is an earlier word worth weighting heavily in the average",
+      "weight": 0,
+      "feedback": "Deciding which earlier words matter is attention's job; it is the weighting that builds the average. The MLP never sees the other words at all."
+    },
+    {
+      "text": "That \"king\" is being used as a verb in a game",
+      "weight": 0,
+      "feedback": "This is what attention establishes by averaging in \"board\", \"triumphantly\", and the grammatical slot. It gets you into board-game territory without yet knowing which game."
+    },
+    {
+      "text": "That \"king\" sits near \"queen\" and \"monarch\"",
+      "weight": 0,
+      "feedback": "That neighborhood is the token embedding's first guess, made before any context is read. It is where \"king\" starts, not something either layer of the stack adds."
+    },
+    {
+      "text": "That the game is checkers and you say \"king me\" when winning",
+      "weight": 100,
+      "feedback": "Nothing in the sentence names the game, so this cannot come from the context. It has to come from what the model absorbed in training, and that is what the MLP holds."
+    }
+  ]
+}

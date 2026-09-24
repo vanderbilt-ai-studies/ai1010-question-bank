@@ -1,0 +1,35 @@
+{
+  "id": "q02-c-13",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "sampling-and-temperature",
+    "thinking-reasoning"
+  ],
+  "question": "Temperature is often described as affecting only the style of the final answer. Why is that description too narrow for a reasoning model?",
+  "options": [
+    {
+      "text": "Thinking tokens are generated at a separate, higher temperature",
+      "weight": 0,
+      "feedback": "There is no second temperature for the hidden phase -- the same setting is in force throughout. What matters is that the phase exists at all, so the setting has more to act on."
+    },
+    {
+      "text": "Temperature is applied once at the end, after the thinking has already been fixed",
+      "weight": 0,
+      "feedback": "It is applied once per token, and the thinking is made of tokens too. Treating the reasoning as settled before temperature enters is exactly the misreading the question is aimed at."
+    },
+    {
+      "text": "It applies at every step, thinking included, so an early choice can redirect it",
+      "weight": 100,
+      "feedback": "Thinking is ordinary next-token generation that happens to be hidden, so temperature is in force for all of it. One low-probability token early in the reasoning sends the model down a different path, and the answer follows that path."
+    },
+    {
+      "text": "Raising temperature also raises the thinking budget",
+      "weight": 0,
+      "feedback": "The two dials are independent -- temperature never changes how many tokens the model may spend. What it changes is which tokens those are, at every step."
+    }
+  ]
+}

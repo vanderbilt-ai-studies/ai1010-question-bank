@@ -1,0 +1,13 @@
+{
+  "id": "example-tf",
+  "type": "TF",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "sampling-and-temperature"
+  ],
+  "question": "Raising the temperature makes the model's choice of next token more random.",
+  "answer": true,
+  "feedback_true": "Right. Higher temperature flattens the probability distribution, so less likely tokens get picked more often.",
+  "feedback_false": "It does. Temperature reshapes the distribution the token is drawn from; higher flattens it, so choices become more varied."
+}

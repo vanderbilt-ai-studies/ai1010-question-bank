@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-16",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "Why can adding many unrelated responsibilities make a skill harder to select?",
+  "options": [
+    {
+      "text": "Every included responsibility makes the skill equally suitable for each task",
+      "weight": 0,
+      "feedback": "Listing many kinds of work does not establish equal suitability. Unrelated responsibilities can make its intended use less clear."
+    },
+    {
+      "text": "A broader skill can be selected without considering its description",
+      "weight": 0,
+      "feedback": "The description still supplies the initial selection guidance. Breadth does not remove the need to assess relevance."
+    },
+    {
+      "text": "More responsibilities reduce the importance of the requested outcome",
+      "weight": 0,
+      "feedback": "The requested outcome remains the basis for choosing a procedure. A broad collection of instructions cannot replace that match."
+    },
+    {
+      "text": "Unrelated responsibilities make the skill's intended use less distinct",
+      "weight": 100,
+      "feedback": "A focused procedure is easier to match to a concrete task. Unrelated responsibilities blur the boundary of what the skill handles."
+    }
+  ]
+}

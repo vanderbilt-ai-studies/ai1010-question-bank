@@ -1,0 +1,34 @@
+{
+  "id": "q03-a-19",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo"
+  ],
+  "question": "Why is it useful that tapping a raised hand also shows the photos and names of neighboring seats, not just the student whose hand is raised?",
+  "options": [
+    {
+      "text": "It fills otherwise empty space on the instructor's screen",
+      "weight": 0,
+      "feedback": "The notes present this as a working part of cold-calling, not as a way to use up room on the display."
+    },
+    {
+      "text": "It lets the instructor take attendance for the whole row at once",
+      "weight": 0,
+      "feedback": "Attendance comes from check-in, which has already happened by the time anyone raises a hand, so nothing about tapping a hand records it."
+    },
+    {
+      "text": "It shows which nearby students have opted in to being cold-called",
+      "weight": 0,
+      "feedback": "The 'OK to call on' highlight is already visible on the chart for everyone who opted in, so tapping a raised hand is not what reveals it."
+    },
+    {
+      "text": "It supports calling on that student or on someone sitting nearby",
+      "weight": 100,
+      "feedback": "Seeing the neighbors alongside the raised hand leaves you a choice: take the hand that is up, or bring in someone close by who has not spoken yet."
+    }
+  ]
+}

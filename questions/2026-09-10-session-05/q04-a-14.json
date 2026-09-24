@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-14",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "semantic-space",
+    "token-embedding"
+  ],
+  "question": "Why can arithmetic on learned word vectors sometimes capture a relationship between concepts?",
+  "options": [
+    {
+      "text": "Relationships can be reflected in directions within the vector space.",
+      "weight": 100,
+      "feedback": "A learned geometry can encode useful relationships. An analogy is an approximate pattern, not an exact identity guaranteed for every model."
+    },
+    {
+      "text": "Vocabulary identifiers are arranged as a ranked list of definitions.",
+      "weight": 0,
+      "feedback": "Token identifiers identify vocabulary entries. Semantic geometry belongs to the learned vectors, not to a ranking of dictionary definitions."
+    },
+    {
+      "text": "Each vector contains a written rule for the requested word analogy.",
+      "weight": 0,
+      "feedback": "Vectors are numerical representations rather than text instructions. Useful analogies can emerge from the learned arrangement."
+    },
+    {
+      "text": "Temperature performs concept arithmetic before embeddings are assigned.",
+      "weight": 0,
+      "feedback": "Temperature affects output sampling later in the pipeline. It does not create the relationships in the embedding space."
+    }
+  ]
+}

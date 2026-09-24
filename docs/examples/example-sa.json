@@ -1,0 +1,23 @@
+{
+  "id": "example-sa",
+  "type": "SA",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "autoregression"
+  ],
+  "question": "What is the one-word name for generating text one token at a time, feeding each new token back into the context?",
+  "accepted": [
+    {
+      "text": "autoregression"
+    },
+    {
+      "text": "autoregressive"
+    },
+    {
+      "text": "^auto-?regress(ion|ive)( generation)?$",
+      "evaluation": "regex"
+    }
+  ],
+  "feedback": "Autoregression. Each chosen token becomes part of the context for the next prediction, so every choice shapes what follows."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-16",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "recurrent-depth",
+    "parameter"
+  ],
+  "question": "Why can a recurrent block perform extra work without adding independent parameters on each pass?",
+  "options": [
+    {
+      "text": "Extra passes add new layers, each with separately learned weights.",
+      "weight": 0,
+      "feedback": "Adding independently parameterized layers would increase the parameter count. A recurrent block instead reuses its existing weights on later passes."
+    },
+    {
+      "text": "The extra work comes from fitting more input tokens in the context.",
+      "weight": 0,
+      "feedback": "Context capacity and recurrent computation describe different resources. The same block can process internal representations again without a larger input sequence."
+    },
+    {
+      "text": "Each pass learns improved weights that replace the previous values.",
+      "weight": 0,
+      "feedback": "Recurrent depth here describes inference with trained weights. The numerical representation changes across passes, rather than a new training update replacing the weights."
+    },
+    {
+      "text": "The same learned transformation is applied to successive states.",
+      "weight": 100,
+      "feedback": "Weight sharing reuses the existing numerical values. More applications can increase computation and latency without increasing the count of independent weights."
+    }
+  ]
+}

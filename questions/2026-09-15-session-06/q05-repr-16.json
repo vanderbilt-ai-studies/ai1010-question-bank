@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-16",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "parameter",
+    "model-size"
+  ],
+  "question": "How can two models follow the same broad computation pattern yet differ greatly?",
+  "options": [
+    {
+      "text": "The processing pattern determines the same learned values",
+      "weight": 0,
+      "feedback": "The program specifies operations. Training can produce different values even when the broad computation pattern is similar."
+    },
+    {
+      "text": "The processing pattern lists each model's possible answers",
+      "weight": 0,
+      "feedback": "A broad algorithm is not a catalogue of responses. Learned values and context also affect the model's behavior."
+    },
+    {
+      "text": "The processing pattern gives a complete account of capability",
+      "weight": 0,
+      "feedback": "Knowing the operations does not specify the parameter arrays or explain every learned behavior. Similar steps can underlie very different models."
+    },
+    {
+      "text": "The parameter arrays differ in size or learned values",
+      "weight": 100,
+      "feedback": "The same broad operations can use different collections of learned numbers. Knowing the processing pattern does not specify the full model."
+    }
+  ]
+}

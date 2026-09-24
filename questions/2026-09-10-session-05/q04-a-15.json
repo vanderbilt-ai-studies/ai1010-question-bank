@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-15",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "mlp",
+    "learned-knowledge"
+  ],
+  "question": "How should you interpret the metaphor that an MLP (multi-layer perceptron) contains world knowledge?",
+  "options": [
+    {
+      "text": "It means factual claims are stored as exact rows with citations.",
+      "weight": 0,
+      "feedback": "The database interpretation is too literal. Learned weights transform representations and do not guarantee an exact source row for each claim."
+    },
+    {
+      "text": "It highlights learned patterns within a distributed representation.",
+      "weight": 100,
+      "feedback": "The metaphor points to knowledge learned during training. Knowledge is distributed through the network rather than confined to a literal fact store."
+    },
+    {
+      "text": "It means attention contributes no learned information to the model.",
+      "weight": 0,
+      "feedback": "The metaphor is not a strict partition of all knowledge. Attention and other learned components also participate in the network's behavior."
+    },
+    {
+      "text": "It identifies a file that is updated whenever you change the prompt.",
+      "weight": 0,
+      "feedback": "A prompt changes context during ordinary inference. It does not update a world-knowledge file or retrain the model's weights."
+    }
+  ]
+}

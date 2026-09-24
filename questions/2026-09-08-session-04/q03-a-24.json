@@ -1,0 +1,35 @@
+{
+  "id": "q03-a-24",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "thinking-reasoning",
+    "post-training"
+  ],
+  "question": "According to the Lab 1 debrief, what capability does a reasoning-capable model have that a non-reasoning model lacks?",
+  "options": [
+    {
+      "text": "The ability to reach the internet for up-to-date information",
+      "weight": 0,
+      "feedback": "External information access is a different capability. The debrief is about what happens inside the model before it commits to an answer."
+    },
+    {
+      "text": "The ability to generate longer and more detailed answers",
+      "weight": 0,
+      "feedback": "Length is a side effect at most. A reasoning model can be brief; what changes is that it can weigh candidates before it settles."
+    },
+    {
+      "text": "The ability to run code in order to check its own answer",
+      "weight": 0,
+      "feedback": "The checking described happens in tokens, in a private scratch space, not by handing the problem to a separate tool that executes it."
+    },
+    {
+      "text": "The ability to try and compare answers before committing to one",
+      "weight": 100,
+      "feedback": "Those tokens build a private scratch space -- restating the problem, trying answers, checking them against each other -- and the capability comes from post-training rather than from any change in how tokens are generated."
+    }
+  ]
+}

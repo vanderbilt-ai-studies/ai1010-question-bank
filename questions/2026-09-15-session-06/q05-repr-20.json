@@ -1,0 +1,36 @@
+{
+  "id": "q05-repr-20",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "context",
+    "context-length",
+    "grounding"
+  ],
+  "question": "Why does a large context capacity still require you to choose useful material?",
+  "options": [
+    {
+      "text": "Capacity determines which prompt facts become permanent weights",
+      "weight": 0,
+      "feedback": "Context capacity concerns what can be supplied for a run. It does not determine permanent learning of prompt facts during ordinary inference."
+    },
+    {
+      "text": "Capacity makes each document a verified source of factual truth",
+      "weight": 0,
+      "feedback": "The ability to include a document does not verify its content or the answer. You still need relevant evidence and inspection of its use."
+    },
+    {
+      "text": "Capacity selects the next token before representations change",
+      "weight": 0,
+      "feedback": "Context capacity is not the token-selection step. Representations are still processed through the model before output scoring."
+    },
+    {
+      "text": "Capacity holds material; useful evidence helps the task",
+      "weight": 100,
+      "feedback": "A large context can hold more material, but you still need information that bears on the task and must verify how the model uses it."
+    }
+  ]
+}

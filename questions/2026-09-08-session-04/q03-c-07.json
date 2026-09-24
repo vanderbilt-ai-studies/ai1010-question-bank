@@ -1,0 +1,35 @@
+{
+  "id": "q03-c-07",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "connector",
+    "computer-use"
+  ],
+  "question": "Getting an agent to operate other applications, such as the 3D tool Blender, points toward which idea named in the lecture?",
+  "options": [
+    {
+      "text": "Replacing screenshots with direct access to the application's source code",
+      "weight": 0,
+      "feedback": "This was not the direction of the discussion. The question was about connecting an agent to other software, not about reading or rewriting that software's code."
+    },
+    {
+      "text": "Training the model on a dedicated dataset built from one application",
+      "weight": 0,
+      "feedback": "The lecture did not suggest training a model on a single application. What it named was a general way of connecting agents to tools, not app-specific training data."
+    },
+    {
+      "text": "Tool-and-connector integrations, formally MCP (Model Context Protocol)",
+      "weight": 100,
+      "feedback": "The lecture named this formally as MCP (Model Context Protocol) and set it aside as material for a later session rather than explaining it in full at that point."
+    },
+    {
+      "text": "Giving the agent unrestricted administrator access to the operating system",
+      "weight": 0,
+      "feedback": "Broad system access was not what was raised. The topic was connecting to specific applications through tools and connectors."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q01-a-22",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "self-supervised-learning",
+    "pre-training"
+  ],
+  "question": "A classmate says: \"The model never makes grammar mistakes, so someone must have programmed the rules of grammar into it.\" Which idea from the lecture corrects this?",
+  "options": [
+    {
+      "text": "Engineers add a grammar-checking step after the model produces its text",
+      "weight": 0,
+      "feedback": "There is no separate grammar checker. The pipeline ends with a token being chosen from probabilities; nothing edits it afterward."
+    },
+    {
+      "text": "A grammar textbook in the training data is where the rules come from",
+      "weight": 0,
+      "feedback": "Even if a grammar book were in the training text, it would be treated like any other text: more next words to guess. The model does not read rules and apply them."
+    },
+    {
+      "text": "Grammar was learned, not programmed, because guessing well required it",
+      "weight": 100,
+      "feedback": "To predict the next word you have to know which kinds of word can go where, so grammatical structure falls out of the training itself. Nobody supplied a single rule, just as nobody in the room needed a stated rule to know a noun follows 'on'."
+    },
+    {
+      "text": "The model copies grammatical sentences from its training text",
+      "weight": 0,
+      "feedback": "The model does not store or copy sentences; it has no text inside it. It produces each token from probabilities shaped by training, which is why it can write sentences that never appeared anywhere."
+    }
+  ]
+}

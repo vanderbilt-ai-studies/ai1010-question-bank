@@ -1,0 +1,31 @@
+{
+  "id": "example-mat",
+  "type": "MAT",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "pre-training",
+    "post-training",
+    "alignment"
+  ],
+  "question": "Match each training stage to what it uses.",
+  "grading": "equally_weighted",
+  "pairs": [
+    {
+      "choice": "Pre-training",
+      "match": "Huge amounts of text, predicting the next token"
+    },
+    {
+      "choice": "Supervised fine-tuning",
+      "match": "Example responses written to show the desired behavior"
+    },
+    {
+      "choice": "Reward-model training",
+      "match": "People's preferences between pairs of responses"
+    }
+  ],
+  "distractors": [
+    "The user's current conversation"
+  ],
+  "feedback": "Pre-training learns from raw text; fine-tuning imitates demonstrations; the reward model learns from preference comparisons. The current conversation is context, not training."
+}

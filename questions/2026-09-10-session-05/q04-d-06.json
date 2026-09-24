@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-06",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "When should you define the required qualities of an output in a skill evaluation?",
+  "options": [
+    {
+      "text": "After choosing the output that looks most impressive",
+      "weight": 0,
+      "feedback": "Choosing standards after seeing a preferred result can reward appearance instead of the intended task requirements."
+    },
+    {
+      "text": "After the skill has been running unattended for several weeks",
+      "weight": 0,
+      "feedback": "You need success criteria during development, before relying on repeated unattended operation."
+    },
+    {
+      "text": "Before judging the outputs from the evaluation",
+      "weight": 100,
+      "feedback": "Advance criteria give you a stable basis for inspecting results and deciding whether the skill helps."
+    },
+    {
+      "text": "After a user reports a failure in the deployed procedure",
+      "weight": 0,
+      "feedback": "Reported failures can improve later tests, but initial evaluation also needs explicit success criteria."
+    }
+  ]
+}

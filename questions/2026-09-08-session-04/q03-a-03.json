@@ -1,0 +1,35 @@
+{
+  "id": "q03-a-03",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo",
+    "task-specification"
+  ],
+  "question": "The seat-minder project began with a 'North Star' problem statement. What did that statement describe?",
+  "options": [
+    {
+      "text": "The exact database schema and table design the app would need",
+      "weight": 0,
+      "feedback": "A schema is a technical detail. The North Star named the problem to be solved, and it came before any technical decision was made."
+    },
+    {
+      "text": "The programming languages and hosting provider the build had to use",
+      "weight": 0,
+      "feedback": "Those choices came later, and the agent made them from stated requirements. The North Star itself named no technology at all."
+    },
+    {
+      "text": "How the app would compare with competing classroom check-in tools",
+      "weight": 0,
+      "feedback": "No competitor comparison appears in the notes. The starting point was a personal account of a problem, not market research."
+    },
+    {
+      "text": "Knowing students' names, who will take a cold call, and their thinking",
+      "weight": 100,
+      "feedback": "That is close to what was actually typed into the agent: a statement about students going unnoticed in a large class, tied to knowing names, knowing who is willing to be called on, and knowing what people are thinking before class begins."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-01",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure",
+    "agent-skill"
+  ],
+  "question": "Which file holds a skill's central instructions?",
+  "options": [
+    {
+      "text": "SKILL.md",
+      "weight": 100,
+      "feedback": "This is the central file that combines identifying metadata and the reusable procedure."
+    },
+    {
+      "text": "references/writing-guide.md",
+      "weight": 0,
+      "feedback": "A referenced guide can provide detailed supporting instructions. It supports the central procedure rather than replacing SKILL.md."
+    },
+    {
+      "text": "assets/notes-template.md",
+      "weight": 0,
+      "feedback": "A template provides a reusable starting structure. The central instructions explain how to use that structure."
+    },
+    {
+      "text": "outputs/lecture-notes.md",
+      "weight": 0,
+      "feedback": "Generated notes are the result of one run. Their filename does not make them the reusable procedure for future runs."
+    }
+  ]
+}

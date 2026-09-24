@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-04",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "file-system",
+    "memory"
+  ],
+  "question": "What is the purpose of a project manifest in organizing agent work?",
+  "options": [
+    {
+      "text": "To copy the entire project into each model input.",
+      "weight": 0,
+      "feedback": "A manifest helps locate relevant material. It does not imply that the contents of every listed file have been loaded."
+    },
+    {
+      "text": "To guarantee that every published file is accurate.",
+      "weight": 0,
+      "feedback": "Organization helps you find files, but accuracy still requires checking the contents against the task."
+    },
+    {
+      "text": "To replace the source evidence after a summary is made.",
+      "weight": 0,
+      "feedback": "A manifest can point to sources, but it cannot substitute for their evidence. Keep important originals available to reopen."
+    },
+    {
+      "text": "To help locate relevant project material.",
+      "weight": 100,
+      "feedback": "A useful manifest works with filenames and folders to guide retrieval. The agent can then read the material needed for its current step."
+    }
+  ]
+}

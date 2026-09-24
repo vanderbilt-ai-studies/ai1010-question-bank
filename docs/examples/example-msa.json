@@ -1,0 +1,23 @@
+{
+  "id": "example-msa",
+  "type": "MSA",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "Besides SKILL.md, name two folders a skill commonly bundles.",
+  "boxes": 2,
+  "accepted": [
+    {
+      "text": "references"
+    },
+    {
+      "text": "scripts"
+    },
+    {
+      "text": "assets"
+    }
+  ],
+  "feedback": "Common folders are references/ (guidance loaded when needed), scripts/ (code for exact steps) and assets/ (templates and files the output uses)."
+}

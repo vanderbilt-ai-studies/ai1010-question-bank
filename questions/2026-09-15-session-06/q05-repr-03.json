@@ -1,0 +1,36 @@
+{
+  "id": "q05-repr-03",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "attention",
+    "mlp",
+    "decoder-stack"
+  ],
+  "question": "What passes from attention to the feed-forward network inside a transformer block?",
+  "options": [
+    {
+      "text": "New vocabulary entries for each token",
+      "weight": 0,
+      "feedback": "Changing a representation does not create a new vocabulary entry. The same token can have successive internal representations."
+    },
+    {
+      "text": "Written rules describing each token",
+      "weight": 0,
+      "feedback": "The block operates on numerical arrays using learned parameters. It does not pass a set of written meaning rules between its parts."
+    },
+    {
+      "text": "Updated numerical representations",
+      "weight": 100,
+      "feedback": "The intermediate material is numerical. Attention and the feed-forward network transform representations before the model chooses an output token."
+    },
+    {
+      "text": "Completed sentences ready for display",
+      "weight": 0,
+      "feedback": "Sentences are the visible result of generation. Inside the block, the model is still transforming numerical representations."
+    }
+  ]
+}

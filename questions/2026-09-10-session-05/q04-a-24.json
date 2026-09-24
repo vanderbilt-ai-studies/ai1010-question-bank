@@ -1,0 +1,36 @@
+{
+  "id": "q04-a-24",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "context-length",
+    "parameter",
+    "model-size"
+  ],
+  "question": "Two models have equal parameter counts but different maximum context lengths measured in tokens. Which conclusion follows from those facts?",
+  "options": [
+    {
+      "text": "They have different context limits with equal learned parameter counts.",
+      "weight": 100,
+      "feedback": "Context capacity and learned parameter count describe different resources. These facts establish a capacity difference, not a universal quality ranking."
+    },
+    {
+      "text": "The larger context limit indicates a larger learned parameter set.",
+      "weight": 0,
+      "feedback": "The stated parameter counts are equal. A longer context window does not by itself establish a larger parameter set."
+    },
+    {
+      "text": "The larger context limit establishes faster completion on comparable tasks.",
+      "weight": 0,
+      "feedback": "The facts concern capacity, not latency. Processing more text can require additional work, and speed needs separate evidence."
+    },
+    {
+      "text": "The larger context limit establishes better answers on comparable tasks.",
+      "weight": 0,
+      "feedback": "A capacity advantage does not guarantee that relevant evidence will be used correctly. Task performance needs to be assessed directly."
+    }
+  ]
+}

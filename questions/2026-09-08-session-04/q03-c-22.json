@@ -1,0 +1,34 @@
+{
+  "id": "q03-c-22",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality"
+  ],
+  "question": "The lecture says a jointly-trained (native multimodal) model has a concept like 'royal' come with visual associations 'built in from the start.' What does 'from the start' refer to?",
+  "options": [
+    {
+      "text": "The start of the conversation, before the user has typed a first message",
+      "weight": 0,
+      "feedback": "This is about training, not about any one conversation. The 'start' being described comes long before a user ever chats with the model."
+    },
+    {
+      "text": "The start of training, when images and text were learned in the same process",
+      "weight": 100,
+      "feedback": "This approach never separates learning about words from learning about images, so a concept and its visual associations are there together from the first training step rather than being added later."
+    },
+    {
+      "text": "The start of the projection step that maps image features into the model's space",
+      "weight": 0,
+      "feedback": "A projection step belongs to the other approach, where vision is added after text training is already finished -- the opposite of 'from the start'."
+    },
+    {
+      "text": "The start of the model's reasoning trace, just before it produces an answer",
+      "weight": 0,
+      "feedback": "A reasoning trace happens inside a single response and has nothing to do with how images and words were learned. The phrase refers to training."
+    }
+  ]
+}

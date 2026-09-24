@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-01",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "agent-skill",
+    "skill-structure"
+  ],
+  "question": "According to the lecture, what is a skill, structurally speaking?",
+  "options": [
+    {
+      "text": "A single system prompt that gets appended to every conversation",
+      "weight": 0,
+      "feedback": "A system prompt is one flat block of text added to every turn. A skill is the opposite: most of it, including any scripts or reference files, only loads when the task actually calls for it."
+    },
+    {
+      "text": "A subdirectory of instructions for an agent, often bundled with scripts and reference files",
+      "weight": 100,
+      "feedback": "This is close to how the lecture put it: a skill is a subdirectory of instructions for the agent, and it can carry along scripts and reference files that get used only when the task needs them."
+    },
+    {
+      "text": "A separate, fine-tuned copy of the underlying model",
+      "weight": 0,
+      "feedback": "Fine-tuning changes the model's weights themselves, which takes retraining. A skill changes nothing about the model -- it is just files that tell an existing model how to approach a task."
+    },
+    {
+      "text": "A plugin that only works if it is written in the same programming language as the harness",
+      "weight": 0,
+      "feedback": "Skills are portable specifically because they are not tied to one programming language or vendor. Requiring a language match would defeat the point of a format any compatible harness can read."
+    }
+  ]
+}

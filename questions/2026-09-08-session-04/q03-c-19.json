@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-19",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "subagent",
+    "agent",
+    "class-demo"
+  ],
+  "question": "What fix does the lecture propose for grading many student submissions consistently, and why does it solve the context-bleeding problem from grading in one long chat?",
+  "options": [
+    {
+      "text": "Use one long chat, but tell the model to ignore everything it graded earlier",
+      "weight": 0,
+      "feedback": "Asking the model to ignore earlier content does not remove that content from what it is attending to. The fix described actually separates the submissions instead."
+    },
+    {
+      "text": "Reduce the sampling randomness so grades come out the same regardless of order",
+      "weight": 0,
+      "feedback": "Lowering randomness does nothing about information carrying forward from one submission to the next. The bias comes from earlier context, not from chance variation."
+    },
+    {
+      "text": "Give an agent the submissions, the rubric, and a grading skill, one subagent each",
+      "weight": 100,
+      "feedback": "Each submission gets its own fresh subagent, so no earlier grading is sitting in that subagent's context. Every submission is judged against the same fixed standard, with nothing carried over."
+    },
+    {
+      "text": "Have a human grade the first several submissions to warm the model up first",
+      "weight": 0,
+      "feedback": "This is not part of the fix described, and it would make things worse rather than better -- more prior grading in context is exactly the source of the bias."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q01-c-22",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp",
+    "learned-knowledge"
+  ],
+  "question": "The lecture asked whether JPEG is the format you would choose for archiving a photograph, and answered no. What does that answer imply about the MLP (multi-layer perceptron)?",
+  "options": [
+    {
+      "text": "It should be replaced by a proper database as models improve",
+      "weight": 0,
+      "feedback": "The lossy, compressed form is not a defect to be engineered away; it is how a neural network holds what it learned. Larger models make the picture sharper, but it stays a picture, not a database."
+    },
+    {
+      "text": "You should not expect it to preserve every detail it was trained on exactly",
+      "weight": 100,
+      "feedback": "Archiving demands a lossless copy, and a JPEG throws detail away to save space. The MLP does the same with training text, which is why it can be confidently vague on specifics."
+    },
+    {
+      "text": "It compresses your prompt before reading it, losing some of what you wrote",
+      "weight": 0,
+      "feedback": "Your prompt is not compressed; attention can draw on all of it. The compression happened long before, when training text was squeezed into the weights."
+    },
+    {
+      "text": "It keeps a low-resolution copy of each conversation it has had",
+      "weight": 0,
+      "feedback": "The MLP does not change between conversations, and it stores nothing from them. What is low-resolution is its picture of the training data, fixed once training ended."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q02-a-13",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "course-logistics"
+  ],
+  "question": "You believe a quiz question in this course was wrong. What does the course let you do about it?",
+  "options": [
+    {
+      "text": "File a challenge in Brightspace, and earn extra credit if it holds up.",
+      "weight": 100,
+      "feedback": "Questions are drafted by a model and checked by a second one, and that process still lets errors through. A challenge that turns out to be correct is worth a point of extra credit."
+    },
+    {
+      "text": "Nothing -- questions are checked by a second reviewer, so they are final.",
+      "weight": 0,
+      "feedback": "The second check is real, but it was described as fallible rather than final. That is exactly why a route for challenges exists and why a correct one is rewarded."
+    },
+    {
+      "text": "Ask for your own score to be corrected, which is all a challenge wins you.",
+      "weight": 0,
+      "feedback": "You are thinking of it as a grade dispute over one attempt. It is treated as a contribution instead: a challenge that turns out to be right earns a point of extra credit on top of any correction."
+    },
+    {
+      "text": "Raise it in class, where a class vote decides whether it stands.",
+      "weight": 0,
+      "feedback": "Nothing about question correctness is put to a vote. A challenge is judged on whether it is actually right, not on how many people agree."
+    }
+  ]
+}

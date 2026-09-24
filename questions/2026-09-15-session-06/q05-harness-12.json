@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-12",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "tool",
+    "verification"
+  ],
+  "question": "Why does writing a command in chat fail to prove that the command ran?",
+  "options": [
+    {
+      "text": "Displaying valid syntax is enough to establish execution",
+      "weight": 0,
+      "feedback": "A syntactically valid command still needs an executor. Its appearance in chat does not establish that it ran."
+    },
+    {
+      "text": "A relevant skill automatically executes its written steps",
+      "weight": 0,
+      "feedback": "A skill can guide a procedure but does not itself provide a tool or permission to perform the action."
+    },
+    {
+      "text": "A detailed description counts as the operation's result",
+      "weight": 0,
+      "feedback": "Describing the intended work is different from receiving an observation produced by performing it."
+    },
+    {
+      "text": "Command text still needs an executor",
+      "weight": 100,
+      "feedback": "The model can produce a textual command without running it. A tool or other executor must carry out the operation."
+    }
+  ]
+}

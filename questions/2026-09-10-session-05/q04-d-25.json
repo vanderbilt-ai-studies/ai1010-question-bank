@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-25",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation",
+    "harness"
+  ],
+  "question": "A daily document-processing skill succeeds in a manual trial. You want it to run unattended. Which preparation best addresses the added demands?",
+  "options": [
+    {
+      "text": "Define triggers, saved progress, checks, and stopping rules",
+      "weight": 100,
+      "feedback": "Also establish required inputs, allowed actions, missing-access behavior, and an available host. Test failure cases before relying on repeated runs."
+    },
+    {
+      "text": "Rely on the single success and repeat the same command continuously",
+      "weight": 0,
+      "feedback": "A successful trial leaves failure behavior and repeated-run effects untested. Persistent operation needs explicit operating conditions."
+    },
+    {
+      "text": "Keep the host online and let each run start without knowledge of prior work",
+      "weight": 0,
+      "feedback": "Availability is necessary, but saved progress helps later runs resume without duplicating changes."
+    },
+    {
+      "text": "Create a daily trigger and assume missing inputs will resolve themselves",
+      "weight": 0,
+      "feedback": "A trigger schedules work but does not define what to do when inputs or access are absent. Specify failure and stopping behavior."
+    }
+  ]
+}

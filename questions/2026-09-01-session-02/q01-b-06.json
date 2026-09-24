@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-06",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "tokenization",
+    "token"
+  ],
+  "question": "How does a model's vocabulary handle common words differently from rare ones?",
+  "options": [
+    {
+      "text": "Frequent words get one token each; rarer words are built from pieces shared with other words",
+      "weight": 100,
+      "feedback": "Frequent words earn a dedicated token because they show up so often. Rare words are built from shared pieces, which is also what lets the model piece together a word it has never met."
+    },
+    {
+      "text": "Frequent words are dropped as filler, and only rarer words are given tokens of their own",
+      "weight": 0,
+      "feedback": "Dropping common words is a habit from older keyword search, not from language models. The model needs \"the\" and \"on\" as much as any other token, because grammar lives in them."
+    },
+    {
+      "text": "Every word gets exactly one token of its own, whether it is common or rare",
+      "weight": 0,
+      "feedback": "A one-token-per-word scheme would need a vocabulary entry for every possible word, including misspellings and new coinages. Splitting rare words into shared pieces avoids that."
+    },
+    {
+      "text": "Rarer words are swapped for a common synonym before the model ever sees them",
+      "weight": 0,
+      "feedback": "There is no synonym lookup. The rare word is kept, just broken into fragments the vocabulary already contains, so its exact spelling still reaches the model."
+    }
+  ]
+}

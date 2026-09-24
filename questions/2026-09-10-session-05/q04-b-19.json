@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-19",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-scope",
+    "skill-sharing"
+  ],
+  "question": "Why should a personal skill's assumptions fit the projects where it is used?",
+  "options": [
+    {
+      "text": "Personal scope removes the need for a description",
+      "weight": 0,
+      "feedback": "A personal skill still needs selection guidance. Broader availability does not replace the required description."
+    },
+    {
+      "text": "Each project must produce identical output content",
+      "weight": 0,
+      "feedback": "Cross-project reuse concerns the method. Different inputs and purposes can still yield different task outputs."
+    },
+    {
+      "text": "Its reusable procedure may be applied across projects",
+      "weight": 100,
+      "feedback": "Personal scope supports use beyond one project, so assumptions should suit that broader intended use."
+    },
+    {
+      "text": "Each project must store its transcripts inside the skill",
+      "weight": 0,
+      "feedback": "Task-specific transcripts belong with their runs. Personal scope does not turn all project inputs into reusable skill content."
+    }
+  ]
+}

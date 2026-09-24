@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-20",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "recurrent-depth",
+    "thinking-reasoning"
+  ],
+  "question": "What trade-off does the lecture identify as coming with looping?",
+  "options": [
+    {
+      "text": "Looping leaves the model unable to generate any text.",
+      "weight": 0,
+      "feedback": "Generation continues as normal. Looping only changes how much refining a representation gets before the pipeline moves on."
+    },
+    {
+      "text": "Looping removes the MLP (multi-layer perceptron) from the pipeline entirely.",
+      "weight": 0,
+      "feedback": "Looping re-runs the same attention-then-MLP stack; it does not take a component out. The trade-off the lecture named is about what you can see, not about what is present."
+    },
+    {
+      "text": "Looping makes the model's embeddings incompatible with the rest of the pipeline.",
+      "weight": 0,
+      "feedback": "The looped output is the same kind of representation, just more settled. The rest of the pipeline consumes it exactly as before."
+    },
+    {
+      "text": "Interpretability gets murkier, since some refinement happens silently in the repeated pass.",
+      "weight": 100,
+      "feedback": "Work done inside an extra pass never becomes a readable token, so the visible reasoning trace covers less of what the model actually did. That is the cost paid for the added stability."
+    }
+  ]
+}

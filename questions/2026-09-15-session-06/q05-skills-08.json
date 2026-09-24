@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-08",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "file-system",
+    "agent-skill"
+  ],
+  "question": "Which feature of an agent working environment is emphasized when you want help editing skill files?",
+  "options": [
+    {
+      "text": "A larger set of learned parameters",
+      "weight": 0,
+      "feedback": "Model size is different from the working environment. The relevant distinction is whether the environment can work with your files and tools."
+    },
+    {
+      "text": "A more detailed written completion claim",
+      "weight": 0,
+      "feedback": "A detailed claim remains a description. File-editing work depends on the environment's ability to use files and tools."
+    },
+    {
+      "text": "A more polished conversation display",
+      "weight": 0,
+      "feedback": "Display polish does not establish file-working capability. Choose an environment with the tools and context that fit the work."
+    },
+    {
+      "text": "Access to the needed files and tools",
+      "weight": 100,
+      "feedback": "The demonstration distinguished a conversation-centered interaction from an agent environment that can work with files and tools."
+    }
+  ]
+}

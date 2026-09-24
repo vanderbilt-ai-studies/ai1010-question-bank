@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-11",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "harness",
+    "tool"
+  ],
+  "question": "Why can two interfaces using the same language model support different actions?",
+  "options": [
+    {
+      "text": "Their product labels specify which file operations the model can perform.",
+      "weight": 0,
+      "feedback": "A product label is insufficient evidence of available actions. Inspect the actual tools and permissions supplied by the environment."
+    },
+    {
+      "text": "Their models execute file operations directly after describing them.",
+      "weight": 0,
+      "feedback": "A model generates a request; execution happens through the harness and an available tool. A description alone does not perform the operation."
+    },
+    {
+      "text": "Their harnesses can supply different tools and execution permissions.",
+      "weight": 100,
+      "feedback": "Sharing a model does not imply sharing its operating environment. The harness and tools determine which supported requests can actually run."
+    },
+    {
+      "text": "Their project names determine the operations built into the model weights.",
+      "weight": 0,
+      "feedback": "Project selection gives the agent relevant context and a place to work. It does not change model weights to provide file operations."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-14",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "mlp",
+    "learned-knowledge"
+  ],
+  "question": "Why is it misleading to describe the MLP (multi-layer perceptron) as the model's searchable fact database?",
+  "options": [
+    {
+      "text": "It assigns vocabulary IDs instead of transforming representations",
+      "weight": 0,
+      "feedback": "Token lookup and representation transformation have different roles. The MLP participates in the latter."
+    },
+    {
+      "text": "Learned information is distributed across the network",
+      "weight": 100,
+      "feedback": "The MLP applies learned transformations, but knowledge is not confined to that component. A database lookup is too literal a picture of this processing."
+    },
+    {
+      "text": "It operates on finished English sentences rather than numbers",
+      "weight": 0,
+      "feedback": "The MLP transforms numerical representations. Treating it as an English-sentence processor adds another misleading picture."
+    },
+    {
+      "text": "It stores the current prompt by retraining on every word",
+      "weight": 0,
+      "feedback": "Current context influences representations during inference. That does not mean the MLP updates its weights on each prompt word."
+    }
+  ]
+}

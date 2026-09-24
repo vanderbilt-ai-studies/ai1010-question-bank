@@ -1,0 +1,35 @@
+{
+  "id": "q02-a-19",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "cost-and-usage",
+    "model-selection"
+  ],
+  "question": "How should the environmental argument in the lecture change the way you pick a model?",
+  "options": [
+    {
+      "text": "It rules out the largest tiers entirely for any coursework.",
+      "weight": 0,
+      "feedback": "Nothing was ruled out -- the weekend exercise has you use the top tier. The argument is about not reaching for it by habit when a smaller one is already correct."
+    },
+    {
+      "text": "It makes the smallest tier that works the sensible start.",
+      "weight": 100,
+      "feedback": "Every answer from a large model costs real computation, so always reaching for the biggest one has a running cost. Start small, check the work, step up only when you must."
+    },
+    {
+      "text": "It applies only to models you run on your own hardware.",
+      "weight": 0,
+      "feedback": "A hosted model runs on someone else's hardware, and that hardware still draws power. Where the machine sits does not change the argument."
+    },
+    {
+      "text": "It matters when a model is trained, not when it is used.",
+      "weight": 0,
+      "feedback": "Training is expensive, but so is every single answer a very large model produces, multiplied across everyone using it. That is the cost you were asked to weigh."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-21",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "verification",
+    "tool"
+  ],
+  "question": "You ask an agent to summarize a README. It displays a file-reading command, but no tool result appears. What should you check next?",
+  "options": [
+    {
+      "text": "Whether the harness actually ran the file-reading tool",
+      "weight": 100,
+      "feedback": "You need evidence that the requested file was read before treating the summary as grounded in its contents."
+    },
+    {
+      "text": "Whether the command was phrased with enough confidence",
+      "weight": 0,
+      "feedback": "More confident language does not establish that the operation was executed."
+    },
+    {
+      "text": "Whether the answer contains a sufficiently large word count",
+      "weight": 0,
+      "feedback": "Length does not show that the agent obtained the source material."
+    },
+    {
+      "text": "Whether the model knows the general purpose of README files",
+      "weight": 0,
+      "feedback": "General knowledge may help interpret a file, but it does not establish access to this particular file."
+    }
+  ]
+}

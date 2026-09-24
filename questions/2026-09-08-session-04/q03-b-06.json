@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-06",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "thinking-budget"
+  ],
+  "question": "The lecture is careful to frame both explanations for why Opus 5 keeps reasoning on as something specific. What is that framing?",
+  "options": [
+    {
+      "text": "A peer-reviewed finding published by an outside research lab.",
+      "weight": 0,
+      "feedback": "No such publication appears in the notes. The explanations are presented as one person's reading of a model's behavior, which is a much weaker kind of evidence."
+    },
+    {
+      "text": "The instructor's own reading of the situation, not a disclosed vendor specification.",
+      "weight": 100,
+      "feedback": "The notes say this explicitly, and it matters for how much weight to put on the two explanations: they are informed guesses about why a model behaves as it does, not confirmed technical documentation from its maker."
+    },
+    {
+      "text": "A confirmed detail from the model's official system card.",
+      "weight": 0,
+      "feedback": "The notes deny this level of certainty. Treating an interpretation as an official disclosure is exactly the overreach the framing was guarding against."
+    },
+    {
+      "text": "A guess a student offered during the lab, not the instructor's.",
+      "weight": 0,
+      "feedback": "The lab is where the finding came from -- students could not turn thinking off on Opus 5 -- but the two explanations for it came from the instructor."
+    }
+  ]
+}

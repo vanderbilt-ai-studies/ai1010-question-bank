@@ -1,0 +1,34 @@
+{
+  "id": "q05-harness-01",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "harness"
+  ],
+  "question": "What is an agent harness?",
+  "options": [
+    {
+      "text": "Software coordinating the model's work and tools",
+      "weight": 100,
+      "feedback": "The harness surrounds the model and manages its work, context, tools, and permissions."
+    },
+    {
+      "text": "The learned numerical parameters inside a model",
+      "weight": 0,
+      "feedback": "Parameters belong to the trained model. The harness is surrounding software that organizes how the model works with tools and context."
+    },
+    {
+      "text": "The vocabulary used to identify tokens in a prompt",
+      "weight": 0,
+      "feedback": "Vocabulary entries identify tokens for model processing. They do not manage external actions or the surrounding workflow."
+    },
+    {
+      "text": "The dataset used to adjust a model during training",
+      "weight": 0,
+      "feedback": "Training data help determine learned parameters. A harness instead manages the system around a model as it works."
+    }
+  ]
+}

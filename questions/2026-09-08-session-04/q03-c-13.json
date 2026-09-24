@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-13",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "harness",
+    "tool",
+    "file-system"
+  ],
+  "question": "Beyond memory and task tracking, what 'less obvious' capability did the lecture say a harness gives an agent?",
+  "options": [
+    {
+      "text": "Command-line tools such as bash, run across many files",
+      "weight": 100,
+      "feedback": "The lecture singles this out: a harness lets an agent compose filtering and extraction steps across many files, and it argues models have become unusually good at writing those commands. A chat session has no files to point them at."
+    },
+    {
+      "text": "A much bigger context window that holds more of the conversation",
+      "weight": 0,
+      "feedback": "That is a property of the model and its limits, not something the surrounding harness supplies. The capability highlighted was reaching outside the conversation, to files and tools."
+    },
+    {
+      "text": "Direct access to the model's training data for looking facts up",
+      "weight": 0,
+      "feedback": "A model does not consult its training data as a searchable store, and a harness does not give it one. What the harness adds is access to files and tools outside the model."
+    },
+    {
+      "text": "Faster token generation, so that long tasks finish sooner",
+      "weight": 0,
+      "feedback": "Speed is not what a harness changes. The point was that an agent can reach for command-line tools and a file system, which a chat session cannot use at all."
+    }
+  ]
+}

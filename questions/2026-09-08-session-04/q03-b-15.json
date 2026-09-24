@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-15",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "decoder-stack",
+    "transformer-pipeline"
+  ],
+  "question": "In the pipeline diagram described in the lecture, what does the ellipsis ('...') between two decoder stacks represent?",
+  "options": [
+    {
+      "text": "A pause where the model stops to check its work before continuing.",
+      "weight": 0,
+      "feedback": "That describes something closer to reasoning or looping, both of which are separate ideas. The ellipsis is a drawing convention, not a step the model takes."
+    },
+    {
+      "text": "A missing part of the diagram that was never finished.",
+      "weight": 0,
+      "feedback": "The ellipsis is deliberate, not an unfinished drawing. It stands for content that is real but too repetitive to draw out."
+    },
+    {
+      "text": "A stand-in for however many more decoder stacks the model actually has.",
+      "weight": 100,
+      "feedback": "Only two stacks fit on the slide, but a real pipeline repeats the same attention-then-MLP (multi-layer perceptron) pattern many more times than a diagram can show."
+    },
+    {
+      "text": "The point where image tokens are converted into word tokens.",
+      "weight": 0,
+      "feedback": "No conversion between token types happens there. The ellipsis marks more repetitions of the same decoder stack pattern."
+    }
+  ]
+}

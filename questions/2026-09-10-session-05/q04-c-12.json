@@ -1,0 +1,34 @@
+{
+  "id": "q04-c-12",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification"
+  ],
+  "question": "Why is a plausible document title insufficient evidence that a repaired link is correct?",
+  "options": [
+    {
+      "text": "The saved title is sufficient evidence that the link has the intended target.",
+      "weight": 0,
+      "feedback": "A plausible label can point to the wrong document. Reading the destination checks its identity rather than relying on the displayed label."
+    },
+    {
+      "text": "The agent's completion claim establishes that the destination was inspected.",
+      "weight": 0,
+      "feedback": "A completion sentence is not evidence that inspection occurred. Check the destination content and the actual action evidence."
+    },
+    {
+      "text": "Opening a document establishes that the link now reaches the intended reading.",
+      "weight": 0,
+      "feedback": "A successful click establishes that a destination opens. You still need to inspect whether that destination contains the intended reading."
+    },
+    {
+      "text": "Different documents can appear under the same convincing title.",
+      "weight": 100,
+      "feedback": "A label can look appropriate even when the destination is wrong. Open the saved link and confirm that the document itself is the intended one."
+    }
+  ]
+}

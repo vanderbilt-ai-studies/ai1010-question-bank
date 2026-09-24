@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-06",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "task-specification"
+  ],
+  "question": "What information should you give an agent when asking it to assemble your work into a file?",
+  "options": [
+    {
+      "text": "The model size and preferred editor",
+      "weight": 0,
+      "feedback": "Those choices do not tell the agent what belongs in the deliverable. Specify the required contents and the output format."
+    },
+    {
+      "text": "The needed contents and file format",
+      "weight": 100,
+      "feedback": "These instructions define what the packaged work must contain and how it should be delivered. You still need to inspect the resulting file."
+    },
+    {
+      "text": "The completion wording and reply length",
+      "weight": 0,
+      "feedback": "These shape the agent's message about its work. They do not specify the contents of the artifact you need."
+    },
+    {
+      "text": "The skill title and conversation length",
+      "weight": 0,
+      "feedback": "A skill title can identify guidance, but it does not replace telling the agent which materials to gather and what file format to produce."
+    }
+  ]
+}

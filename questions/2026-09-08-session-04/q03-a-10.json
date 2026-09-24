@@ -1,0 +1,36 @@
+{
+  "id": "q03-a-10",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "task-specification",
+    "agent",
+    "class-demo"
+  ],
+  "question": "The agent building seat-minder was told things like 'it has to run on Vercel, it needs a database like this,' rather than being handed every detail of the stack. What do the notes say this approach made possible?",
+  "options": [
+    {
+      "text": "Testing the software was no longer necessary before it went live",
+      "weight": 0,
+      "feedback": "Refinement carried on over several days and the concurrency risk got specific attention, so nothing about this approach skipped testing."
+    },
+    {
+      "text": "The agent was guaranteed never to make a design mistake",
+      "weight": 0,
+      "feedback": "A real concurrency risk still had to be called out separately, so requirement-level direction did not head off every possible mistake."
+    },
+    {
+      "text": "The project could skip having a North Star problem statement",
+      "weight": 0,
+      "feedback": "These requirements came after the North Star, as guidance layered on top of it rather than as a substitute for it."
+    },
+    {
+      "text": "Reaching a working solution faster than by knowing every technology first",
+      "weight": 100,
+      "feedback": "Giving requirements instead of specifying each technology got to a solution far faster, with a first working prototype coming together in about an hour."
+    }
+  ]
+}

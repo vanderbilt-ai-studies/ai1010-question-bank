@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-21",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "Your notes skill produces readable summaries but repeatedly omits challenging study questions. You know those questions are essential. What is the best next step?",
+  "options": [
+    {
+      "text": "Specify the missing requirement and evaluate revised outputs",
+      "weight": 100,
+      "feedback": "Your expertise identifies the needed quality criterion. Make it explicit, then test whether the revision changes the artifacts as intended."
+    },
+    {
+      "text": "Assume the polished summaries show that the original skill meets the need",
+      "weight": 0,
+      "feedback": "Readable prose is only one quality dimension. The repeated omission shows an important requirement is unmet."
+    },
+    {
+      "text": "Switch to unattended operation so repeated runs eventually include the questions",
+      "weight": 0,
+      "feedback": "Repeated operation does not reliably repair an omitted requirement and can keep producing the same inadequate output."
+    },
+    {
+      "text": "Replace the test transcripts with easier ones before comparing the summaries",
+      "weight": 0,
+      "feedback": "Easier inputs can conceal the problem. Evaluate whether the revised procedure meets the actual requirement on useful examples."
+    }
+  ]
+}

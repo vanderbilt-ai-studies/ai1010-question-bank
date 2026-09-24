@@ -1,0 +1,34 @@
+{
+  "id": "q02-d-03",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "inference-speed"
+  ],
+  "question": "Several companies are building chips specialized for the transformer architecture. On such a chip, a medium-sized model generates at a rate on the order of:",
+  "options": [
+    {
+      "text": "Thousands of tokens per second",
+      "weight": 100,
+      "feedback": "That is roughly two orders of magnitude above a hosted frontier model. It is what makes a long stretch of generation cheap in wall-clock time, which changes what is worth building on top of a medium-sized model."
+    },
+    {
+      "text": "Several hundred tokens per second",
+      "weight": 0,
+      "feedback": "This would only be a few times faster than a hosted frontier model, which would not change much. The whole reason these chips are interesting is that they clear the hosted rate by a much wider margin than that."
+    },
+    {
+      "text": "Tens of tokens per second",
+      "weight": 0,
+      "feedback": "That is the range a hosted frontier model already occupies, so a chip that delivered it would offer nothing new. The specialized chips buy speed at the price of model size, and the speed gain is dramatic."
+    },
+    {
+      "text": "A few tokens per second",
+      "weight": 0,
+      "feedback": "That is what you get on a laptop with no GPU (graphics processing unit) -- the slow end of the range, not the fast end. Purpose-built inference hardware sits at the opposite extreme."
+    }
+  ]
+}

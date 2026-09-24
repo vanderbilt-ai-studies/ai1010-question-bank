@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-01",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "ai-history"
+  ],
+  "question": "In the lecture's tour of what \"AI\" (artificial intelligence) has meant over the decades, which approach came first?",
+  "options": [
+    {
+      "text": "General problem solvers",
+      "weight": 100,
+      "feedback": "The timeline opened in the 1950s with programs meant to reason through problems in general, before anyone had tried expert systems or learning from data. Each later era redefined the word rather than replacing the goal."
+    },
+    {
+      "text": "Expert systems",
+      "weight": 0,
+      "feedback": "Expert systems, hand-built rules gathered from human specialists, were the next chapter, along with the first neural nets. They came after the general problem solvers, not before."
+    },
+    {
+      "text": "Machine learning, such as random forests",
+      "weight": 0,
+      "feedback": "Random forests and logistic regression belong to the machine learning era, when the field shifted to fitting models to data. That is two chapters in, not the beginning."
+    },
+    {
+      "text": "Deep learning",
+      "weight": 0,
+      "feedback": "Deep learning is the current era and the one this course lives in. It is easy to assume it is where AI started because it is where the word is loudest now, but it arrived last."
+    }
+  ]
+}

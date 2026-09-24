@@ -1,0 +1,34 @@
+{
+  "id": "q03-d-12",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-sharing"
+  ],
+  "question": "The lecture mentioned using Astra, a different frontier model, to fix and improve some existing Claude skills over a weekend, then bringing the improved skills back to run in Claude. Which idea from the lecture does this best illustrate?",
+  "options": [
+    {
+      "text": "Contradictory skills, since Astra's edits might disagree with Claude's own instructions",
+      "weight": 0,
+      "feedback": "Contradiction is about two different skills disagreeing when both apply to the same request. Here it is one skill, edited by a different model, which is a portability story rather than a conflict between two skills."
+    },
+    {
+      "text": "A naming collision, since Astra and Claude might pick the same skill for different requests",
+      "weight": 0,
+      "feedback": "A naming collision is about two similarly named skills confusing which one the model picks. Nothing here involves two competing skill names -- it is the same skill file moving between models."
+    },
+    {
+      "text": "Context rot, since editing a skill with a second model adds more material to the context window",
+      "weight": 0,
+      "feedback": "Editing a skill file with a different model does not add anything to a running conversation's context window. Context rot is about material piling up inside one conversation, not about which model touched a file."
+    },
+    {
+      "text": "Skill portability, since a skill is just files that any compatible harness can run",
+      "weight": 100,
+      "feedback": "A skill is nothing more than files and instructions, so it does not matter which model wrote or repaired it. Any harness that reads the same format, Claude's included, can run it, which is exactly what let the improved version come back."
+    }
+  ]
+}

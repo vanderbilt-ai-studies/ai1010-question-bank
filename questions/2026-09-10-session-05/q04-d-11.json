@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-11",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation",
+    "skill-creator"
+  ],
+  "question": "Why should you review a skill even when an artificial intelligence author produces polished instructions?",
+  "options": [
+    {
+      "text": "Fluent wording is the main evidence that every required step ran",
+      "weight": 0,
+      "feedback": "Readable instructions describe work; they do not establish execution. Inspect tool and artifact evidence for completed steps."
+    },
+    {
+      "text": "Human review should judge wording before deciding the output requirements",
+      "weight": 0,
+      "feedback": "Your expertise should make important requirements explicit before you judge the results, rather than letting polished wording determine success."
+    },
+    {
+      "text": "Clear prose can still omit task-specific quality requirements",
+      "weight": 100,
+      "feedback": "An author can organize the instructions well while missing errors or standards that your experience tells you matter."
+    },
+    {
+      "text": "A procedure written by a capable model needs checking only for formatting",
+      "weight": 0,
+      "feedback": "A capable author can still miss task-specific requirements. Review the substance and inspect actual results, as well as readability."
+    }
+  ]
+}

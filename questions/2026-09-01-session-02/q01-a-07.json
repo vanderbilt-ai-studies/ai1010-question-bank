@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-07",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "context"
+  ],
+  "question": "In a chat with a model such as Claude, what makes up the context?",
+  "options": [
+    {
+      "text": "The message you just typed, without the earlier turns",
+      "weight": 0,
+      "feedback": "Your latest message is part of the context, but the earlier turns go in with it. If they did not, the model would lose the thread every time you replied."
+    },
+    {
+      "text": "Your typed prompt, with any attachments handled separately",
+      "weight": 0,
+      "feedback": "There is no separate system for attachments. An uploaded document is turned into tokens and placed in the context alongside your typed prompt, which is how the model can draw on it."
+    },
+    {
+      "text": "Your prompt, anything you attached, and the conversation so far",
+      "weight": 100,
+      "feedback": "Everything you put in front of the model counts as context: the prompt, uploaded documents, and every earlier turn of the conversation. All of it goes in together at the left of the pipeline."
+    },
+    {
+      "text": "Everything the model read while it was being trained",
+      "weight": 0,
+      "feedback": "Training text shaped the model's parameters, but it is not sitting in front of the model when you chat. Context is what you supply for this request, which is why it is the lever you control."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-17",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "semantic-space",
+    "token-embedding"
+  ],
+  "question": "Why does subtracting the embedding for \"man\" from the embedding for \"king\" produce something near a genderless \"sovereign\" or \"ruler\"?",
+  "options": [
+    {
+      "text": "Because the model has a rule written into it that \"king\" equals \"man\" plus \"ruler\"",
+      "weight": 0,
+      "feedback": "No such rule is written down anywhere. The relationship falls out of where the tokens were placed during training, not from a formula someone entered."
+    },
+    {
+      "text": "Because \"man\" and \"king\" are stored in the same database record",
+      "weight": 0,
+      "feedback": "There are no records. Each token is just a point in the space, and the result comes from the geometry of those points."
+    },
+    {
+      "text": "Because the two tokens' vocabulary id numbers are subtracted, leaving the id for \"ruler\"",
+      "weight": 0,
+      "feedback": "Vocabulary ids are arbitrary labels, and subtracting one from another lands on nothing in particular. The arithmetic is done on the embedding vectors, where each direction through the space carries some aspect of meaning."
+    },
+    {
+      "text": "Because meaning is position, so removing the \"man\" direction leaves royalty",
+      "weight": 100,
+      "feedback": "Since location is meaning, each direction in the space corresponds to some aspect of meaning. Subtracting \"man\" strips out the male aspect, and what remains sits among rulers and crowns."
+    }
+  ]
+}

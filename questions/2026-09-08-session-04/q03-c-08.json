@@ -1,0 +1,34 @@
+{
+  "id": "q03-c-08",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "computer-use"
+  ],
+  "question": "Why does the lecture call computer use 'genuinely difficult,' rather than a solved problem?",
+  "options": [
+    {
+      "text": "Because screenshots take up too much storage space to be practical",
+      "weight": 0,
+      "feedback": "Storage is not the issue raised. The difficulty described is about completing tasks correctly, not about how much space images occupy."
+    },
+    {
+      "text": "Because most software is not built to be operated with a mouse and keyboard",
+      "weight": 0,
+      "feedback": "Everyday software is built exactly for mouse-and-keyboard use by people, which is why an agent has to learn to click and type the way a person does. That is not the source of the difficulty."
+    },
+    {
+      "text": "Because the model must translate between two programming languages at each step",
+      "weight": 0,
+      "feedback": "No language translation is involved. The work is interpreting an image and choosing where to click or type, which is a different kind of problem entirely."
+    },
+    {
+      "text": "Because even the best systems today finish only some of the tasks people find easy",
+      "weight": 100,
+      "feedback": "Realistic desktop benchmarks are the evidence the lecture leans on: current systems fall well short of what a person does without thinking about it, which is what keeps this an open problem rather than a finished one."
+    }
+  ]
+}

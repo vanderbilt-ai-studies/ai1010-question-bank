@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-03",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification",
+    "skill-creator"
+  ],
+  "question": "What evidence supports a claim that the requested Skill Creator procedure was actually used?",
+  "options": [
+    {
+      "text": "A final message that prominently names Skill Creator",
+      "weight": 0,
+      "feedback": "Naming a procedure in generated text does not establish that its instructions were loaded or its steps performed."
+    },
+    {
+      "text": "A skill folder with a polished title and complete instructions",
+      "weight": 0,
+      "feedback": "A finished document can exist without the requested authoring procedure having been followed."
+    },
+    {
+      "text": "A record showing that the agent read the short catalog description",
+      "weight": 0,
+      "feedback": "The description helps select a skill. Evidence of selection alone does not establish that the detailed instructions were loaded and their required steps completed."
+    },
+    {
+      "text": "Records of loaded instructions and completed required steps",
+      "weight": 100,
+      "feedback": "Check evidence that the procedure was loaded and that its required work actually occurred, including relevant evaluation artifacts."
+    }
+  ]
+}

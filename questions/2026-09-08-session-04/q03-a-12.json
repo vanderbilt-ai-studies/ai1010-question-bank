@@ -1,0 +1,34 @@
+{
+  "id": "q03-a-12",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo"
+  ],
+  "question": "Why was the agent asked for 'defensive, non-blocking code' while seat-minder was being built?",
+  "options": [
+    {
+      "text": "To make the app look more polished and professional on screen",
+      "weight": 0,
+      "feedback": "This request is about handling simultaneous check-ins correctly. Appearance came up separately, when a later model produced a prettier interface."
+    },
+    {
+      "text": "To survive many students checking in at nearly the same moment",
+      "weight": 100,
+      "feedback": "With around 120 students arriving within the same few seconds, requests can race to claim one seat or update one database row, and this is the kind of code that keeps that from corrupting the result."
+    },
+    {
+      "text": "To reduce how much the Vercel hosting for the app would cost",
+      "weight": 0,
+      "feedback": "Hosting cost is never offered as a motivation. The stated reason is the crush of check-ins at the start of class."
+    },
+    {
+      "text": "To make sure the app kept working without an internet connection",
+      "weight": 0,
+      "feedback": "Offline use is not discussed anywhere in the notes; students reach a hosted web backend by scanning a QR code."
+    }
+  ]
+}

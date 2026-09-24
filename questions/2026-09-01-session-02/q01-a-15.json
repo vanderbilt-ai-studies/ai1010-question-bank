@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-15",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "context"
+  ],
+  "question": "You upload a PDF (portable document format) file to a chat and ask a question about it. At which stage of the pipeline does that file enter?",
+  "options": [
+    {
+      "text": "Token embeddings",
+      "weight": 0,
+      "feedback": "The document will eventually be embedded, but so will everything else. Embedding is a transformation applied to the context, not a place where the document lives."
+    },
+    {
+      "text": "Decoder stacks",
+      "weight": 0,
+      "feedback": "The stacks process whatever is in the context; they do not hold the document. Your file has to enter at the left of the pipeline to reach them at all."
+    },
+    {
+      "text": "Context",
+      "weight": 100,
+      "feedback": "An attachment is part of what you put in front of the model, together with your prompt and the conversation so far. It enters at the far left and flows through every stage after that."
+    },
+    {
+      "text": "Token probabilities",
+      "weight": 0,
+      "feedback": "Probabilities are what the model produces at the end, not something you supply. Nothing you upload goes in at that stage."
+    }
+  ]
+}

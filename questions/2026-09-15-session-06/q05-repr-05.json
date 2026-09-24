@@ -1,0 +1,34 @@
+{
+  "id": "q05-repr-05",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "mlp"
+  ],
+  "question": "What does the MLP (multi-layer perceptron) contribute within a transformer block?",
+  "options": [
+    {
+      "text": "It transforms representations using learned parameters",
+      "weight": 100,
+      "feedback": "The feed-forward network applies transformations learned during training. Its contribution helps the interpretation develop through the model."
+    },
+    {
+      "text": "It executes file commands outside the model",
+      "weight": 0,
+      "feedback": "External commands require a harness and tools. The MLP is part of the model's internal numerical processing."
+    },
+    {
+      "text": "It assigns a fresh vocabulary ID to each interpretation",
+      "weight": 0,
+      "feedback": "The MLP changes the representation of a token. Successive interpretations do not require new vocabulary entries."
+    },
+    {
+      "text": "It displays a finished word after each block",
+      "weight": 0,
+      "feedback": "Intermediate blocks transform numerical representations. Choosing a token for output happens near the end."
+    }
+  ]
+}

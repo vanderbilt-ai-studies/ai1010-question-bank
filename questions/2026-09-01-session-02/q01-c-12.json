@@ -1,0 +1,34 @@
+{
+  "id": "q01-c-12",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "attention"
+  ],
+  "question": "The model is working on the word \"crane\" in \"Wading through the marsh, the tall gray crane stretched its neck.\" Which words can attention draw on for that token?",
+  "options": [
+    {
+      "text": "Every word in the sentence, since the model takes the sentence in as a whole",
+      "weight": 0,
+      "feedback": "The whole sentence is in the context, but attention for a given token averages over the tokens that came before it. \"Neck\" has not been reached yet when \"crane\" is being resolved."
+    },
+    {
+      "text": "Only the words that come before it in the context",
+      "weight": 100,
+      "feedback": "Attention looks back: for each token it takes a weighted average of the tokens already in front of it. That is why \"wading\", \"marsh\", and \"gray\" can move \"crane\" toward the bird and \"neck\" cannot."
+    },
+    {
+      "text": "Only the handful of words sitting closest to it",
+      "weight": 0,
+      "feedback": "Nearby words often carry the most weight, but nothing fences attention into a window. It reaches back over the whole context, including a document you attached earlier."
+    },
+    {
+      "text": "Only the words the model has produced so far in its own reply",
+      "weight": 0,
+      "feedback": "The model's own output does join the context as it goes, but so does everything you supplied. For a token in your sentence, attention draws on the earlier words of that sentence."
+    }
+  ]
+}

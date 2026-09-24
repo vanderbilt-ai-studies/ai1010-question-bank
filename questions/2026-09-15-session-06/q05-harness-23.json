@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-23",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "tool",
+    "agent-skill"
+  ],
+  "question": "Your skill says \"upload the final report,\" but the agent has no upload tool. What is the immediate limitation?",
+  "options": [
+    {
+      "text": "The skill's wording determines whether an upload tool exists",
+      "weight": 0,
+      "feedback": "An instruction can name an action without providing the capability to execute it. Tools must be available in the environment."
+    },
+    {
+      "text": "The model's confidence determines whether an upload can run",
+      "weight": 0,
+      "feedback": "Confidence is a feature of the response. It does not replace an unavailable upload tool."
+    },
+    {
+      "text": "The environment lacks a required action capability",
+      "weight": 100,
+      "feedback": "The skill gives guidance, while tools provide actions. An upload step requires a tool or integration that can carry it out."
+    },
+    {
+      "text": "The report's completeness determines whether it was uploaded",
+      "weight": 0,
+      "feedback": "A complete local artifact and a successful external upload are separate outcomes. The task still needs an available upload capability."
+    }
+  ]
+}

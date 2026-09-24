@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-05",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "autoregression"
+  ],
+  "question": "In autoregressive generation, what happens to a token after it is selected?",
+  "options": [
+    {
+      "text": "It becomes part of the context for later token choices.",
+      "weight": 100,
+      "feedback": "Each choice extends the sequence. The growing sequence influences which tokens are likely next."
+    },
+    {
+      "text": "It replaces the trained weights used for later token choices.",
+      "weight": 0,
+      "feedback": "Generated text changes context, not the trained weights during ordinary inference."
+    },
+    {
+      "text": "It is held apart until the complete answer has been selected.",
+      "weight": 0,
+      "feedback": "The answer is generated incrementally. Earlier generated tokens influence later choices before the whole answer exists."
+    },
+    {
+      "text": "It supplies a new independent layer for the decoder stack.",
+      "weight": 0,
+      "feedback": "Adding a token grows the sequence. It does not add another learned layer to the model."
+    }
+  ]
+}

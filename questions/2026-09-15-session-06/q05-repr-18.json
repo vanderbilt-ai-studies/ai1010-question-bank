@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-18",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "learned-knowledge",
+    "parameter"
+  ],
+  "question": "Why does understanding a model's algorithm leave questions about its learned behavior?",
+  "options": [
+    {
+      "text": "The program becomes inaccessible once training has finished",
+      "weight": 0,
+      "feedback": "The notes say software remains inspectable. The difficulty is explaining learned behavior from the algorithm and parameters, not the disappearance of the program."
+    },
+    {
+      "text": "Learned values also affect the resulting behavior",
+      "weight": 100,
+      "feedback": "The program describes how computation proceeds. The interaction of many learned parameters with context can still make a particular behavior hard to explain."
+    },
+    {
+      "text": "The algorithm is replaced by English instructions at inference",
+      "weight": 0,
+      "feedback": "The numerical computation still runs during inference. Understanding it is useful even though it does not fully explain every learned behavior."
+    },
+    {
+      "text": "The vocabulary indices specify each complete answer in advance",
+      "weight": 0,
+      "feedback": "Vocabulary indices identify tokens. They do not provide a list of complete answers explaining the model's behavior."
+    }
+  ]
+}

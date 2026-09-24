@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-12",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-creator",
+    "verification"
+  ],
+  "question": "Why is a saved skill file insufficient evidence that Skill Creator was used?",
+  "options": [
+    {
+      "text": "The same artifact could be written through a different process",
+      "weight": 100,
+      "feedback": "You need execution and file evidence of the requested process, not just an artifact that could have another origin."
+    },
+    {
+      "text": "The file confirms the procedure was loaded, but not that testing finished",
+      "weight": 0,
+      "feedback": "A file can be written without loading the requested procedure. Check both loaded instructions and completed required work rather than inferring either from the artifact."
+    },
+    {
+      "text": "A saved file proves the procedure ran but conceals its evaluation score",
+      "weight": 0,
+      "feedback": "The file establishes an artifact exists, not that the named process or an evaluation ran."
+    },
+    {
+      "text": "Saving instructions automatically substitutes for comparative evaluation",
+      "weight": 0,
+      "feedback": "Writing a procedure and testing its effects are different activities. One cannot establish the other."
+    }
+  ]
+}

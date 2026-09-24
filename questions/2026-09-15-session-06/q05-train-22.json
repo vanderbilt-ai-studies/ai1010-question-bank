@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-22",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "self-supervised-learning",
+    "pre-training"
+  ],
+  "question": "A training program takes a sentence, hides its final token, and trains a model to predict that token from the earlier text. Which idea does this illustrate?",
+  "options": [
+    {
+      "text": "Ordinary inference using weights without a learning update",
+      "weight": 0,
+      "feedback": "The scenario explicitly trains the model on a target. Ordinary inference generates outputs without that parameter-update process."
+    },
+    {
+      "text": "Self-supervised learning using a target supplied by the text",
+      "weight": 100,
+      "feedback": "The token already in the sentence supplies the answer for the learning objective. No person needs to label that continuation separately."
+    },
+    {
+      "text": "Preference learning using human rankings of several responses",
+      "weight": 0,
+      "feedback": "There are no ranked alternative responses in this scenario. The learning target is a token drawn from the existing text."
+    },
+    {
+      "text": "Assistant fine-tuning using demonstrations of helpful replies",
+      "weight": 0,
+      "feedback": "This example does not provide a desired assistant reply. It uses the next token from text as a prediction target."
+    }
+  ]
+}

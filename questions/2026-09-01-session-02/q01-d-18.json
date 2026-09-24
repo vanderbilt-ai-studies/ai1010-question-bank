@@ -1,0 +1,36 @@
+{
+  "id": "q01-d-18",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "grounding",
+    "context",
+    "attention"
+  ],
+  "question": "A student asks a model about a company's refund policy and gets a wrong answer. They paste the policy document into the chat, ask again, and the answer is now right. Which idea explains the change?",
+  "options": [
+    {
+      "text": "The model learned the policy and updated its parameters",
+      "weight": 0,
+      "feedback": "The parameters never change during a chat. The document made a difference because it was in the context for attention to read, and it will be forgotten as soon as it leaves the context."
+    },
+    {
+      "text": "The second attempt happened to run at a lower temperature",
+      "weight": 0,
+      "feedback": "Temperature only decides which of the model's plausible paths gets taken, so it changes wording between runs. It cannot supply a fact the model never had, and no setting on the choice step would turn a made-up policy into the real one."
+    },
+    {
+      "text": "The policy was in the context, where attention could draw on it directly",
+      "weight": 100,
+      "feedback": "The first time, the model filled in a probable-sounding policy from its lossy picture of the world. The second time, the real policy was in the context, attention could draw on it directly, and that evidence won out over the blur in the MLP (multi-layer perceptron)."
+    },
+    {
+      "text": "The model recognized the document as official and switched into lookup mode",
+      "weight": 0,
+      "feedback": "There is no lookup mode; the model runs the same pipeline either way. The document helped not because it was recognized as official but because it was in the context, where attention could use it to shape the representation."
+    }
+  ]
+}

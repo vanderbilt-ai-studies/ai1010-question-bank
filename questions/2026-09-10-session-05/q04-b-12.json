@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-12",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "Why does a description that says only \"helps with documents\" give weak selection guidance?",
+  "options": [
+    {
+      "text": "It omits the entire step-by-step procedure",
+      "weight": 0,
+      "feedback": "A description is supposed to be shorter than the full instructions. The problem is unclear scope, not the absence of every step."
+    },
+    {
+      "text": "It fails to include a finished document from each run",
+      "weight": 0,
+      "feedback": "Selection guidance should describe recurring work. Appending finished outputs does not repair an unclear task boundary."
+    },
+    {
+      "text": "It lacks the names of every file in the assets folder",
+      "weight": 0,
+      "feedback": "An inventory of assets does not itself explain the skill's purpose. The description needs a clear outcome and use condition."
+    },
+    {
+      "text": "It leaves the intended task too vague",
+      "weight": 100,
+      "feedback": "A useful description indicates both the outcome and when the skill applies, so a broad label makes relevance harder to judge."
+    }
+  ]
+}

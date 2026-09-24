@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-14",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "Why place a long, specialized writing guide in a reference linked from the main procedure?",
+  "options": [
+    {
+      "text": "Its instructions then become the input for every task",
+      "weight": 0,
+      "feedback": "The guide remains reusable guidance, not the changing source content for each task."
+    },
+    {
+      "text": "It can be opened when that guidance is needed",
+      "weight": 100,
+      "feedback": "Staged loading keeps the main procedure focused while making detailed guidance available for relevant steps."
+    },
+    {
+      "text": "The guide no longer needs a connection to the procedure",
+      "weight": 0,
+      "feedback": "A useful reference supports the procedure. Separating it into a file does not remove the need to know when it applies."
+    },
+    {
+      "text": "It automatically becomes an executable writing program",
+      "weight": 0,
+      "feedback": "A referenced document remains guidance. Executable operations belong to code, not prose made into a separate file."
+    }
+  ]
+}

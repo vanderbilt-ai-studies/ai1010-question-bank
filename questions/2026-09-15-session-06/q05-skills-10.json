@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-10",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "agent-skill",
+    "training-vs-inference"
+  ],
+  "question": "Why can revising a skill change the agent's later work without training a new model?",
+  "options": [
+    {
+      "text": "The revision replaces a set of learned model weights",
+      "weight": 0,
+      "feedback": "This describes a change to the model rather than a change to its reusable guidance. Editing a skill ordinarily leaves the model weights unchanged."
+    },
+    {
+      "text": "The revision changes guidance used during the work",
+      "weight": 100,
+      "feedback": "A skill supplies reusable instructions and resources. Changing that package can guide later runs without changing the underlying learned parameters."
+    },
+    {
+      "text": "The revision turns previous reports into model parameters",
+      "weight": 0,
+      "feedback": "Reports are artifacts you can inspect or package. Editing the skill does not convert those files into trained model weights."
+    },
+    {
+      "text": "The revision makes the file location the task objective",
+      "weight": 0,
+      "feedback": "The working location helps identify relevant materials. The procedure's instructions and the intended task still determine what the agent should do."
+    }
+  ]
+}

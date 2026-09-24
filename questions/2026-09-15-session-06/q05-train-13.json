@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-13",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "hallucination",
+    "pre-training"
+  ],
+  "question": "Why can strong next-token prediction coexist with inaccurate claims?",
+  "options": [
+    {
+      "text": "Learning likely text does not verify its associations",
+      "weight": 100,
+      "feedback": "Prediction can build useful language and world patterns. The objective does not turn every association learned from text into a true statement."
+    },
+    {
+      "text": "Prediction quality measures how many claims humans have verified",
+      "weight": 0,
+      "feedback": "The described prediction objective concerns the next token, not a count of fact-checked claims. Good prediction is therefore not a truth guarantee."
+    },
+    {
+      "text": "Inaccurate claims indicate that inference must have changed the weights",
+      "weight": 0,
+      "feedback": "An inaccurate output can arise while using existing weights. Weight updates are not needed for a model to generate a mistaken claim."
+    },
+    {
+      "text": "Extensive training removes language patterns and keeps verified facts",
+      "weight": 0,
+      "feedback": "Pre-training learns patterns and associations from extensive text. The notes do not describe a filtering process that leaves a store of verified facts."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "q01-c-21",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "attention",
+    "mlp",
+    "decoder-stack"
+  ],
+  "question": "Within a decoder stack, attention runs first and the MLP (multi-layer perceptron) second. Why does that order make sense?",
+  "options": [
+    {
+      "text": "The MLP works on what attention hands it, so the meaning in context has to be settled first",
+      "weight": 100,
+      "feedback": "The MLP nudges whatever embedding it is handed. If \"king\" still sat among monarchs, the MLP would push it toward royal facts; once attention has moved it toward board games, the MLP can add that the game is checkers."
+    },
+    {
+      "text": "Attention needs the MLP's facts to decide which words matter, so the MLP has to be ready",
+      "weight": 0,
+      "feedback": "Attention weights words using their embeddings and positions, not stored facts. It works out that \"board\" and \"triumphantly\" matter without knowing anything about checkers."
+    },
+    {
+      "text": "The order does not matter, since both layers do the same kind of averaging over the context",
+      "weight": 0,
+      "feedback": "They do different things: attention averages across the context, and the MLP applies weights learned in training to one embedding. Feeding the MLP an uncorrected first guess would send its nudge in the wrong direction."
+    },
+    {
+      "text": "The MLP picks the word's meaning and attention then confirms it against the context",
+      "weight": 0,
+      "feedback": "This has the roles backwards. Attention is what reads the context; the MLP cannot see the other words at all, so it could not choose a meaning for \"king\" on its own."
+    }
+  ]
+}

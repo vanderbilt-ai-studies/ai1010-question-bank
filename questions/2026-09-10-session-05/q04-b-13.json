@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-13",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "Why is the number of installed skills insufficient to determine whether a skill catalog is useful?",
+  "options": [
+    {
+      "text": "Selection also depends on description quality, overlap, and context use.",
+      "weight": 100,
+      "feedback": "The same count can describe clearly separated procedures or a confusing set of overlapping ones. The notes give no universal maximum for useful installed skills."
+    },
+    {
+      "text": "Selection depends on the total length of all previous generated outputs.",
+      "weight": 0,
+      "feedback": "Past outputs describe particular runs, while selection begins with skill descriptions. Output volume does not establish whether the catalog offers clear, relevant guidance."
+    },
+    {
+      "text": "Selection improves whenever more skills cover the same recurring task.",
+      "weight": 0,
+      "feedback": "Overlapping coverage can make the intended procedure harder to identify. More entries do not by themselves establish a more useful catalog."
+    },
+    {
+      "text": "Selection quality follows from storing the catalog in one project folder.",
+      "weight": 0,
+      "feedback": "Project scope can fit local conventions, but storage location does not establish description quality or distinguish overlapping procedures. Assess how the skills fit the work."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "example-ms",
+  "type": "MS",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "harness",
+    "tool"
+  ],
+  "question": "Which of these does the harness, rather than the model, do? Select all that apply.",
+  "grading": "right_minus_wrong",
+  "options": [
+    {
+      "text": "Runs an approved file-read and returns the result",
+      "correct": true,
+      "feedback": "Yes. The model proposes the tool call; the harness carries it out and puts the result into context."
+    },
+    {
+      "text": "Enforces which actions are allowed",
+      "correct": true,
+      "feedback": "Yes. Permissions live in the harness, outside the model."
+    },
+    {
+      "text": "Produces the probability distribution over next tokens",
+      "correct": false,
+      "feedback": "That is the model itself. The harness never predicts tokens."
+    },
+    {
+      "text": "Decides which words a token embedding sits near",
+      "correct": false,
+      "feedback": "Embeddings were learned in training. The harness has nothing to do with them."
+    }
+  ]
+}

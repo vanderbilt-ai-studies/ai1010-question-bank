@@ -1,0 +1,35 @@
+{
+  "id": "q03-c-01",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality",
+    "self-supervised-learning"
+  ],
+  "question": "GPT-style models are trained on images using self-supervised learning, the same general method Session 3 introduced for text. What does that look like when applied to images, as described in the lecture?",
+  "options": [
+    {
+      "text": "Images and text are folded into one shared sequence from the start, with pieces of that sequence left out for the model to predict",
+      "weight": 100,
+      "feedback": "This is the native multimodal approach the lecture describes: text and images are part of the same training process from day one, treated as a shared sequence rather than two separate pipelines bolted together."
+    },
+    {
+      "text": "A separate model is trained only on images, then combined with the text model afterward through a projection step",
+      "weight": 0,
+      "feedback": "That describes the other approach the lecture contrasts this with -- the Anthropic-style method of pretraining on text first and adding vision later. It is a real approach, just not this one."
+    },
+    {
+      "text": "Human labelers write captions for each image, and the model is trained to reproduce those captions",
+      "weight": 0,
+      "feedback": "Writing captions for supervision is a plausible-sounding training method, but it is ordinary supervised learning with human labels, not the self-supervised, predict-the-missing-piece method the lecture describes."
+    },
+    {
+      "text": "An already-trained language model is simply shown static images afterward and asked to describe them, with no additional training involved",
+      "weight": 0,
+      "feedback": "That describes using a finished model at inference time, not training it. Both approaches the lecture discusses involve real training on image data, whether jointly from the start or in a later step."
+    }
+  ]
+}

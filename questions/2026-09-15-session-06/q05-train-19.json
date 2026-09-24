@@ -1,0 +1,34 @@
+{
+  "id": "q05-train-19",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "alignment"
+  ],
+  "question": "Why does training a model to refuse a harmful request leave behavioral reliability as an ongoing concern?",
+  "options": [
+    {
+      "text": "A refusal during training guarantees matching responses during deployment",
+      "weight": 0,
+      "feedback": "This treats an encouraged behavior as an inviolable rule. The notes explicitly distinguish improved behavior from a guarantee across contexts."
+    },
+    {
+      "text": "A refusal shows that learned parameters no longer influence model behavior",
+      "weight": 0,
+      "feedback": "Refusals can be shaped through post-training, which affects the model. They do not indicate that learned weights have stopped influencing responses."
+    },
+    {
+      "text": "A favored response in training may not hold under unfamiliar framing",
+      "weight": 100,
+      "feedback": "Post-training can encourage a refusal, but that response is not an unbreakable rule for every context. Reliability must extend beyond the situations represented in training."
+    },
+    {
+      "text": "A refusal changes external permissions each time the model generates it",
+      "weight": 0,
+      "feedback": "This confuses the model choosing a response with external enforcement. Training encourages behavior; harness permissions separately constrain which actions can execute."
+    }
+  ]
+}

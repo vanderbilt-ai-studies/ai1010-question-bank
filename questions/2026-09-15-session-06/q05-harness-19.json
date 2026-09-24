@@ -1,0 +1,34 @@
+{
+  "id": "q05-harness-19",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "permissions-and-safety"
+  ],
+  "question": "Why is the label \"sandbox\" insufficient evidence that a deployment is safe?",
+  "options": [
+    {
+      "text": "The label establishes that every file operation is blocked",
+      "weight": 0,
+      "feedback": "The name alone does not establish which actions the actual controls restrict. Their implementation and behavior must be checked."
+    },
+    {
+      "text": "The label establishes that generated statements are accurate",
+      "weight": 0,
+      "feedback": "Access controls address executable actions. They do not guarantee that every written claim is true."
+    },
+    {
+      "text": "Its controls still need implementation and testing",
+      "weight": 100,
+      "feedback": "Calling an environment a sandbox does not establish that its intended restrictions exist or work. Inspect and test the actual controls."
+    },
+    {
+      "text": "The label establishes that broader access is appropriate",
+      "weight": 0,
+      "feedback": "A label does not determine the authority needed for a task. The tools and working area should be chosen deliberately."
+    }
+  ]
+}

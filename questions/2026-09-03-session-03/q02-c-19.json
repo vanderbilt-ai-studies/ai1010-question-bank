@@ -1,0 +1,35 @@
+{
+  "id": "q02-c-19",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-selection",
+    "thinking-budget"
+  ],
+  "question": "You want a fast, complete answer that leans on broad world knowledge and does not really need to be worked through step by step. Which combination fits best?",
+  "options": [
+    {
+      "text": "A smaller model with a long thinking budget",
+      "weight": 0,
+      "feedback": "That pairing suits a problem that mainly needs working through, where time can substitute for capability. Here the answer depends on what the model knows, and a smaller model knows less."
+    },
+    {
+      "text": "A larger model with thinking turned off",
+      "weight": 100,
+      "feedback": "World knowledge is what the larger model buys you, and skipping the thinking phase keeps the reply fast. There is nothing to work through, so there is nothing for a budget to buy."
+    },
+    {
+      "text": "A smaller model with thinking turned off",
+      "weight": 0,
+      "feedback": "This is certainly the fastest and cheapest option, but it is short on the thing the task actually depends on. Going smaller costs you world knowledge first of all."
+    },
+    {
+      "text": "A larger model at its maximum thinking budget",
+      "weight": 0,
+      "feedback": "You would get a good answer, at several times the usage and a long wait for deliberation the task does not need. The budget only earns its cost when there is real working out to do."
+    }
+  ]
+}

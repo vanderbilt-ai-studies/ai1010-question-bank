@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-07",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "After saving a specific change to a skill, what is the next step in the demonstrated workflow?",
+  "options": [
+    {
+      "text": "Package the previous output as the final result",
+      "weight": 0,
+      "feedback": "A previous output does not show what the changed skill does. Test the revised version before treating the work as complete."
+    },
+    {
+      "text": "Treat the saved instructions as proof of success",
+      "weight": 0,
+      "feedback": "Saving confirms that you changed the procedure. The next check is whether using it produces the intended result."
+    },
+    {
+      "text": "Run a test and examine the resulting output",
+      "weight": 100,
+      "feedback": "Testing connects the written revision to its effect. Inspect the output against the task instead of relying on the agent's success claim."
+    },
+    {
+      "text": "Change the model before trying the procedure",
+      "weight": 0,
+      "feedback": "The skill workflow lets you revise and test instructions without training or replacing the model first."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-20",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation",
+    "harness"
+  ],
+  "question": "Why does turning a one-time skill into a persistent process require additional failure testing?",
+  "options": [
+    {
+      "text": "Repeated execution repairs errors by retrying the unchanged procedure",
+      "weight": 0,
+      "feedback": "Repetition can reproduce the same error, so define failure behavior and test it before relying on unattended runs."
+    },
+    {
+      "text": "Saved progress eliminates the need to check whether required inputs are present",
+      "weight": 0,
+      "feedback": "Saved state supports continuity, but later runs can still encounter missing inputs or access."
+    },
+    {
+      "text": "An available execution host establishes that every requested action is appropriate",
+      "weight": 0,
+      "feedback": "Host availability enables operations; allowed actions and verification criteria still need to be defined."
+    },
+    {
+      "text": "An unattended process can repeat the same error across runs",
+      "weight": 100,
+      "feedback": "Persistent operation adds opportunities for recurring mistakes. Test failure cases and define when the process should stop."
+    }
+  ]
+}

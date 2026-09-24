@@ -1,0 +1,34 @@
+{
+  "id": "q01-c-14",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "mlp"
+  ],
+  "question": "Which of these best describes what the MLP (multi-layer perceptron) is made of?",
+  "options": [
+    {
+      "text": "A table of words paired with their definitions and usages",
+      "weight": 0,
+      "feedback": "A table would let the model look meanings up, but the lecture is emphatic that there are no words stored in the MLP and nothing to look up. What it holds is numeric, learned in training."
+    },
+    {
+      "text": "A search index over the text the model was trained on",
+      "weight": 0,
+      "feedback": "If training text were indexed, the model could quote it back exactly, and it cannot. Training text is compressed into weights, lossy like a JPEG, not stored for retrieval."
+    },
+    {
+      "text": "Numeric weights, learned in training, that shift an embedding along",
+      "weight": 100,
+      "feedback": "Given the embedding attention just produced, those numbers push it further toward what the model picked up in training. Nothing is looked up; the knowledge is baked into the numbers themselves."
+    },
+    {
+      "text": "A list of grammar rules the model was given before training",
+      "weight": 0,
+      "feedback": "Nobody hands the model rules; it learns grammar along with everything else by guessing the next word. And what it learns is stored as weights, not as a list."
+    }
+  ]
+}

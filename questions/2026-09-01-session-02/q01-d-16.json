@@ -1,0 +1,35 @@
+{
+  "id": "q01-d-16",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "hallucination",
+    "mlp"
+  ],
+  "question": "A student asks a model for sources on a niche topic and it returns a paper with a convincing title, authors, and journal that turns out not to exist. Which idea from the lecture explains this?",
+  "options": [
+    {
+      "text": "The model's citation database was out of date",
+      "weight": 0,
+      "feedback": "There is no citation database; the MLP (multi-layer perceptron) stores no papers to look up. What the model has is a fuzzy picture of what citations on that topic look like, and it produced one that fits the picture."
+    },
+    {
+      "text": "The model glitched under a hard question and produced garbage",
+      "weight": 0,
+      "feedback": "The output was not garbage; it was a well-formed, plausible citation, which is precisely the model working as designed. A hard question exposes the blurry part of the JPEG, but nothing malfunctioned."
+    },
+    {
+      "text": "The model found a real paper but mis-copied its details",
+      "weight": 0,
+      "feedback": "The model does not find and copy; it generates a probable continuation token by token. On a niche topic the sharp parts of its picture run out, and it fills in a citation-shaped answer from the blur."
+    },
+    {
+      "text": "The model produced a citation-shaped answer from its fuzzy JPEG",
+      "weight": 100,
+      "feedback": "A citation is a highly patterned kind of text, so the model can produce one that looks right without any real paper behind it. With no source in the context, the fuzzy JPEG supplied something probable, and nothing in the mechanism checks that it exists."
+    }
+  ]
+}

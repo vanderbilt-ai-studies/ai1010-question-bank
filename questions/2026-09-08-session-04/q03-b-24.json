@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-24",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "recurrent-depth",
+    "thinking-reasoning"
+  ],
+  "question": "According to the addendum, a recurrent-depth model can spend extra computation at inference time. What does it avoid having to produce in order to spend it?",
+  "options": [
+    {
+      "text": "A final answer.",
+      "weight": 0,
+      "feedback": "The answer still comes. The extra computation happens before it, refining a hidden representation rather than replacing the output."
+    },
+    {
+      "text": "A new set of weights.",
+      "weight": 0,
+      "feedback": "The same shared block, with the same weights, is what gets unrolled again -- that reuse is the point. Nothing new is created at inference time."
+    },
+    {
+      "text": "A longer training run.",
+      "weight": 0,
+      "feedback": "The addendum places this extra computation at inference, when the model is answering a question, not back in training."
+    },
+    {
+      "text": "Extra visible tokens.",
+      "weight": 100,
+      "feedback": "The refinement happens in a latent representation, so the model can put more computation into a hard problem without writing out a longer reasoning trace to do it."
+    }
+  ]
+}

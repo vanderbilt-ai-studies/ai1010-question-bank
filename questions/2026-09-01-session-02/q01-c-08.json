@@ -1,0 +1,34 @@
+{
+  "id": "q01-c-08",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "attention"
+  ],
+  "question": "Consider: \"After the storm, the river rose so fast that water spilled over the bank and flooded the road.\" To move \"bank\" away from its money meaning, which words would attention weight most heavily?",
+  "options": [
+    {
+      "text": "\"After\" and \"so\"",
+      "weight": 0,
+      "feedback": "These connect the clauses but carry nothing about rivers or money. Attention gives weight in proportion to how much a word matters to the one being resolved, and function words like these get little."
+    },
+    {
+      "text": "\"spilled\" alone, because verbs matter most",
+      "weight": 0,
+      "feedback": "The verb helps, but attention does not privilege one part of speech. It averages across all the earlier words, and the nouns \"river\" and \"water\" are the ones that pin down this \"bank\"."
+    },
+    {
+      "text": "Every earlier word equally",
+      "weight": 0,
+      "feedback": "An equal average would let \"After\", \"the\", and \"so\" dilute the signal from \"river\" and \"water\". The whole point of the weighting is that some words count for much more than others."
+    },
+    {
+      "text": "\"river\" and \"water\"",
+      "weight": 100,
+      "feedback": "Those words put the sentence firmly by a river, and their embeddings, averaged in with heavy weight, drag \"bank\" out of finance and toward riverbanks. This is the same move that took \"king\" from monarchs to checkers."
+    }
+  ]
+}

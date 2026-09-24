@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-11",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "agent-skill",
+    "skill-structure"
+  ],
+  "question": "Why should a lecture-notes skill keep its reusable procedure separate from one lecture's transcript?",
+  "options": [
+    {
+      "text": "The procedure should reproduce the same notes each time",
+      "weight": 0,
+      "feedback": "Reusability means applying a method to changing inputs, not forcing every lecture to produce identical content."
+    },
+    {
+      "text": "The transcript must contain the skill's selection metadata",
+      "weight": 0,
+      "feedback": "Selection metadata describes the skill. A transcript is source material and should not have to define the skill's identity."
+    },
+    {
+      "text": "The procedure must apply to different lectures",
+      "weight": 100,
+      "feedback": "The skill encodes how to do recurring work; the transcript supplies the content that changes from run to run."
+    },
+    {
+      "text": "The transcript becomes a reusable template after one run",
+      "weight": 0,
+      "feedback": "A source transcript still describes a particular lecture. Repeated use does not turn its content into a general output template."
+    }
+  ]
+}

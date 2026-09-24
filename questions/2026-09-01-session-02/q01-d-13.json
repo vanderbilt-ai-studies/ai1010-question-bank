@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-13",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "hallucination"
+  ],
+  "question": "How does the lecture reframe what people call a hallucination?",
+  "options": [
+    {
+      "text": "As the model doing exactly what it always does, in a case where the context did not contain the answer",
+      "weight": 100,
+      "feedback": "The same process produces every answer, right or wrong: a probable continuation drawn from the context and the fuzzy JPEG. When the context lacks the answer, the JPEG fills in something plausible, and that is what gets labeled a hallucination."
+    },
+    {
+      "text": "As a rare fault in the decoder stacks that better engineering will eventually remove",
+      "weight": 0,
+      "feedback": "That treats hallucination as a bug, which is what the lecture pushes back on. The stacks are working normally when the model is wrong; they are producing a plausible continuation, and no fix to the mechanism changes what it selects for."
+    },
+    {
+      "text": "As what happens when the model's fact database returns the wrong entry",
+      "weight": 0,
+      "feedback": "There is no fact database to return anything. The MLP (multi-layer perceptron) is a lossy JPEG of the world, and a wrong answer is the blurry part of that picture being read off as if it were sharp."
+    },
+    {
+      "text": "As a sign that the model was trained on false information",
+      "weight": 0,
+      "feedback": "A model can be wrong about something its training text got right, because the JPEG is fuzzy where a topic was rare. The wrongness comes from the mechanism producing something plausible without the answer in context, not from bad training data."
+    }
+  ]
+}

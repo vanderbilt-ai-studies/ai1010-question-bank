@@ -1,0 +1,34 @@
+{
+  "id": "q03-b-18",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "recurrent-depth"
+  ],
+  "question": "The lecture used the phrase 'a second bite of the apple' to describe what?",
+  "options": [
+    {
+      "text": "A student getting a second attempt at a quiz question.",
+      "weight": 0,
+      "feedback": "This phrase was used in the lecture about the architecture, not about quiz retakes."
+    },
+    {
+      "text": "A representation passing through the same decoder stack again, becoming further refined while staying stable.",
+      "weight": 100,
+      "feedback": "This matches the lecture: the phrase describes looping, where sending a stack's output back through itself gives the representation another pass to become more refined without losing stability."
+    },
+    {
+      "text": "A model being retrained from scratch on new data.",
+      "weight": 0,
+      "feedback": "Retraining from scratch is a much larger and different process than the extra inference-time pass the phrase describes."
+    },
+    {
+      "text": "Adding a second, completely separate model to check the first model's answer.",
+      "weight": 0,
+      "feedback": "The lecture describes one stack processing the same representation again, not a second, separate model reviewing the first model's work."
+    }
+  ]
+}

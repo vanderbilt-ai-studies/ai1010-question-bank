@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-14",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-structure",
+    "verification"
+  ],
+  "question": "Why should you ask the agent to identify the actual skill file instead of assuming a folder location?",
+  "options": [
+    {
+      "text": "The skill's location determines whether the model was trained",
+      "weight": 0,
+      "feedback": "Location concerns where the reusable package is stored. It does not turn editing instructions into training a model."
+    },
+    {
+      "text": "The location can differ across products and installations",
+      "weight": 100,
+      "feedback": "The notes describe project and personal skill directories and warn that locations depend on the setup. Identifying the actual file avoids relying on a guessed path."
+    },
+    {
+      "text": "The latest report contains the authoritative skill procedure",
+      "weight": 0,
+      "feedback": "A report is a result, while the skill file holds the procedure. Locate that actual instruction file and its supporting resources."
+    },
+    {
+      "text": "The file must be renamed each time its instructions are edited",
+      "weight": 0,
+      "feedback": "The editing workflow calls for saving with the intended filename. The reason to locate the file is variation in where skills are stored."
+    }
+  ]
+}

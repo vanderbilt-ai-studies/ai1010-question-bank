@@ -1,0 +1,34 @@
+{
+  "id": "q03-d-23",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "A student asked whether you have to explicitly tell an agent to use a particular skill, or whether it happens automatically. What was the answer?",
+  "options": [
+    {
+      "text": "A skill only ever loads when it is explicitly named by its exact file path",
+      "weight": 0,
+      "feedback": "Requiring an exact path would defeat the point of automatic matching. Loading turns on how closely a request matches the skill's name and description, not on typing a location."
+    },
+    {
+      "text": "Skills always require a human to approve loading them before every single use",
+      "weight": 0,
+      "feedback": "No per-use approval step was described. Automatic matching is exactly what lets a skill trigger without that kind of gatekeeping on every request."
+    },
+    {
+      "text": "It should load automatically when a request matches its name and description",
+      "weight": 100,
+      "feedback": "That match is the whole reason those two fields stay resident in context. You can also call a skill explicitly, often with a forward-slash command, but recognition is the normal path."
+    },
+    {
+      "text": "Automatic loading is impossible; every skill must be invoked with a slash command",
+      "weight": 0,
+      "feedback": "Explicit invocation is available as an option, not as the only route. Automatic loading on a close match was described as how a skill is normally reached."
+    }
+  ]
+}

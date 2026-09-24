@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-17",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "attention",
+    "context",
+    "class-demo"
+  ],
+  "question": "What mechanism does the lecture point to for why an earlier graded submission can bias the grading of a later one in the same chat conversation?",
+  "options": [
+    {
+      "text": "Attention -- everything said earlier in the conversation can influence what the model generates next",
+      "weight": 100,
+      "feedback": "The lecture ties this directly to attention: because a model draws on everything earlier in the conversation when producing new output, an earlier grading can shift how a later submission comes out, for better or worse."
+    },
+    {
+      "text": "Sampling randomness -- each grade differs slightly by chance",
+      "weight": 0,
+      "feedback": "Random sampling would produce small, undirected variation, not a systematic bias toward harsher or more lenient grading based on what came right before. The lecture points to context carrying forward, not chance."
+    },
+    {
+      "text": "Post-training -- the reinforcement-learning stage makes the model grade every submission identically",
+      "weight": 0,
+      "feedback": "Post-training shapes the model once, before any conversation happens; it cannot explain why grading drifts within a single ongoing chat. The bias described comes from what is currently in the conversation, not from training."
+    },
+    {
+      "text": "The harness -- providing files and memory lets the agent treat every submission identically",
+      "weight": 0,
+      "feedback": "This actually describes the fix, not the problem. A harness giving each submission a fresh subagent is what prevents this bias; it is not the cause of it."
+    }
+  ]
+}

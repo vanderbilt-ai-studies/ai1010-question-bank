@@ -1,0 +1,35 @@
+{
+  "id": "q03-a-01",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo",
+    "agent"
+  ],
+  "question": "What is seat-minder, the app the instructor demoed at the start of session 4?",
+  "options": [
+    {
+      "text": "A grading tool that scores lab reports against a rubric",
+      "weight": 0,
+      "feedback": "That is the grading-skill demo described later in the session, not seat-minder. Seat-minder handles check-in and cold-calling, not grading."
+    },
+    {
+      "text": "A scheduling tool for booking office hours",
+      "weight": 0,
+      "feedback": "Office-hours booking never comes up in the notes. Seat-minder is about in-class check-in and cold-calling, not appointment scheduling."
+    },
+    {
+      "text": "A check-in and cold-calling web app for the class",
+      "weight": 100,
+      "feedback": "Students scan a QR code and tap their seat to check in, and the app then lets the instructor see who is present, who has opted in to being called on, and pull up a photo and name before calling on someone."
+    },
+    {
+      "text": "A skill-editing tool for revising the lecture-notes skill",
+      "weight": 0,
+      "feedback": "Editing the lecture-notes skill was a separate part of the session, a different exercise from building seat-minder."
+    }
+  ]
+}

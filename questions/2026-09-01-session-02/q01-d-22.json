@@ -1,0 +1,35 @@
+{
+  "id": "q01-d-22",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "context",
+    "model-size"
+  ],
+  "question": "Making the model bigger was the field's whole strategy for several years, and the lecture says that is only half of it. What does it point to as the other half?",
+  "options": [
+    {
+      "text": "Faster hardware, so the models can run more stacks in less time",
+      "weight": 0,
+      "feedback": "Speed is not what the lecture points to; a faster model with the same fuzzy JPEG still produces the same plausible answers. The missing piece is what you give the model to work with."
+    },
+    {
+      "text": "Training only on facts that have been checked for accuracy",
+      "weight": 0,
+      "feedback": "Better training data would still leave a lossy compression that is blurry wherever a topic was rare. The lecture's remedy for wrong answers is not cleaner training but evidence placed in front of the model."
+    },
+    {
+      "text": "Adding more noise at the choice step so the models explore further",
+      "weight": 0,
+      "feedback": "Temperature gives variety between runs; it cannot supply anything the model does not know. The rest of the picture is about knowledge the model can draw on, not about the choice rule."
+    },
+    {
+      "text": "The context you give it, which attention can draw on directly",
+      "weight": 100,
+      "feedback": "Scaling took the field from GPT-3 to the first Claude models, but a bigger JPEG is still fuzzy somewhere. Attention can draw on anything in the context, so getting the right material there is where the course goes next."
+    }
+  ]
+}

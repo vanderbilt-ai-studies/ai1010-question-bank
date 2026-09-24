@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-08",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "tokenization"
+  ],
+  "question": "What happens at the token encoding stage of the pipeline?",
+  "options": [
+    {
+      "text": "Each token is placed at a location in a high-dimensional semantic space",
+      "weight": 0,
+      "feedback": "That is the token embedding stage, which comes next. Encoding happens first and is simpler: it only assigns each token an id number from the vocabulary."
+    },
+    {
+      "text": "The text is scrambled so that the company running the model cannot read it",
+      "weight": 0,
+      "feedback": "The word 'encoding' sounds like encryption, but it is not about secrecy. It is bookkeeping: each token is swapped for its number in a fixed vocabulary so the model has numbers to work with."
+    },
+    {
+      "text": "The model computes a probability for each possible next token",
+      "weight": 0,
+      "feedback": "Probabilities appear at the far right of the pipeline, after the decoder stacks. Encoding is the very first step after the context, before the model has done any thinking at all."
+    },
+    {
+      "text": "The text is cut into tokens, each with a vocabulary id number",
+      "weight": 100,
+      "feedback": "Deep learning models handle numbers and nothing else, so the first thing done to your text is to break it into tokens and look each one up in a fixed vocabulary. What comes out is a list of id numbers; meaning enters one step later, at the embedding stage."
+    }
+  ]
+}

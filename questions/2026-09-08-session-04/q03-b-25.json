@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-25",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "recurrent-depth",
+    "thinking-reasoning"
+  ],
+  "question": "Two models are given the same hard problem. Model A produces a much longer written chain-of-thought before answering. Model B produces a short visible answer but, per the addendum's description, unrolls a shared recurrent block to a greater depth internally before producing that answer. Which statement best matches the addendum?",
+  "options": [
+    {
+      "text": "Model B spends extra computation on a hidden representation; Model A spends it on visible text.",
+      "weight": 100,
+      "feedback": "These are two different ways of buying more computation at answer time: unrolling a shared block more times, or writing out a longer reasoning trace. The addendum contrasts them without ranking one above the other."
+    },
+    {
+      "text": "Model A must be less capable, since a long chain-of-thought signals confusion.",
+      "weight": 0,
+      "feedback": "Trace length is not offered as evidence of capability anywhere in the addendum. Writing more is simply one way to spend extra computation."
+    },
+    {
+      "text": "Model B is not using additional computation, since its visible answer is short.",
+      "weight": 0,
+      "feedback": "This is exactly the inference the addendum warns against. The extra work happens inside the repeated pass, so a short answer says nothing about how much computation went into it."
+    },
+    {
+      "text": "Both models use the same mechanism, just with different output lengths.",
+      "weight": 0,
+      "feedback": "Refining a latent representation and emitting more tokens are two distinct mechanisms in the addendum, not one mechanism producing different amounts of text."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q03-a-08",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo"
+  ],
+  "question": "Which technologies did seat-minder end up using, as described in the notes?",
+  "options": [
+    {
+      "text": "A Ruby on Rails application backed by a MySQL database",
+      "weight": 0,
+      "feedback": "Rails and MySQL appear nowhere in the notes; the stack described is JavaScript and Python over a Postgres-compatible database."
+    },
+    {
+      "text": "JavaScript and Python on Vercel, with a Postgres-compatible database",
+      "weight": 100,
+      "feedback": "That is the stack the notes describe (Neon for the database), and the agent picked it from stated requirements rather than having it dictated up front."
+    },
+    {
+      "text": "A no-code drag-and-drop site builder with no database behind it",
+      "weight": 0,
+      "feedback": "The notes describe a real database absorbing many simultaneous check-ins, which is exactly the work a database-free builder could not do."
+    },
+    {
+      "text": "A shared spreadsheet that every student in the room edits live",
+      "weight": 0,
+      "feedback": "No spreadsheet approach appears in the notes; seat-minder is a hosted web backend with its own database."
+    }
+  ]
+}

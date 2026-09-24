@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-14",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "decoder-stack",
+    "model-size"
+  ],
+  "question": "What did the lecture say about the number of decoder stacks in Astra specifically?",
+  "options": [
+    {
+      "text": "It has exactly 32 stacks, like the smaller reference model used in class.",
+      "weight": 0,
+      "feedback": "The 32-stack figure was given for a smaller reference model, to make the comparison concrete. It was not offered as a count for Astra."
+    },
+    {
+      "text": "The exact count is not public, though the lecture indicated there are a lot.",
+      "weight": 100,
+      "feedback": "The lecture was careful here: a frontier model of this size clearly has many stacks, but the actual number has not been disclosed, so any specific figure would be a guess."
+    },
+    {
+      "text": "It has fewer stacks than smaller models, since looping replaces depth.",
+      "weight": 0,
+      "feedback": "Looping and stack count are two distinct levers in the notes, not substitutes for each other. Nothing suggests a frontier model has fewer stacks than a smaller one."
+    },
+    {
+      "text": "It has 16 stacks, matching the smallest model tier mentioned.",
+      "weight": 0,
+      "feedback": "Sixteen came up as a plausible count for a smaller model, not as a figure for Astra, whose count the lecture says is not public."
+    }
+  ]
+}

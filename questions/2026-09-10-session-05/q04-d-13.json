@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-13",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "Why should you keep inputs and relevant settings similar in runs with and without a skill?",
+  "options": [
+    {
+      "text": "To ensure that both runs produce exactly the same wording",
+      "weight": 0,
+      "feedback": "The purpose is to compare performance, not force identical text. Different wording can meet the same quality criteria."
+    },
+    {
+      "text": "To replace a comparison of quality with a comparison of answer length",
+      "weight": 0,
+      "feedback": "Similar conditions help you interpret performance, but output length does not replace defined task-specific quality criteria."
+    },
+    {
+      "text": "To let successful installation serve as evidence that the skill improves quality",
+      "weight": 0,
+      "feedback": "Installation makes the skill available. Comparable runs still require inspecting actual outputs to evaluate improvement."
+    },
+    {
+      "text": "To make differences more informative about the skill",
+      "weight": 100,
+      "feedback": "When the task and conditions are comparable, observed changes provide better evidence about the added guidance."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-19",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "attention",
+    "activation-space"
+  ],
+  "question": "Why is literally averaging English words a misleading description of attention?",
+  "options": [
+    {
+      "text": "Attention combines final answers after the model selects them",
+      "weight": 0,
+      "feedback": "Attention operates inside the transformer blocks. It helps shape representations before next-token selection near the output."
+    },
+    {
+      "text": "Attention combines source-code rules written for each meaning",
+      "weight": 0,
+      "feedback": "The relevant inputs are numerical representations. There need not be a hand-written rule for each interpretation a model develops."
+    },
+    {
+      "text": "Attention combines transformed numerical representations",
+      "weight": 100,
+      "feedback": "The words help you picture the process, but the mechanism works on numerical representations. The notes describe weighted combinations of those transformed representations."
+    },
+    {
+      "text": "Attention combines written definitions retrieved from a database",
+      "weight": 0,
+      "feedback": "This replaces one literal word-based picture with another. The computation operates on representations, not retrieved dictionary prose."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-02",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "training-vs-inference",
+    "parameter"
+  ],
+  "question": "Which change characterizes model training?",
+  "options": [
+    {
+      "text": "Transforming representations for the current input",
+      "weight": 0,
+      "feedback": "Intermediate representations change as a model processes input during inference too. Training is distinguished by updates to learned parameters."
+    },
+    {
+      "text": "Updating learned parameter values",
+      "weight": 100,
+      "feedback": "Training uses a learning objective and updates parameters. These weight changes distinguish it from an ordinary forward run."
+    },
+    {
+      "text": "Extending the current conversation history",
+      "weight": 0,
+      "feedback": "A conversation can grow during inference. More history is not by itself evidence that the model weights changed."
+    },
+    {
+      "text": "Producing the next response for the user",
+      "weight": 0,
+      "feedback": "Producing a response is an inference activity. Training additionally uses a learning process to change parameters."
+    }
+  ]
+}

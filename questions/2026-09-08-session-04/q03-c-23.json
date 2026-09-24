@@ -1,0 +1,37 @@
+{
+  "id": "q03-c-23",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "harness",
+    "memory",
+    "file-system",
+    "agent-skill"
+  ],
+  "question": "Per the lecture, what four things does a harness add to a raw model, using the 'no pencils or pens' fix as the frame?",
+  "options": [
+    {
+      "text": "A rubric, a grading skill, a subagent, and a database",
+      "weight": 0,
+      "feedback": "These are specific tools used in the grading demo, not the general list of four things the lecture says a harness supplies to any model."
+    },
+    {
+      "text": "A bigger context window, more parameters, faster inference, and a larger vocabulary",
+      "weight": 0,
+      "feedback": "These are properties of model scale and speed, not the externalized capabilities the lecture lists. A harness adds things outside the model, not changes to the model itself."
+    },
+    {
+      "text": "A file system, persistent memory, task tracking, and skills",
+      "weight": 100,
+      "feedback": "These are the four things the lecture lists as what a harness supplies -- exactly the kind of externalized notes and tools the student in the pencils-and-pens analogy is denied."
+    },
+    {
+      "text": "A screenshot loop, a click function, a type function, and a wait function",
+      "weight": 0,
+      "feedback": "These describe the computer-use loop specifically, not the general list of harness additions. Computer use is one capability a harness can enable, not the four things being asked about here."
+    }
+  ]
+}

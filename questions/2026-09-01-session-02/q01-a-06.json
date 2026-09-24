@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-06",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "transformer-pipeline"
+  ],
+  "question": "Reading the decoder transformer pipeline from left to right, what is the correct order of the stages?",
+  "options": [
+    {
+      "text": "Context, token encodings, token embeddings, decoder stacks, token probabilities, next word prediction",
+      "weight": 100,
+      "feedback": "Text goes in as context, becomes numbers, becomes locations in semantic space, passes through the stacks, comes out as a probability for every token, and one token is chosen. Every stage feeds the next."
+    },
+    {
+      "text": "Context, token embeddings, token encodings, decoder stacks, token probabilities, next word prediction",
+      "weight": 0,
+      "feedback": "Encoding and embedding are easy to swap because both turn tokens into numbers. But a token has to be given its vocabulary number (encoding) before that number can be mapped to a location in semantic space (embedding)."
+    },
+    {
+      "text": "Context, decoder stacks, token encodings, token embeddings, token probabilities, next word prediction",
+      "weight": 0,
+      "feedback": "The decoder stacks are the heart of the model, so it is tempting to put them right after the input. But they can only work on numbers, so the text must be encoded and embedded first."
+    },
+    {
+      "text": "Context, token encodings, token embeddings, token probabilities, decoder stacks, next word prediction",
+      "weight": 0,
+      "feedback": "Probabilities are the output of the decoder stacks, not the input to them. The stacks refine the embeddings; only after the last stack does the model produce a probability for every token."
+    }
+  ]
+}

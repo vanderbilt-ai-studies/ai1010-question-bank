@@ -1,0 +1,36 @@
+{
+  "id": "q03-a-09",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "agent",
+    "task-specification",
+    "class-demo"
+  ],
+  "question": "Who actually chose seat-minder's technology stack (JavaScript, Python, Vercel, Neon)?",
+  "options": [
+    {
+      "text": "The agent, working from the requirements it was given",
+      "weight": 100,
+      "feedback": "The notes credit the agent with the choice: requirements such as running on Vercel and needing a database of a particular kind were supplied, and the agent selected the technologies to satisfy them."
+    },
+    {
+      "text": "A committee of teaching assistants who reviewed several options",
+      "weight": 0,
+      "feedback": "No committee or teaching-assistant review of the stack appears in the notes; the choice is attributed to the agent."
+    },
+    {
+      "text": "The instructor, from years of experience with each technology",
+      "weight": 0,
+      "feedback": "The notes contrast exactly this: requirements were given rather than every technology being personally known, and that is part of why the build moved so fast."
+    },
+    {
+      "text": "Vanderbilt's IT department, following a mandated technology list",
+      "weight": 0,
+      "feedback": "No institutional mandate is mentioned. The technologies follow from the requirements the agent was working to."
+    }
+  ]
+}

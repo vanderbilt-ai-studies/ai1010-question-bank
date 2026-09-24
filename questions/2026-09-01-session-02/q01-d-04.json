@@ -1,0 +1,36 @@
+{
+  "id": "q01-d-04",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "probability-distribution-over-tokens",
+    "attention",
+    "mlp"
+  ],
+  "question": "Given the context \"She looked across the board and said triumphantly, 'King ...'\", why does the model give \"me\" far more probability than \"cat\"?",
+  "options": [
+    {
+      "text": "Because \"me\" is a more frequent word than \"cat\" in English as a whole",
+      "weight": 0,
+      "feedback": "Raw frequency is what the model would fall back on with no context at all. Here the context has done its work: by the last stack the representation has been moved to a place where a winner in checkers is speaking, and that, not frequency, is what lifts \"me.\""
+    },
+    {
+      "text": "Because the model stores \"King me\" as a fixed phrase and retrieves it",
+      "weight": 0,
+      "feedback": "That is the database picture, and the lecture rules it out. Nothing is stored as words to be retrieved; the MLP (multi-layer perceptron) is a fuzzy JPEG that nudges an embedding, and the probabilities are computed fresh from the contextualized representation."
+    },
+    {
+      "text": "Because the representation now carries that this is a checkers verb spoken by a winner",
+      "weight": 100,
+      "feedback": "Attention moved \"king\" out of monarch-space using \"board\" and \"triumphantly,\" and the MLP (multi-layer perceptron) added that this is checkers and a winner speaks. The probability for \"me\" is what that fully contextualized representation yields."
+    },
+    {
+      "text": "Because \"cat\" is not one of the tokens in the model's vocabulary",
+      "weight": 0,
+      "feedback": "\"Cat\" is certainly in the vocabulary of any model trained on English. It receives a probability like every token; the point is that the probability is essentially zero, not that the token is missing."
+    }
+  ]
+}

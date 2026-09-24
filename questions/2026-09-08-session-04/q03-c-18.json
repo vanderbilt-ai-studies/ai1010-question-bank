@@ -1,0 +1,35 @@
+{
+  "id": "q03-c-18",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "subagent",
+    "class-demo"
+  ],
+  "question": "The demo mentions copying and pasting each submission into a brand-new chat, one at a time, as a way to avoid the context-bleeding problem from grading in one long conversation. Why does the lecture call this 'not terrifically repeatable'?",
+  "options": [
+    {
+      "text": "Because each new chat costs significantly more money to run than one long conversation",
+      "weight": 0,
+      "feedback": "Cost is not the reason given. The concern raised is about the practicality of the manual process itself, not about price."
+    },
+    {
+      "text": "Because doing this by hand for well over a hundred submissions does not scale",
+      "weight": 100,
+      "feedback": "The lecture notes the course has well over a hundred submissions at a time; manually starting a fresh chat and re-pasting the rubric for each one is possible but tedious enough that it is not a realistic routine at that scale."
+    },
+    {
+      "text": "Because a brand-new chat cannot be given the rubric at all",
+      "weight": 0,
+      "feedback": "A new chat can absolutely be given the rubric by pasting it in again -- that is exactly the manual step being described. The limitation is the effort of doing it by hand, not an inability to include the rubric."
+    },
+    {
+      "text": "Because the course's learning platform does not allow more than one browser tab open at a time",
+      "weight": 0,
+      "feedback": "This is not a constraint mentioned anywhere in the lecture. The repeatability problem is about manual effort at scale, not a platform restriction."
+    }
+  ]
+}

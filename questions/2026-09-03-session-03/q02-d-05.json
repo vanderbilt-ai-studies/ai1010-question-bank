@@ -1,0 +1,35 @@
+{
+  "id": "q02-d-05",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "inference-speed",
+    "context"
+  ],
+  "question": "When you first submit a large context to a model, how is that context handled?",
+  "options": [
+    {
+      "text": "Strictly one token at a time, in the order you typed it",
+      "weight": 0,
+      "feedback": "That describes generation, not intake. Your context is already complete when it arrives, so there is nothing to wait for and the model does not have to walk it in sequence."
+    },
+    {
+      "text": "In chunks, with each chunk finished before the next one starts",
+      "weight": 0,
+      "feedback": "Staging it that way would still make one part of your context wait on another, and that waiting is what makes generation slow. Because the whole context is present from the start, much of the work over it can go on at the same time."
+    },
+    {
+      "text": "Token by token, but faster than generation because nothing is written to the screen",
+      "weight": 0,
+      "feedback": "Display is not the bottleneck. Generation is slow because each token depends on the one before it -- and that dependency simply does not exist for text you have already supplied."
+    },
+    {
+      "text": "Largely in parallel, since it arrives all at once",
+      "weight": 100,
+      "feedback": "The whole context is available up front, so the work over it can be spread out rather than serialized. That is why pasting a long document costs surprisingly little time compared with waiting for a long answer."
+    }
+  ]
+}

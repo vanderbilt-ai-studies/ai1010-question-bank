@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-08",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "agent-skill",
+    "skill-structure"
+  ],
+  "question": "In a lecture-notes workflow, what role do the newly created notes play?",
+  "options": [
+    {
+      "text": "The procedure that replaces future instructions",
+      "weight": 0,
+      "feedback": "One finished set of notes contains a particular lecture's content. It does not replace instructions for processing other lectures."
+    },
+    {
+      "text": "The metadata used to discover every skill",
+      "weight": 0,
+      "feedback": "Discovery uses short skill descriptions. Newly created notes are the product of an already selected workflow."
+    },
+    {
+      "text": "The source transcript supplied before the run",
+      "weight": 0,
+      "feedback": "The transcript is an input. The newly written notes are what the procedure produces from that input."
+    },
+    {
+      "text": "Output from this particular run",
+      "weight": 100,
+      "feedback": "The notes are the result of applying a reusable procedure to the current lecture material."
+    }
+  ]
+}

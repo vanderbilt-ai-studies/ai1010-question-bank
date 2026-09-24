@@ -1,0 +1,36 @@
+{
+  "id": "q02-a-20",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-selection",
+    "cost-and-usage",
+    "course-logistics"
+  ],
+  "question": "Why does the weekend exercise ask you to give all four tiers the same problem, rather than a different problem to each?",
+  "options": [
+    {
+      "text": "Because a tier can only be judged on a problem chosen to suit its size.",
+      "weight": 0,
+      "feedback": "There is no per-tier problem type. Tiers differ in degree rather than kind, which is exactly why one shared problem is the right test."
+    },
+    {
+      "text": "Because four different problems would cost four times the usage credits.",
+      "weight": 0,
+      "feedback": "Cost is a reason to run Fable last, not a reason to reuse the problem. Four different problems would simply leave you with nothing to compare."
+    },
+    {
+      "text": "Because holding the problem fixed shows you what size changes.",
+      "weight": 100,
+      "feedback": "If the problem changes with the model, you cannot tell whether a better answer came from the tier or from an easier question. Fixing it isolates the one thing you are studying."
+    },
+    {
+      "text": "Because the four tiers share a cache, so a repeated problem runs faster.",
+      "weight": 0,
+      "feedback": "Nothing is shared between tiers that way, and a repeat would not speed anything up. The reason for one problem is comparison, not speed."
+    }
+  ]
+}

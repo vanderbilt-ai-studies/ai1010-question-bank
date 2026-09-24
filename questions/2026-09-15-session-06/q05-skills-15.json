@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-15",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "verification"
+  ],
+  "question": "Why does an agent's message saying it created a complete file provide weaker evidence than inspecting the file?",
+  "options": [
+    {
+      "text": "The message changes the task requirements after execution",
+      "weight": 0,
+      "feedback": "A completion message describes claimed success. The issue is whether the actual artifact satisfies the existing requirements, rather than whether the message creates new ones."
+    },
+    {
+      "text": "The message determines the output format more reliably",
+      "weight": 0,
+      "feedback": "A message may describe a format, but opening the output lets you verify the artifact itself rather than relying on that description."
+    },
+    {
+      "text": "The message reports success without showing the full artifact",
+      "weight": 100,
+      "feedback": "A success claim does not establish that the complete artifact exists in the correct place. Inspect its contents and verify the intended version and location."
+    },
+    {
+      "text": "The message confirms that every packaged component is the intended version",
+      "weight": 0,
+      "feedback": "A claim of completion does not verify which versions are in the artifact. Open the file and inspect the included materials."
+    }
+  ]
+}

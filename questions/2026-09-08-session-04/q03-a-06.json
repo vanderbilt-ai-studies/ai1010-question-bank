@@ -1,0 +1,34 @@
+{
+  "id": "q03-a-06",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo"
+  ],
+  "question": "A student has now missed more than one class session in a row. Based on how seat-minder's attendance tracking is described in the notes, what should happen next?",
+  "options": [
+    {
+      "text": "The student is automatically dropped from the course roster",
+      "weight": 0,
+      "feedback": "No automatic drop appears in the notes. The consequence described is a personal follow-up, not an administrative action."
+    },
+    {
+      "text": "Nothing in particular, since seat-minder only records who is present each day",
+      "weight": 0,
+      "feedback": "Attendance is recorded through seat-minder precisely so a pattern like this surfaces, rather than being logged and then left alone."
+    },
+    {
+      "text": "The student's seat is reassigned to someone else for the rest of the semester",
+      "weight": 0,
+      "feedback": "The airline-style model lets you keep your seat or pick a new one each class, so no seat is taken away over absences."
+    },
+    {
+      "text": "The instructor follows up with that student personally",
+      "weight": 100,
+      "feedback": "The notes say a no-show over more than one class period triggers a personal follow-up, which is part of why attendance is being recorded this way this semester."
+    }
+  ]
+}

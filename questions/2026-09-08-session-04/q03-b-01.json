@@ -1,0 +1,36 @@
+{
+  "id": "q03-b-01",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "post-training",
+    "thinking-budget",
+    "thinking-reasoning"
+  ],
+  "question": "The lecture offered two explanations for why even a very capable model like Opus 5 resists having its thinking turned off. What was the first explanation?",
+  "options": [
+    {
+      "text": "Its post-training likely leaned on reasoning traces from a strongly reasoning-oriented predecessor model.",
+      "weight": 100,
+      "feedback": "This is the training-shapes-voice explanation: if a model learned its style and its standard for a good answer from another model's reasoning-heavy output, dropping reasoning can cost both the quality and the voice that training built in. The lecture offered this as the instructor's own reading, not a vendor disclosure."
+    },
+    {
+      "text": "Its vendor documentation reportedly forbids disabling reasoning for legal reasons.",
+      "weight": 0,
+      "feedback": "No such documentation appears in the notes. Both explanations in the lecture were offered as the instructor's own reading of the situation rather than anything the model's maker had published."
+    },
+    {
+      "text": "Its attention mechanism probably cannot run without a reasoning step between tokens.",
+      "weight": 0,
+      "feedback": "Mechanically nothing about token-by-token generation changes when reasoning is on or off -- the model still produces tokens the same way it always does. Reasoning is a mode that post-training adds, not something attention requires."
+    },
+    {
+      "text": "Its pre-training data apparently excluded examples of answering without reasoning.",
+      "weight": 0,
+      "feedback": "This puts the explanation in the wrong stage. The lecture's point was about post-training -- what kind of reasoning traces shaped the model's later behavior -- not about what pre-training contained."
+    }
+  ]
+}

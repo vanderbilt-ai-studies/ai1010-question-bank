@@ -1,0 +1,35 @@
+{
+  "id": "example-fib",
+  "type": "FIB",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "decoder-stack",
+    "attention",
+    "mlp"
+  ],
+  "question": "Each decoder stack has two parts: {{1}} runs first, then the {{2}}.",
+  "blanks": [
+    {
+      "accepted": [
+        {
+          "text": "attention"
+        }
+      ]
+    },
+    {
+      "accepted": [
+        {
+          "text": "MLP"
+        },
+        {
+          "text": "multi-layer perceptron"
+        },
+        {
+          "text": "feed-forward network"
+        }
+      ]
+    }
+  ],
+  "feedback": "Attention first brings in information from the rest of the context; the MLP (multi-layer perceptron) then applies learned knowledge to the result."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-16",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "context",
+    "attention",
+    "class-demo"
+  ],
+  "question": "In the demo's second attempt, pasting the rubric helped, but grading a second student's submission in the same chat conversation introduced a new problem. What was it?",
+  "options": [
+    {
+      "text": "The rubric had to be pasted in again before every new submission",
+      "weight": 0,
+      "feedback": "That is not the problem identified -- the rubric stayed in context. The issue was what else stayed in context alongside it, namely the first grading."
+    },
+    {
+      "text": "The chat session ran out of room to hold the rubric and submissions",
+      "weight": 0,
+      "feedback": "Running out of space is not the failure described. The problem was the content that carried forward, not capacity."
+    },
+    {
+      "text": "The model forgot the rubric once it had finished the first submission",
+      "weight": 0,
+      "feedback": "The rubric was still available. What also stayed available was the first submission's grade and comments, and that is what shifted the second result."
+    },
+    {
+      "text": "The first grading stayed in context, so the second was judged partly against it",
+      "weight": 100,
+      "feedback": "Everything earlier in a chat can influence what comes next, so a submission graded right after another is no longer judged purely on its own merits -- it can come out harsher or more lenient because of what preceded it."
+    }
+  ]
+}

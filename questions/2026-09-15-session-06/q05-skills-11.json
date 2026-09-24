@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-11",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-structure",
+    "verification"
+  ],
+  "question": "Why is seeing Markdown-style headings in an editor insufficient to confirm that a skill file was saved properly?",
+  "options": [
+    {
+      "text": "Typing Markdown headings automatically changes the saved format",
+      "weight": 0,
+      "feedback": "Visible heading syntax does not establish the actual file format. A document can look like Markdown while still being saved as rich text."
+    },
+    {
+      "text": "Changing the filename also converts rich text into plain text",
+      "weight": 0,
+      "feedback": "The filename and saved format are separate checks. A .md name does not by itself convert rich-text contents."
+    },
+    {
+      "text": "The saved format or filename may still be wrong",
+      "weight": 100,
+      "feedback": "Appearance does not establish the saved file type. Check for plain-text Markdown and the intended filename before testing the skill."
+    },
+    {
+      "text": "Opening a file in an editor establishes that the agent can use it",
+      "weight": 0,
+      "feedback": "An editor can display a document without proving it is saved as the intended skill file. Check the format and name, then test the result."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-09",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "What information initially helps an agent choose a relevant skill from a catalog?",
+  "options": [
+    {
+      "text": "The catalog names and short descriptions",
+      "weight": 100,
+      "feedback": "These give the agent an initial account of each skill's purpose and applicability before loading detailed instructions."
+    },
+    {
+      "text": "The full procedure of every installed skill",
+      "weight": 0,
+      "feedback": "The detailed procedure is loaded after a skill is selected. Requiring every complete procedure would defeat staged loading."
+    },
+    {
+      "text": "A ranking by when the skills were installed",
+      "weight": 0,
+      "feedback": "Installation order does not establish whether a procedure fits the requested work. The description supplies relevance information."
+    },
+    {
+      "text": "The largest collection of bundled examples",
+      "weight": 0,
+      "feedback": "Many examples may help a procedure, but their number does not identify whether its purpose matches the task."
+    }
+  ]
+}

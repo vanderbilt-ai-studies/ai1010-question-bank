@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-16",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "verification",
+    "skill-evaluation"
+  ],
+  "question": "Why should you check which skill version is included when an agent packages your work?",
+  "options": [
+    {
+      "text": "A skill version establishes whether the model has more parameters",
+      "weight": 0,
+      "feedback": "Skill versions concern changes to instructions and resources. They are not versions of the model's learned parameter arrays."
+    },
+    {
+      "text": "A skill version determines whether the output needs inspection",
+      "weight": 0,
+      "feedback": "The verification habit applies to the actual output regardless of the version label. A label cannot substitute for checking its contents."
+    },
+    {
+      "text": "A skill version replaces the need to state required contents",
+      "weight": 0,
+      "feedback": "A version can identify intended guidance, but the agent still needs the required contents and output format when assembling the deliverable."
+    },
+    {
+      "text": "A readable package may include an outdated procedure",
+      "weight": 100,
+      "feedback": "Readability does not establish that the intended materials were gathered. The notes specifically call for checking explanations, results, and intended skill versions."
+    }
+  ]
+}

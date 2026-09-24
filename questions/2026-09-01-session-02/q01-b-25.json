@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-25",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "token-embedding",
+    "attention"
+  ],
+  "question": "A student reads \"She looked across the board and said, triumphantly, 'King me'\" and says the embedding for \"king\" must already encode the checkers meaning, since the model gets the sentence right. Which idea from the lecture corrects this?",
+  "options": [
+    {
+      "text": "The embedding for \"king\" holds every possible sense, and the app selects the right one",
+      "weight": 0,
+      "feedback": "An embedding is one location, not a bundle of senses. And no app does the selecting; the shift toward the checkers meaning happens inside the model, after the embedding."
+    },
+    {
+      "text": "The tokenizer gives \"king\" a different token when it is used as a verb",
+      "weight": 0,
+      "feedback": "Tokenization works on spelling, not on grammatical role. \"King\" is the same token in both sentences, and so it starts with the same embedding."
+    },
+    {
+      "text": "The embedding is only a first guess, fixed before the surrounding words have any effect",
+      "weight": 100,
+      "feedback": "On its own, \"king\" lands among monarchs and crowns, and that is where the embedding puts it in this sentence too. Getting to the checkers meaning takes the rest of the model, working from the surrounding words."
+    },
+    {
+      "text": "The model looked up \"king me\" in a stored list of idioms",
+      "weight": 0,
+      "feedback": "There is no list of idioms. Meaning is a location, and the model gets to the checkers reading by moving that location, not by matching a phrase against a table."
+    }
+  ]
+}

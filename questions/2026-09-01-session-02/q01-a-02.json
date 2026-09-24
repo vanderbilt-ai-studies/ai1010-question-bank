@@ -1,0 +1,34 @@
+{
+  "id": "q01-a-02",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "ai-history"
+  ],
+  "question": "Logistic regression and random forests were given in the lecture as examples of which era of AI (artificial intelligence)?",
+  "options": [
+    {
+      "text": "Expert systems",
+      "weight": 0,
+      "feedback": "Expert systems encode rules written by human specialists, while logistic regression and random forests fit themselves to data. Both come before deep learning, which is why they are easy to blur together."
+    },
+    {
+      "text": "Machine learning",
+      "weight": 100,
+      "feedback": "These are classic machine learning methods: instead of hand-writing rules, you hand the algorithm data and let it fit a model. The lecture placed them in the era just before deep learning."
+    },
+    {
+      "text": "Deep learning",
+      "weight": 0,
+      "feedback": "Deep learning means many-layered neural networks such as convolutional and recurrent nets. Random forests and logistic regression learn from data too, but they are not neural networks, and the lecture kept them in the earlier era."
+    },
+    {
+      "text": "General problem solvers",
+      "weight": 0,
+      "feedback": "General problem solvers were the earliest idea of AI, programs that tried to reason through any problem. They did not learn from data at all, which is exactly what logistic regression and random forests do."
+    }
+  ]
+}

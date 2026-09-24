@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-24",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-sharing",
+    "permissions-and-safety"
+  ],
+  "question": "You receive an unfamiliar shared skill that includes executable scripts and asks for file access. What should you do before running it?",
+  "options": [
+    {
+      "text": "Grant the requested access because shared instructions provide a secure sandbox",
+      "weight": 0,
+      "feedback": "Instructions do not create a secure sandbox. Review the source, scripts, and requested access before use."
+    },
+    {
+      "text": "Read only the output examples because successful examples establish code safety",
+      "weight": 0,
+      "feedback": "Examples illustrate possible results but do not establish what included code does or where it came from."
+    },
+    {
+      "text": "Review its source, script behavior, and requested access",
+      "weight": 100,
+      "feedback": "A skill can include ordinary executable code. Understanding its origin and operations helps you assess what you are installing."
+    },
+    {
+      "text": "Assume the scripts are harmless because their folder uses a compatible format",
+      "weight": 0,
+      "feedback": "Format compatibility concerns organization, not the behavior of executable code or the trustworthiness of its source."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-13",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "model-size",
+    "decoder-stack"
+  ],
+  "question": "What second lever for model size did today's session add, beyond width?",
+  "options": [
+    {
+      "text": "More decoder stacks, making the same pipeline longer.",
+      "weight": 100,
+      "feedback": "Depth is the lever added today: the same attention-then-multi-layer-perceptron block repeated more times, rather than each block being made wider."
+    },
+    {
+      "text": "A larger vocabulary of possible output tokens.",
+      "weight": 0,
+      "feedback": "Vocabulary size sets what tokens the model can emit. It is not one of the two levers the lecture discusses for making a model tier larger."
+    },
+    {
+      "text": "A higher maximum context window length.",
+      "weight": 0,
+      "feedback": "Context window is how much text the model can hold at once, a separate property from how many decoder stacks the pipeline contains."
+    },
+    {
+      "text": "Replacing the MLP (multi-layer perceptron) with a lookup database.",
+      "weight": 0,
+      "feedback": "The MLP still carries what the model learned in training, and nothing gets looked up in a database. The lever the lecture adds here is the number of decoder stacks."
+    }
+  ]
+}

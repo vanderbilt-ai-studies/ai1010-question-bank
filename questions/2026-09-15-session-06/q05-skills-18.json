@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-18",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-structure",
+    "verification"
+  ],
+  "question": "Your edited instructions look right in a text editor, but the saved file is named SKILL.md.txt. What is the best next step?",
+  "options": [
+    {
+      "text": "Remove the extra extension and assume the file is ready",
+      "weight": 0,
+      "feedback": "Fixing the name addresses one concern. The notes also call for confirming plain-text format and testing the intended skill."
+    },
+    {
+      "text": "Check the name and plain-text format, then test",
+      "weight": 100,
+      "feedback": "The actual file must have the intended name and format. A test then checks whether the edited instructions function as intended."
+    },
+    {
+      "text": "Save it as rich text while giving it the intended name",
+      "weight": 0,
+      "feedback": "The correct name does not make rich-text contents plain-text Markdown. Both the name and the format matter."
+    },
+    {
+      "text": "Confirm the instructions look right and accept the saved copy",
+      "weight": 0,
+      "feedback": "Visual inspection of the wording does not resolve the extra extension or establish the saved format. Check the actual file and test it."
+    }
+  ]
+}

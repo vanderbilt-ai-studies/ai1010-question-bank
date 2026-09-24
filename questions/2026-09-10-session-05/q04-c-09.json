@@ -1,0 +1,34 @@
+{
+  "id": "q04-c-09",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification"
+  ],
+  "question": "What should a support workflow check after applying a repair?",
+  "options": [
+    {
+      "text": "The affected object and its requested behavior.",
+      "weight": 100,
+      "feedback": "Read back what changed and check the behavior the user needed. This establishes more than the fact that an operation was attempted."
+    },
+    {
+      "text": "The wording of the original repair request alone.",
+      "weight": 0,
+      "feedback": "The request identifies the desired result but does not show the current state. Verification requires observing the affected object."
+    },
+    {
+      "text": "The confidence of the agent that proposed the repair.",
+      "weight": 0,
+      "feedback": "Confidence is generated output, not evidence of the repair. Check the actual saved result and behavior."
+    },
+    {
+      "text": "The success record of the same repair on a prior case.",
+      "weight": 0,
+      "feedback": "A documented case helps select a procedure, but its past success does not establish the current result. Read back the object changed in this run."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-b-21",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure",
+    "agent-skill"
+  ],
+  "question": "You are building a notes skill for repeated use. You have one lecture transcript and instructions for processing any lecture. How should you organize them?",
+  "options": [
+    {
+      "text": "Keep the procedure in SKILL.md and the transcript with its task",
+      "weight": 100,
+      "feedback": "The procedure is reusable expertise, while the transcript is the changing input for a particular run."
+    },
+    {
+      "text": "Put the transcript in SKILL.md and the procedure in the output notes",
+      "weight": 0,
+      "feedback": "This reverses the roles: source content would replace the reusable instructions, while the method would be buried in one result."
+    },
+    {
+      "text": "Put both in the description so selection also supplies every detail",
+      "weight": 0,
+      "feedback": "The description should summarize outcome and applicability. Full instructions and current source material belong in their own roles."
+    },
+    {
+      "text": "Put both in assets as blank templates for all future lecture tasks",
+      "weight": 0,
+      "feedback": "A transcript is a completed source, not a blank template, and procedural instructions belong in the main skill file."
+    }
+  ]
+}

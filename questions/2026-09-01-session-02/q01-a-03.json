@@ -1,0 +1,35 @@
+{
+  "id": "q01-a-03",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "ai-history",
+    "model-size"
+  ],
+  "question": "The transformer was introduced in 2017. How does that architecture relate to the chat models you use today?",
+  "options": [
+    {
+      "text": "It has been replaced by a newer architecture designed for chat",
+      "weight": 0,
+      "feedback": "It feels as though something so much better must have replaced a 2017 design, but the lecture's point was the opposite: the architecture has not changed. What changed is how big it is and how much text it is trained on."
+    },
+    {
+      "text": "It survives only as the part of the model that handles grammar",
+      "weight": 0,
+      "feedback": "The transformer is the whole model, not one component inside it. The pipeline you saw, from context to next token, is the transformer end to end."
+    },
+    {
+      "text": "It is the same architecture, scaled up",
+      "weight": 100,
+      "feedback": "Today's models are the 2017 design made much bigger and trained on trillions of words instead of a million. That is why one pipeline diagram describes Claude, ChatGPT, and Gemini alike."
+    },
+    {
+      "text": "It is the same architecture, retrained yearly on the same amount of text",
+      "weight": 0,
+      "feedback": "The architecture is indeed the same, but the scale is not. The lecture stressed that training went from about a million words to trillions, and the models themselves grew along with it."
+    }
+  ]
+}

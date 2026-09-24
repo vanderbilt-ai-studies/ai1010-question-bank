@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-22",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "permissions-and-safety",
+    "verification"
+  ],
+  "question": "An agent can read your project but lacks permission to modify it. It proposes a useful edit. What follows?",
+  "options": [
+    {
+      "text": "The read permission also permits the proposed modification",
+      "weight": 0,
+      "feedback": "Reading and changing files require the relevant access. The scenario explicitly says the agent lacks permission to modify the project."
+    },
+    {
+      "text": "The suggestion does not change the project file",
+      "weight": 100,
+      "feedback": "A model can describe a useful edit without executing it. Reading access and a proposal do not establish a completed modification."
+    },
+    {
+      "text": "The value of the edit supplies the missing permission",
+      "weight": 0,
+      "feedback": "A model's judgment that an action is useful does not grant write access. The surrounding controls determine permitted execution."
+    },
+    {
+      "text": "The skill can write the edit using its instructions",
+      "weight": 0,
+      "feedback": "The skill can guide an editing procedure. Its instructions do not perform the file operation or supply the missing write permission."
+    }
+  ]
+}

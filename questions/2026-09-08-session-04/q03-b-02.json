@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-02",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "thinking-budget",
+    "agent"
+  ],
+  "question": "What was the lecture's second explanation for why a model like Opus 5 might resist turning off reasoning?",
+  "options": [
+    {
+      "text": "Without reasoning it would have no way to reach the knowledge stored in its weights.",
+      "weight": 0,
+      "feedback": "Knowledge lives in the weights and is available on every pass, reasoning or not. Reasoning changes whether the model can lay out and compare candidate answers before committing, not whether it can reach what it learned."
+    },
+    {
+      "text": "It is built to run inside a harness as an agent on long, multi-step tasks.",
+      "weight": 100,
+      "feedback": "A model meant to work as an agent for hours at a stretch benefits from having reasoning available throughout. That is a different design goal from a chat product optimized for the fastest possible reply, which would trade the other way."
+    },
+    {
+      "text": "Turning reasoning off would exceed the model's maximum context window.",
+      "weight": 0,
+      "feedback": "The notes do not connect reasoning availability to context window size. A context window limits how much text the model can hold at once, not whether it reasons before answering."
+    },
+    {
+      "text": "Its weights cannot produce output without an internal looping pass.",
+      "weight": 0,
+      "feedback": "This borrows the looped-transformer idea from later in the session, which is about refining a representation inside a stack. The notes never link looping to why reasoning stays on."
+    }
+  ]
+}

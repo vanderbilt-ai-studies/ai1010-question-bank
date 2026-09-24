@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-06",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "context-management",
+    "memory"
+  ],
+  "question": "Which information belongs in a compact working record for an unfinished project?",
+  "options": [
+    {
+      "text": "The preferred output style and unrelated personal examples.",
+      "weight": 0,
+      "feedback": "A recurring style preference can be useful, but it does not tell you what happened in this project or what remains to do."
+    },
+    {
+      "text": "Goals, decisions, progress, issues, sources, and next steps.",
+      "weight": 100,
+      "feedback": "These details allow work to resume with its purpose and current state intact. Source locations also support reopening evidence when the summary is insufficient."
+    },
+    {
+      "text": "The complete contents of every file that the agent can access.",
+      "weight": 0,
+      "feedback": "A working record preserves useful state rather than duplicating an entire project. Relevant originals can be retrieved when needed."
+    },
+    {
+      "text": "The intended final answer with every unfinished check omitted.",
+      "weight": 0,
+      "feedback": "A desired outcome is not a record of progress. Unresolved checks matter because they distinguish unfinished work from verified completion."
+    }
+  ]
+}

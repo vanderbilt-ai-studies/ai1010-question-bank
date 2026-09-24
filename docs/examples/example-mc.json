@@ -1,0 +1,32 @@
+{
+  "id": "example-mc",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "added",
+  "concepts": [
+    "attention"
+  ],
+  "question": "Which part of a decoder stack lets a token take account of the other tokens in the context?",
+  "options": [
+    {
+      "text": "Attention",
+      "weight": 100,
+      "feedback": "Attention gathers information from the other tokens and moves this token's representation toward its meaning in context."
+    },
+    {
+      "text": "The MLP (multi-layer perceptron)",
+      "weight": 0,
+      "feedback": "The MLP works on each token's representation separately, applying learned knowledge. Mixing across tokens is attention's job."
+    },
+    {
+      "text": "The tokenizer",
+      "weight": 0,
+      "feedback": "The tokenizer splits text into tokens before the model runs. It does not relate tokens to each other."
+    },
+    {
+      "text": "Temperature",
+      "weight": 0,
+      "feedback": "Temperature only affects how the next token is sampled at the very end."
+    }
+  ]
+}

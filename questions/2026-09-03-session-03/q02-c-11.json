@@ -1,0 +1,34 @@
+{
+  "id": "q02-c-11",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-budget"
+  ],
+  "question": "You move the effort setting from Medium to Max and then send a short, simple question. What does the higher setting guarantee about the model's thinking?",
+  "options": [
+    {
+      "text": "Only that it may think longer, not that it will",
+      "weight": 100,
+      "feedback": "Effort sets a ceiling on thinking tokens rather than a quota to be filled, and on an easy question the model can stop far short of it. A budget is permission to spend, and the model spends roughly what the problem seems to need."
+    },
+    {
+      "text": "That the reply you read will be longer than it was at Medium",
+      "weight": 0,
+      "feedback": "The budget governs the hidden thinking that happens before the reply starts, so a long think can still end in two sentences. Reply length and budget size are not tied to each other."
+    },
+    {
+      "text": "That every token of the budget is used before it replies",
+      "weight": 0,
+      "feedback": "That would make the largest setting cost the same on every message, however trivial the message was. The ceiling limits what the model may spend; it does not instruct it to spend that much."
+    },
+    {
+      "text": "That the answer will be more accurate than it was at Medium",
+      "weight": 0,
+      "feedback": "More room to think earns its keep on a hard, well-specified problem, but it cannot improve an answer that needed no working out. On a short question there is nothing for the extra tokens to do."
+    }
+  ]
+}

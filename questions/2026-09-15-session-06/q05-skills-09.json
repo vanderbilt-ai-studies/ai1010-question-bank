@@ -1,0 +1,35 @@
+{
+  "id": "q05-skills-09",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "file-system",
+    "task-specification"
+  ],
+  "question": "Why should you deliberately choose a project or local folder before asking an agent to revise a skill?",
+  "options": [
+    {
+      "text": "It helps identify which materials belong to the work",
+      "weight": 100,
+      "feedback": "Choosing the working area helps establish the task's relevant materials. The same model can be more useful when its tools and context fit the work."
+    },
+    {
+      "text": "It trains the model on every file in that location",
+      "weight": 0,
+      "feedback": "Choosing a working area establishes relevant materials; it does not turn skill editing into model training."
+    },
+    {
+      "text": "It confirms the skill already meets the task criteria",
+      "weight": 0,
+      "feedback": "A folder identifies materials, not their quality. You still need to compare the procedure and its output with the task criteria."
+    },
+    {
+      "text": "It proves the final file was saved in that location",
+      "weight": 0,
+      "feedback": "Selecting a folder is preparation for the work. Completion still requires checking that the intended artifact actually exists in the correct place."
+    }
+  ]
+}

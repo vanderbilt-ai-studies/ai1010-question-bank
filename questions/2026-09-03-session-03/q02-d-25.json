@@ -1,0 +1,36 @@
+{
+  "id": "q02-d-25",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "file-system",
+    "task-specification",
+    "agent"
+  ],
+  "question": "You have installed the desktop app and want to give an agent access to your files so it can help you write up a research project. What should you point it at?",
+  "options": [
+    {
+      "text": "Your whole Documents folder, so that nothing it might need is left out",
+      "weight": 0,
+      "feedback": "Handing over everything is the instinct to resist. Most of what is in there has nothing to do with this project, and the aim is to get the right material in front of the agent rather than the most material."
+    },
+    {
+      "text": "Everything on your computer, so it can locate files wherever they happen to sit",
+      "weight": 0,
+      "feedback": "This is the version of the mistake with the widest blast radius, both for privacy and for usefulness. Breadth of access is not what makes an agent good at a task."
+    },
+    {
+      "text": "Your Downloads folder, since that is where new material tends to arrive",
+      "weight": 0,
+      "feedback": "Downloads is a pile of unrelated things, which is the opposite of a focused working space. Move what belongs to the project into its own folder first."
+    },
+    {
+      "text": "One subdirectory holding that project's papers and files",
+      "weight": 100,
+      "feedback": "The name of the game is getting the right material into context, and a folder is just another way of doing what a good prompt does. The class survey presentation was made exactly this way: an agent given one subdirectory of survey responses and asked to make sense of them."
+    }
+  ]
+}

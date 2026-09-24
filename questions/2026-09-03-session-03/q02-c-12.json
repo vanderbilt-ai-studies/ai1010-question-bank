@@ -1,0 +1,34 @@
+{
+  "id": "q02-c-12",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-budget"
+  ],
+  "question": "You set effort to High and then ask a one-line question. What does the model do with that budget?",
+  "options": [
+    {
+      "text": "It may use very little of it, because the budget is a ceiling rather than an amount to spend",
+      "weight": 100,
+      "feedback": "Effort caps how many tokens the model may spend thinking; it does not oblige it to spend them. An easy request can come back almost at once even at a generous setting, which is why the ceiling only really bites on the problems large enough to reach it."
+    },
+    {
+      "text": "It spends the whole budget, so the reply arrives once the tokens run out",
+      "weight": 0,
+      "feedback": "That would turn every setting above Low into a guaranteed wait and make the dial useless for mixed work. The budget limits thinking; it is not a quota the model has to work through."
+    },
+    {
+      "text": "It shortens the visible reply to make room for the thinking it was allowed",
+      "weight": 0,
+      "feedback": "The budget covers the hidden thinking, not the answer you read, and the two are not drawn from one allowance. You can get a long reply after almost no thinking, or a short one after a great deal."
+    },
+    {
+      "text": "It raises the temperature to fill the time it was given",
+      "weight": 0,
+      "feedback": "Temperature is a separate control acting on which token gets picked, and nothing links it to how much thinking is allowed. An unspent budget is simply unspent."
+    }
+  ]
+}

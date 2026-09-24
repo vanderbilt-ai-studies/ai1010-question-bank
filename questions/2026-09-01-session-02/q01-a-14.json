@@ -1,0 +1,35 @@
+{
+  "id": "q01-a-14",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "tokenization",
+    "token-embedding"
+  ],
+  "question": "Token encodings and token embeddings are both ways of turning a token into numbers. What is the difference between them?",
+  "options": [
+    {
+      "text": "Encodings are used for common words and embeddings for rare ones",
+      "weight": 0,
+      "feedback": "Both stages apply to every token; there is no split by word frequency. Each token is first encoded, then embedded."
+    },
+    {
+      "text": "An encoding is an arbitrary id from the vocabulary; an embedding is a location whose position carries meaning",
+      "weight": 100,
+      "feedback": "The encoding is just a lookup number, like a seat number in a theater. The embedding places the token in a semantic space where nearby tokens mean similar things, so its position says something about what the token means."
+    },
+    {
+      "text": "An encoding carries the token's meaning; an embedding is just a shorter code for it",
+      "weight": 0,
+      "feedback": "This has the two stages backwards. The encoding comes first and is meaningless on its own; the embedding is the larger object, thousands of numbers, and it is where meaning lives."
+    },
+    {
+      "text": "Encodings are computed by the decoder stacks; embeddings arrive already in the context",
+      "weight": 0,
+      "feedback": "Neither is produced by the stacks and neither arrives in the context. Both are early stages that prepare the text for the stacks to work on."
+    }
+  ]
+}

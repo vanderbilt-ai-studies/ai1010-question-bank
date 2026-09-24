@@ -1,0 +1,35 @@
+{
+  "id": "q05-train-11",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "training-vs-inference",
+    "activation-space"
+  ],
+  "question": "Why can a model produce different responses to different inputs while its learned weights remain fixed?",
+  "options": [
+    {
+      "text": "Its weights and intermediate representations refer to the same numbers",
+      "weight": 0,
+      "feedback": "The notes distinguish learned weights from the representations produced during processing. Confusing them makes an ordinary inference change look like training."
+    },
+    {
+      "text": "The new input acts as a human preference comparison during training",
+      "weight": 0,
+      "feedback": "Receiving input is not the same as training on human comparisons. An ordinary response can change through input-dependent processing without a learning update."
+    },
+    {
+      "text": "Its intermediate representations depend on the input being processed",
+      "weight": 100,
+      "feedback": "Inference uses existing weights while processing the current input. Changing representations are different from changes to the weights themselves."
+    },
+    {
+      "text": "Each new input supplies an error signal that updates learned parameters",
+      "weight": 0,
+      "feedback": "This confuses ordinary input-dependent processing with training. Training uses a learning process to update parameters; a new input alone does not establish such an update."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q01-a-25",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "self-supervised-learning",
+    "next-token-prediction"
+  ],
+  "question": "A physicist trains the same next-item guessing architecture on gravity-wave readings instead of English text. Based on the lecture, what should she expect?",
+  "options": [
+    {
+      "text": "The model learns the structure of gravity-wave data the way it learns English",
+      "weight": 100,
+      "feedback": "The learner is general-purpose: hide the next item, guess, adjust. Feed it English and it learns English; feed it gravity-wave data and it learns about gravity waves. Nothing in the method is specific to language."
+    },
+    {
+      "text": "The model fails, because the architecture was designed around words",
+      "weight": 0,
+      "feedback": "The architecture is not built around words; it is built around predicting the next item in a sequence, whatever the items are. Words are just one kind of sequence."
+    },
+    {
+      "text": "The model needs a rulebook of physics loaded in before it can start",
+      "weight": 0,
+      "feedback": "No rules are written down for English either. The whole point of self-supervised learning is that the data provides its own answer, so physics would be learned the same way."
+    },
+    {
+      "text": "The model translates the readings into English sentences before learning from them",
+      "weight": 0,
+      "feedback": "Nothing gets translated. The readings become numbers the model predicts directly; there is no English step in between."
+    }
+  ]
+}

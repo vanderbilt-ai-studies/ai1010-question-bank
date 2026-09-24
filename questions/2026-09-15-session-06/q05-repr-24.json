@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-24",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "learned-knowledge",
+    "parameter"
+  ],
+  "question": "A teammate wants to stop a model inventing a detail in future responses and says, \"Find the line that tells it to invent that detail, then delete it.\" What is the best explanation of why this code search may fail?",
+  "options": [
+    {
+      "text": "That detail must be stored in the vocabulary ID for its main word",
+      "weight": 0,
+      "feedback": "Vocabulary IDs identify tokens. They do not each store an instruction to make a particular claim."
+    },
+    {
+      "text": "That detail shows the model rewrote its program during the reply",
+      "weight": 0,
+      "feedback": "An unwanted output does not establish that the program changed. Ordinary inference runs computation using existing weights and current context."
+    },
+    {
+      "text": "Deleting the detail from this answer also changes the learned behavior",
+      "weight": 0,
+      "feedback": "Editing visible output repairs that artifact. It does not establish that the underlying parameters or behavior in future responses have changed."
+    },
+    {
+      "text": "The detail may emerge from learned values and context",
+      "weight": 100,
+      "feedback": "The notes explain why a specific answer need not have a corresponding hand-written rule. You can inspect the software without assuming that one line controls that behavior."
+    }
+  ]
+}

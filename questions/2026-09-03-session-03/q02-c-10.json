@@ -1,0 +1,35 @@
+{
+  "id": "q02-c-10",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "model-selection",
+    "thinking-budget"
+  ],
+  "question": "In an ordinary chat setup, the lecture said you are controlling two things. Which two?",
+  "options": [
+    {
+      "text": "The temperature and the size of the thinking budget",
+      "weight": 0,
+      "feedback": "Temperature matters and was discussed at length, but it is not one of the two dials you are handed in the chat interface. The other dial is the one you pick before you type anything."
+    },
+    {
+      "text": "The model and the temperature",
+      "weight": 0,
+      "feedback": "You do pick the model, but the second dial in the chat interface is not temperature. It is the setting that decides how much work the model may do before it starts replying."
+    },
+    {
+      "text": "The model and the thinking budget",
+      "weight": 100,
+      "feedback": "Which model gives you raw capability, world knowledge, and reasoning quality; the budget gives you how much work it may do before answering. They interact but are not interchangeable, and a third control appears once agents enter the picture."
+    },
+    {
+      "text": "The temperature and the length of the reply",
+      "weight": 0,
+      "feedback": "Reply length is an outcome you can ask for in the prompt, not one of the two settings the interface gives you. Neither of these is the dial you set before the conversation starts."
+    }
+  ]
+}

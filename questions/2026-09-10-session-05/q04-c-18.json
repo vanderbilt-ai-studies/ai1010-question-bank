@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-18",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "subagent",
+    "task-specification"
+  ],
+  "question": "Why does a fresh subagent need both a focused assignment and relevant background?",
+  "options": [
+    {
+      "text": "Fresh context automatically includes every decision from the main conversation.",
+      "weight": 0,
+      "feedback": "Fresh context should not be assumed to contain unsupplied facts. Relevant background has to be provided or made accessible."
+    },
+    {
+      "text": "A narrow task still depends on facts it may not have received.",
+      "weight": 100,
+      "feedback": "Focus limits the question, but it does not supply missing evidence. Give the subagent enough context and check its returned finding."
+    },
+    {
+      "text": "A bounded assignment guarantees that the returned finding needs no checking.",
+      "weight": 0,
+      "feedback": "Narrow scope can help manage context, but it does not guarantee accuracy. The resulting answer still needs verification."
+    },
+    {
+      "text": "Loading unrelated history is a substitute for supplying the relevant evidence.",
+      "weight": 0,
+      "feedback": "A larger input does not necessarily contain the evidence the question requires. Select the background that supports the bounded assignment."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q05-train-08",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "post-training"
+  ],
+  "question": "What follows reward-model training in the classic reinforcement learning from human feedback pipeline?",
+  "options": [
+    {
+      "text": "Training the reward model again on example assistant responses",
+      "weight": 0,
+      "feedback": "Example assistant responses provide demonstrations for supervised fine-tuning. After learning a reward signal from comparisons, the described pipeline uses that signal to optimize the assistant."
+    },
+    {
+      "text": "Training the assistant to predict the next tokens in raw text",
+      "weight": 0,
+      "feedback": "This is the foundational text-model training example. The stage after reward-model learning instead uses the learned preference signal for further assistant optimization."
+    },
+    {
+      "text": "Training the assistant to copy reward scores as desired replies",
+      "weight": 0,
+      "feedback": "This confuses an evaluation signal with a demonstration answer. A reward signal guides optimization; it is not the response the assistant is being taught to produce."
+    },
+    {
+      "text": "Training the assistant using the learned reward signal",
+      "weight": 100,
+      "feedback": "The reward model learns from human comparisons, and reinforcement learning uses that signal to optimize the assistant. These are distinct stages."
+    }
+  ]
+}

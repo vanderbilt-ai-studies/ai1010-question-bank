@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-09",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-sharing"
+  ],
+  "question": "Which set of checks most directly tests whether a transferred skill can execute its intended operations?",
+  "options": [
+    {
+      "text": "Tools, libraries, file access, and actual output",
+      "weight": 100,
+      "feedback": "A compatible format is only part of portability. The destination must support the operations, and you should inspect a representative result."
+    },
+    {
+      "text": "Matching folder names, valid formatting, and clear prose",
+      "weight": 0,
+      "feedback": "These checks help preserve readable instructions, but they do not establish that the destination has the programs and access needed to execute them."
+    },
+    {
+      "text": "A successful original run and an identical destination copy",
+      "weight": 0,
+      "feedback": "Matching the original preserves the procedure, but the new host may lack its dependencies or access. Test the destination environment itself."
+    },
+    {
+      "text": "File existence, a discoverable catalog entry, and an enabled skill",
+      "weight": 0,
+      "feedback": "These checks establish availability in the host, but do not establish that required programs and access are present or that actual outputs meet requirements."
+    }
+  ]
+}

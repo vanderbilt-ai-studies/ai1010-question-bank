@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-02",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "harness",
+    "tool"
+  ],
+  "question": "What is the language model doing when it generates a request to read a file?",
+  "options": [
+    {
+      "text": "Opening the file directly without an intervening tool.",
+      "weight": 0,
+      "feedback": "Generating text is different from performing a file operation. The harness invokes a tool to carry out a supported request."
+    },
+    {
+      "text": "Producing a request for the harness to execute.",
+      "weight": 100,
+      "feedback": "The model can choose and express an operation. The harness handles execution and supplies the result for a later model step."
+    },
+    {
+      "text": "Verifying that the file contains the expected final content.",
+      "weight": 0,
+      "feedback": "A request to read is not yet evidence about the contents. Verification requires receiving and checking the actual result."
+    },
+    {
+      "text": "Adding every file in the project to the current context.",
+      "weight": 0,
+      "feedback": "A file request can target one relevant source. Access to a project does not mean all its files enter the model input."
+    }
+  ]
+}

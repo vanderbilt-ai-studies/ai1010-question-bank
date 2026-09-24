@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-10",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification",
+    "task-specification"
+  ],
+  "question": "What should the final response in a bounded support workflow communicate?",
+  "options": [
+    {
+      "text": "An attempted repair to every available course contact.",
+      "weight": 0,
+      "feedback": "An attempt is not a verified result, and broad delivery can misdirect the message. Check success and use the intended recipient."
+    },
+    {
+      "text": "The verified result and the responder's automated identity.",
+      "weight": 100,
+      "feedback": "The response should go to the intended recipient after validation. Identifying the automated responder makes the nature of that communication clear."
+    },
+    {
+      "text": "A planned repair described as completed by a human operator.",
+      "weight": 0,
+      "feedback": "A plan does not establish completion, and describing an automated responder as human obscures who acted. Report the verified result accurately."
+    },
+    {
+      "text": "The original report with the verification outcome left unstated.",
+      "weight": 0,
+      "feedback": "Repeating the report does not tell the recipient what happened. The workflow calls for communicating the result that has actually been checked."
+    }
+  ]
+}

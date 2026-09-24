@@ -1,0 +1,36 @@
+{
+  "id": "q05-harness-18",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "agent",
+    "tool",
+    "context"
+  ],
+  "question": "Why can two agents using the same model perform differently on the same task?",
+  "options": [
+    {
+      "text": "The same model requires the same tools in each environment",
+      "weight": 0,
+      "feedback": "Tools belong to the surrounding system. Two agents can expose different actions while using the same underlying model."
+    },
+    {
+      "text": "Their tools, context, and procedures may differ",
+      "weight": 100,
+      "feedback": "The model is one component of the agent. Its surroundings affect the information and actions available for the task."
+    },
+    {
+      "text": "The same model brings its folder permissions to each environment",
+      "weight": 0,
+      "feedback": "File permissions are supplied by the environment. They are not a capability the model carries into every deployment."
+    },
+    {
+      "text": "The same model guarantees the same evidence enters each context",
+      "weight": 0,
+      "feedback": "An agent needs access to relevant evidence. Different tools and working contexts can provide different information to the same model."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "q04-d-17",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation",
+    "model-selection",
+    "cost-and-usage"
+  ],
+  "question": "Why must you evaluate a cheaper execution model even if a more capable model helped write the skill?",
+  "options": [
+    {
+      "text": "Authoring quality does not establish execution quality",
+      "weight": 100,
+      "feedback": "A well-developed procedure may help a cheaper model, but only tested results show whether it meets your requirements."
+    },
+    {
+      "text": "The cheaper model should be rejected because another model wrote its instructions",
+      "weight": 0,
+      "feedback": "The proposed strategy may work. Evaluation determines adequacy rather than assuming failure from model differences."
+    },
+    {
+      "text": "A stronger authoring model automatically installs all execution dependencies",
+      "weight": 0,
+      "feedback": "Developing instructions does not establish that required software or access exists in the execution environment."
+    },
+    {
+      "text": "The authoring model permanently transfers its own abilities into the cheaper model",
+      "weight": 0,
+      "feedback": "A skill supplies guidance; it does not transfer the authoring model's underlying capabilities into another model."
+    }
+  ]
+}

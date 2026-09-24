@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-03",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality",
+    "semantic-space",
+    "token"
+  ],
+  "question": "The lecture connects native multimodal training to a model's strength not just at understanding images, but at generating them. What is the reasoning behind that connection?",
+  "options": [
+    {
+      "text": "Native training gives the model a much larger vocabulary of words to draw on",
+      "weight": 0,
+      "feedback": "Vocabulary size is not what the lecture points to here. The connection is about where images sit relative to words inside the model, not about how many words it knows."
+    },
+    {
+      "text": "Projection-based models add images through a separate generator bolted on later",
+      "weight": 0,
+      "feedback": "The lecture describes projection as a way of adding image understanding after text training, and it does not explain generation quality by a bolted-on generator. The reasoning given is about where images live in the model's representation."
+    },
+    {
+      "text": "Images share the same semantic space as words, so a picture is produced token by token",
+      "weight": 100,
+      "feedback": "Because a jointly trained model never separates image space from word space, making a picture is another case of drawing tokens from a vocabulary one at a time, with a little sampling randomness at each step -- the same process used for a sentence."
+    },
+    {
+      "text": "Native training makes image output deterministic rather than randomly sampled",
+      "weight": 0,
+      "feedback": "The lecture says the reverse: image generation carries the same temperature-like sampling randomness as text, which is also why re-editing the same picture drifts over several rounds."
+    }
+  ]
+}

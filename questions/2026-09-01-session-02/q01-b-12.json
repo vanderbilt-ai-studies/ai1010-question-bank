@@ -1,0 +1,35 @@
+{
+  "id": "q01-b-12",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "autoregression",
+    "next-token-prediction"
+  ],
+  "question": "A model's reply comes to about 300 tokens. Roughly how many times did the whole model run to produce it?",
+  "options": [
+    {
+      "text": "Once, because a single pass produces the entire reply",
+      "weight": 0,
+      "feedback": "A single pass produces a single token, not a reply. Getting 300 tokens out of a one-token machine takes the loop of appending and re-running."
+    },
+    {
+      "text": "Twice, once to read the prompt and once to write the reply",
+      "weight": 0,
+      "feedback": "Reading and writing are not separate phases. Every run reads the whole context, including the prompt, and writes exactly one token."
+    },
+    {
+      "text": "About a dozen times, roughly once per sentence",
+      "weight": 0,
+      "feedback": "Sentences are not the model's unit of work. Each run yields one token, so the count of runs tracks tokens, not sentences."
+    },
+    {
+      "text": "About 300 times, once for each token",
+      "weight": 100,
+      "feedback": "The model runs once per token, and each run takes the whole context, now one token longer. That is why a long reply takes noticeably longer than a short one."
+    }
+  ]
+}

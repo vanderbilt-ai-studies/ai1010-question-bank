@@ -1,0 +1,35 @@
+{
+  "id": "q03-d-11",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-sharing",
+    "agent-skill"
+  ],
+  "question": "Why are skills portable across different model providers, according to the lecture?",
+  "options": [
+    {
+      "text": "Because every provider agreed to a shared API (application programming interface) standard for skills",
+      "weight": 0,
+      "feedback": "No shared industry API was described -- portability comes from what a skill is made of, not from a formal cross-vendor agreement."
+    },
+    {
+      "text": "Because a skill is compiled into a single universal binary before it runs",
+      "weight": 0,
+      "feedback": "Compiling to a binary would tie a skill to one execution environment, which is the opposite of the plain-files approach the lecture described."
+    },
+    {
+      "text": "Because a skill is just files and instructions, not code tied to one vendor, so any harness that understands the same format can run it",
+      "weight": 100,
+      "feedback": "Because a skill is just files and instructions rather than vendor-specific code, any agent whose harness understands the same skill format can run it -- which is exactly why a skill could move between model providers."
+    },
+    {
+      "text": "Because skills never contain any structure, only plain paragraphs of English",
+      "weight": 0,
+      "feedback": "Skills do have structure -- a name, description, instructions, and often scripts and reference files -- the portability comes from that structure being format-based, not vendor-based, not from having no structure at all."
+    }
+  ]
+}

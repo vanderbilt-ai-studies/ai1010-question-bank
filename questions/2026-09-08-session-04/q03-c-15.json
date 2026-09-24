@@ -1,0 +1,36 @@
+{
+  "id": "q03-c-15",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "grounding",
+    "hallucination",
+    "class-demo"
+  ],
+  "question": "A professor pastes a lab report into a chat session and asks it to 'grade this,' without attaching a rubric or any assignment description. The reply comes back confident and well-formatted. What does the lecture warn is the danger here?",
+  "options": [
+    {
+      "text": "The chat session will refuse to grade anything without more information",
+      "weight": 0,
+      "feedback": "The demo shows the opposite: the session answered readily and confidently. The danger is precisely that it did not refuse, with nothing to go on."
+    },
+    {
+      "text": "The reply will look messy, making the missing rubric obvious right away",
+      "weight": 0,
+      "feedback": "The demo's point is the reverse. The output looked polished, which is what makes the problem easy to miss rather than obvious."
+    },
+    {
+      "text": "The model has no idea what it is rating, and polished output can hide that",
+      "weight": 100,
+      "feedback": "With no rubric or assignment description, the model is drawing only on general training about what grading looks like -- and because the result still reads well, confidence is easy to mistake for correctness."
+    },
+    {
+      "text": "The chat session will crash partway through generating the response",
+      "weight": 0,
+      "feedback": "Nothing in the demo describes a technical failure. The danger is in the reliability of the content, not in the session failing to finish."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q05-repr-04",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "attention"
+  ],
+  "question": "What role does attention play in interpreting a token?",
+  "options": [
+    {
+      "text": "It chooses the displayed token before any blocks run",
+      "weight": 0,
+      "feedback": "Next-token selection occurs near the end of the model's processing. Attention works on representations inside the blocks."
+    },
+    {
+      "text": "It replaces the vocabulary index with a new index",
+      "weight": 0,
+      "feedback": "The representation changes during attention. That change is not a reassignment of the token's vocabulary ID."
+    },
+    {
+      "text": "It saves the conversation by updating model weights",
+      "weight": 0,
+      "feedback": "Using context during ordinary inference changes current representations, not the learned weights."
+    },
+    {
+      "text": "It incorporates relevant information from context",
+      "weight": 100,
+      "feedback": "Attention lets the token's representation draw on surrounding information. This can shift its interpretation as more relevant context is considered."
+    }
+  ]
+}

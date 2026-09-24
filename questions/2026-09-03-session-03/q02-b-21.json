@@ -1,0 +1,34 @@
+{
+  "id": "q02-b-21",
+  "type": "MC",
+  "date": "2026-09-03",
+  "date_basis": "discussed",
+  "session": 3,
+  "source": "Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets",
+  "concepts": [
+    "thinking-reasoning"
+  ],
+  "question": "In the lecture's spoken-out-loud analogy, the presenter raised a possible line of answer and then dismissed it as a bad one. What does that dismissal correspond to inside a reasoning model?",
+  "options": [
+    {
+      "text": "More hidden tokens, which then shape what the model generates next",
+      "weight": 100,
+      "feedback": "Rejecting a line is not a special operation -- it is just more text written into the model's own context, and the answer that follows is conditioned on it."
+    },
+    {
+      "text": "A candidate response being deleted from a shortlist",
+      "weight": 0,
+      "feedback": "There is no shortlist of responses. The model holds one running sequence of tokens, so nothing can be removed from a set that never existed."
+    },
+    {
+      "text": "A weight inside the model being adjusted so it avoids that answer",
+      "weight": 0,
+      "feedback": "Weights are fixed by training and do not change while you are talking to the model. A rejected idea leaves its trace only as text in the context, which is what shapes the tokens that follow."
+    },
+    {
+      "text": "The model backing up and regenerating from an earlier point",
+      "weight": 0,
+      "feedback": "Generation only moves forward, one token at a time. A rejected idea stays in the context as written text rather than being rewound and erased."
+    }
+  ]
+}

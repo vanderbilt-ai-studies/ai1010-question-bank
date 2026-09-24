@@ -1,0 +1,34 @@
+{
+  "id": "q03-a-20",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo"
+  ],
+  "question": "How did seat-minder change the instructor's experience of cold-calling, according to the notes?",
+  "options": [
+    {
+      "text": "It let him call on people by name and photo, knowing who opted in",
+      "weight": 100,
+      "feedback": "Check-in supplies the names and photos and the opt-in highlight supplies the willingness, so a cold call in a large room stops being a call on an unidentified student."
+    },
+    {
+      "text": "It let him skip cold-calling, with the app picking answers for students",
+      "weight": 0,
+      "feedback": "The app helps identify and choose who to call on; it never answers on a student's behalf."
+    },
+    {
+      "text": "It let him grade students automatically from the answers they gave",
+      "weight": 0,
+      "feedback": "Grading turns up later in the session as a separate demo with a rubric and an agent, not as anything seat-minder does."
+    },
+    {
+      "text": "It let him limit cold-calling to only the top-performing students",
+      "weight": 0,
+      "feedback": "The opt-in is about comfort with being called on, not about performance, and no grade data feeds the seating chart at all."
+    }
+  ]
+}

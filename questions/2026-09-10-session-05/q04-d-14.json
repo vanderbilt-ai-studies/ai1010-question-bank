@@ -1,0 +1,34 @@
+{
+  "id": "q04-d-14",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation"
+  ],
+  "question": "Why would a transcript containing an important promise near its end be useful for testing a notes skill?",
+  "options": [
+    {
+      "text": "It lets you use a longer generated answer as evidence of better coverage",
+      "weight": 0,
+      "feedback": "Length does not establish that the important promise was captured. Inspect the output against the relevant source requirement."
+    },
+    {
+      "text": "It tests whether the procedure preserves an easily missed requirement",
+      "weight": 100,
+      "feedback": "A difficult case can expose omissions that a straightforward transcript would fail to reveal."
+    },
+    {
+      "text": "It makes repeated runs of this transcript sufficient to assess varied inputs",
+      "weight": 0,
+      "feedback": "Repeated success on this case provides evidence for that case. Representative inputs are still needed to assess other challenges."
+    },
+    {
+      "text": "It lets you judge completeness from the output without reopening the transcript",
+      "weight": 0,
+      "feedback": "An output can sound complete while omitting a promise. Compare it with the source to check the relevant requirement."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-02",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "token-embedding"
+  ],
+  "question": "What is a token embedding in the pipeline studied in this course?",
+  "options": [
+    {
+      "text": "A text definition retrieved for each vocabulary entry.",
+      "weight": 0,
+      "feedback": "An embedding is a numerical vector, not a dictionary definition retrieved as text."
+    },
+    {
+      "text": "A probability assigned to the next complete sentence.",
+      "weight": 0,
+      "feedback": "An embedding represents a token before the output stage. Next-token probabilities are calculated after the decoder transformations."
+    },
+    {
+      "text": "A rule that selects which output token comes next.",
+      "weight": 0,
+      "feedback": "Token selection uses the output distribution. Embeddings supply representations for the model to transform."
+    },
+    {
+      "text": "A numerical vector used to represent a vocabulary item.",
+      "weight": 100,
+      "feedback": "A token identifier maps to a vector. The learned geometry can represent relationships between items."
+    }
+  ]
+}

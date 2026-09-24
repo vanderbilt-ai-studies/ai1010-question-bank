@@ -1,101 +1,88 @@
 # Question format
 
-## A question file
+Each question is one JSON file, named `<id>.json`, somewhere under
+`questions/`. Its `type` is one of Brightspace's ten **auto-graded** question
+types, and its fields follow Brightspace's own settings for that type, so a
+question maps one-to-one onto what you would build in the Brightspace
+Question Library.
 
-Each question is one Markdown file, named for its id, somewhere under
-`questions/`:
+`tools/build.py` checks every file against the rules below and combines them
+into `data/questions.json`. A complete, valid example of every type is in
+[`examples/`](examples/); `python3 tools/test_build.py` confirms they pass.
 
-```markdown
----
-id: q02-a-01
-date: 2026-09-03
-date_basis: discussed
-session: 3
-source: Quiz 2 - Sessions 1-3: Choosing a Model and Thinking Budgets
-concepts: [model-selection]
-answer: B
----
-
-**Question:** Claude's four model tiers, listed from the smallest to the largest, are:
-
-- A. Sonnet 5, Haiku 4.5, Opus 5, Fable 5.1
-- B. Haiku 4.5, Sonnet 5, Opus 5, Fable 5.1
-- C. Haiku 4.5, Opus 5, Sonnet 5, Fable 5.1
-- D. Fable 5.1, Opus 5, Sonnet 5, Haiku 4.5
-
-<details>
-<summary>Show the answer and why each option is right or wrong</summary>
-
-**Answer: B**
-
-- A. Not quite. ...
-- B. Correct. ...
-- C. Not quite. ...
-- D. Not quite. ...
-
-</details>
-```
-
-### The header (between the `---` lines)
+## Fields every question has
 
 | Field | Required | Meaning |
 |---|---|---|
-| `id` | yes | Unique, lowercase letters, digits and hyphens. Must match the file name. Never changes once published. |
-| `date` | yes* | `YYYY-MM-DD`. The day the material was discussed in class, or the day the question was added. *Left out, it is filled in automatically when committed. |
-| `date_basis` | no | `discussed` (a class session) or `added` (added straight to this repository). Defaults to `added`. |
-| `session` | no | Class session number, for questions from a quiz. |
+| `id` | yes | Unique; lowercase letters, digits, hyphens. Matches the file name. Never changes once published, so study histories stay correct. |
+| `type` | yes | `TF`, `MC`, `MS`, `SA`, `MSA`, `FIB`, `MAT`, `ORD`, `ARITH` or `SIGFIG` (table below). |
+| `date` | yes* | `YYYY-MM-DD`: the class session where the material was discussed, or the day the question was added. *Left out, it is filled in automatically with the day the file was first committed. |
+| `date_basis` | no | `discussed` (a class session) or `added` (added to this repository directly). Default `added`. |
+| `session` | no | Class session number. |
 | `source` | no | Where the question came from, such as the quiz name. |
-| `concepts` | yes | One or more tags from [`concepts.json`](../concepts.json), most central first, in square brackets. |
-| `answer` | yes | The letter of the correct option. |
-| `level` | no | `recall`, `understanding` or `application`, where the author recorded it. |
+| `concepts` | yes | One or more tags from [`concepts.json`](../concepts.json), most central first. |
+| `level` | no | `recall`, `understanding` or `application`. |
+| `points` | no | Default 1. |
+| `question` | yes | The question text: plain text, light Markdown allowed. |
+| `feedback` | see below | Explanation of the answer. Required for every type except TF, MC and MS, which explain each choice instead. |
+| `hint` | no | Shown on request before answering. |
 
-### The body
+Every question carries an explanation of its answer -- the course promises
+feedback on every answer, and the build refuses a question without it.
 
-- The question text, after `**Question:**`.
-- The options, one per line, exactly `- A. text`, `- B. text`, lettered in order.
-- A `<details>` block holding `**Answer: X**` and one explanation line per
-  option in the same `- A. text` form. Every option needs an explanation.
+## The ten types
 
-Ids from the quizzes are `q<quiz number>-<topic>-<number>`, for example
-`q05-harness-03`. Ids for questions added directly can be anything unique;
-`added-<date>-<number>` works.
+| Code | Brightspace type | Type-specific fields |
+|---|---|---|
+| `TF` | True or False | `answer` (true/false), `feedback_true`, `feedback_false` |
+| `MC` | Multiple Choice | `options`: `[{text, weight, feedback}]`. Exactly one option has `weight` 100; others 0, or partial credit between. |
+| `MS` | Multi-Select | `options`: `[{text, correct, feedback}]`; `grading` |
+| `SA` | Short Answer | `accepted`: typed answers (below) |
+| `MSA` | Multi-Short Answer | `boxes` (how many answers the student types); `accepted`, matched in any order |
+| `FIB` | Fill in the Blanks | `question` marks blanks `{{1}}`, `{{2}}`...; `blanks`: `[{accepted, size?}]`, one per marker in order |
+| `MAT` | Matching | `pairs`: `[{choice, match}]`; `distractors` (extra wrong matches); `grading` |
+| `ORD` | Ordering | `items`, listed in the correct order; `grading` |
+| `ARITH` | Arithmetic | `formula` using `{name}` variables; `variables`: `[{name, min, max, decimals?, step?}]`; `decimals`; `tolerance`; `units` |
+| `SIGFIG` | Significant Figures | `formula`; `variables`; `significant_figures`; `tolerance` |
+
+Written Response and Likert are left out: neither is auto-graded.
+
+### Typed answers (`SA`, `MSA`, each `FIB` blank)
+
+`accepted` is a list of `{text, weight, evaluation}`:
+
+- `weight` -- percent credit, 0-100, default 100. At least one answer must be 100.
+- `evaluation` -- `case_insensitive` (default), `case_sensitive`, or `regex`
+  (the text is a regular expression, a pattern such as `^auto-?regress(ion|ive)$`).
+
+### Grading rules
+
+- `MS` `grading`: `all_or_nothing` (default), `right_answers`,
+  `right_minus_wrong`, `correct_answers_limited_selections`.
+- `MAT` and `ORD` `grading`: `equally_weighted` (default), `all_or_nothing`,
+  `right_minus_wrong`.
+
+### Tolerance (`ARITH`, `SIGFIG`)
+
+`{"value": 0.1, "mode": "units"}` or `{"value": 1, "mode": "percent"}`.
 
 ## `data/questions.json`
 
-Generated by `tools/build.py` from the question files -- never edit it by hand.
+Generated by `tools/build.py` -- never edit it by hand. It holds:
 
-```json
-{
-  "about": "...",
-  "count": 495,
-  "concepts": [
-    {"id": "attention", "label": "Attention", "definition": "...", "group": "inside-the-model"}
-  ],
-  "questions": [
-    {
-      "id": "q02-a-01",
-      "date": "2026-09-03",
-      "date_basis": "discussed",
-      "session": 3,
-      "source": "Quiz 2 - ...",
-      "concepts": ["model-selection"],
-      "level": null,
-      "question": "Claude's four model tiers ...",
-      "options": [
-        {"letter": "A", "text": "...", "correct": false, "explanation": "Not quite. ..."}
-      ],
-      "answer": "B",
-      "path": "questions/2026-09-03-session-03/q02-a-01.md"
-    }
-  ]
-}
-```
-
-Questions are sorted by date, then id. `session` and `level` are `null` when
-not recorded.
+- `count`, and `types` (code -> Brightspace name),
+- `concepts`: every concept with `id`, `label`, `definition`, `group`,
+- `questions`: every question, sorted by date then id, with defaults filled in
+  so every consumer sees the same shape:
+  - `points`, `date_basis`, `grading` and each typed answer's `weight` and
+    `evaluation` are always present;
+  - optional fields (`session`, `level`, `source`, `feedback`, `hint`) are
+    present, `null` when not set;
+  - `MC` options also carry `correct` (true for the `weight` 100 option);
+  - `path` gives the source file.
 
 ## Adding a concept
 
 Add an entry to the right group in `concepts.json` (`id`, `label`,
-`definition`), then run `python3 tools/build.py`. A question that uses a tag
-not in `concepts.json` fails the build, which keeps the tags consistent.
+`definition`), then run `python3 tools/build.py`. A question using a tag that
+is not in `concepts.json` fails the build, which keeps tags consistent.

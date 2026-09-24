@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-08",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "verification",
+    "task-specification"
+  ],
+  "question": "How should a bounded technical-support workflow handle an unfamiliar problem?",
+  "options": [
+    {
+      "text": "Apply the closest familiar repair and inspect only if challenged.",
+      "weight": 0,
+      "feedback": "Similar symptoms do not establish that a known repair fits. An unfamiliar case belongs at the escalation boundary."
+    },
+    {
+      "text": "Try a newly generated repair because it includes an undo plan.",
+      "weight": 0,
+      "feedback": "Reversal information can help manage a change, but it does not make an unfamiliar repair a known, authorized procedure. The bounded workflow escalates unfamiliar cases."
+    },
+    {
+      "text": "Treat a familiar phrase in the report as proof of a known case.",
+      "weight": 0,
+      "feedback": "Matching a phrase is weaker than inspecting the current state and comparing it with a documented case. Ambiguous cases should be escalated."
+    },
+    {
+      "text": "Escalate the case with the evidence collected.",
+      "weight": 100,
+      "feedback": "The workflow is bounded by known, authorized repairs. Escalation preserves useful evidence while handling uncertainty explicitly."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q01-d-06",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "probability-distribution-over-tokens",
+    "sampling-and-temperature"
+  ],
+  "question": "Up to the point where the token probabilities are produced, how does the model behave from one run to the next?",
+  "options": [
+    {
+      "text": "Randomly, because the embeddings start from a fresh position each run",
+      "weight": 0,
+      "feedback": "Embeddings are learned during training and then fixed; a token lands in the same location every time. Nothing before the probabilities is random, which is why the variation has to be added on purpose at the end."
+    },
+    {
+      "text": "Randomly, because attention samples which earlier tokens to look at",
+      "weight": 0,
+      "feedback": "Attention computes a weighted average over every earlier token; it does not sample a subset. The whole path from context to probabilities is a fixed computation with no dice in it."
+    },
+    {
+      "text": "Deterministically, so a repeated context produces the identical spread of probabilities",
+      "weight": 100,
+      "feedback": "Everything from token encoding through the last decoder stack is a fixed calculation, so identical context gives identical probabilities. The variety you see in answers is introduced afterward, when noise is added at the choice step."
+    },
+    {
+      "text": "Deterministically, but only when no noise is added at the choice step",
+      "weight": 0,
+      "feedback": "Noise is added after the probabilities exist, so it cannot reach back and change them. The stages before the choice compute the same way whether or not noise is applied later; only which token gets picked varies."
+    }
+  ]
+}

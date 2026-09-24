@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-20",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "model-size"
+  ],
+  "question": "What does the word \"large\" literally refer to in \"large language model\"?",
+  "options": [
+    {
+      "text": "A larger and more carefully checked collection of training facts",
+      "weight": 0,
+      "feedback": "Large describes the model, not a curated set of facts; there is no fact collection inside it. The size is in the parameters: bigger MLPs (multi-layer perceptrons) and more decoder stacks."
+    },
+    {
+      "text": "A longer context window than a small model has",
+      "weight": 0,
+      "feedback": "Context length is a separate matter, and the lecture treats context as the other half of the picture, not as what large means. The slide shows only one change for a large model: the boxes get taller."
+    },
+    {
+      "text": "Bigger MLPs (multi-layer perceptrons) and more decoder stacks",
+      "weight": 100,
+      "feedback": "That is the whole difference between the small-model slide and the large-model one: taller boxes and more of them. More parameters means more room for a sharper JPEG of the world, up to hundreds of billions of parameters in the largest models."
+    },
+    {
+      "text": "A more advanced architecture than a small model uses",
+      "weight": 0,
+      "feedback": "Small and large models use the identical architecture. The transformer introduced in 2017 is still the one in use; what changed is the scale, not the design."
+    }
+  ]
+}

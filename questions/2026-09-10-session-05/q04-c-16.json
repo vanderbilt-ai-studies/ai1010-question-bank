@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-16",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "memory",
+    "context-management"
+  ],
+  "question": "Why should a preferred writing style be distinguished from a record of which file was published?",
+  "options": [
+    {
+      "text": "The writing style is a project fact that expires when a file is published.",
+      "weight": 0,
+      "feedback": "A style preference can recur across tasks. Publishing a file changes project state without necessarily changing that preference."
+    },
+    {
+      "text": "The publication record is a preference for what should happen on the next task.",
+      "weight": 0,
+      "feedback": "A publication record tracks what happened in this project. A recurring preference guides later choices rather than establishing completed operations."
+    },
+    {
+      "text": "Both records describe stable choices that can be reused without updating.",
+      "weight": 0,
+      "feedback": "Preferences may recur, but a project record tracks changing facts. Reusing stale publication state can misrepresent what has actually been completed."
+    },
+    {
+      "text": "One can recur across tasks; the other tracks changing project facts.",
+      "weight": 100,
+      "feedback": "A preference may guide many tasks, while project state records current decisions and operations. Maintaining both appropriately helps prevent stale assumptions."
+    }
+  ]
+}

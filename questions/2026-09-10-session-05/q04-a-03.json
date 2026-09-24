@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-03",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "attention"
+  ],
+  "question": "Which operation most directly describes attention in the decoder pipeline?",
+  "options": [
+    {
+      "text": "Combining information from relevant context positions.",
+      "weight": 100,
+      "feedback": "Attention lets a representation incorporate information from permitted positions in the context. This helps account for how a token is being used."
+    },
+    {
+      "text": "Selecting one output token from its final probabilities.",
+      "weight": 0,
+      "feedback": "Selecting the output token happens after the decoder blocks produce the next-token distribution."
+    },
+    {
+      "text": "Increasing the number of learned weights during a reply.",
+      "weight": 0,
+      "feedback": "Using attention during ordinary generation applies trained weights; it does not add parameters as the reply grows."
+    },
+    {
+      "text": "Replacing input tokens with their vocabulary identifiers.",
+      "weight": 0,
+      "feedback": "That is token encoding. Attention operates on numerical representations after the initial encoding and embedding steps."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-25",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "thinking-reasoning",
+    "recurrent-depth"
+  ],
+  "question": "A commercial model gives a better answer after spending longer on a problem. You know research models can use hidden recurrence. What can you conclude about this commercial model?",
+  "options": [
+    {
+      "text": "It uses the same recurrent block as the published research model.",
+      "weight": 0,
+      "feedback": "Similar behavior does not establish identical internals. A published research architecture is evidence about that research system."
+    },
+    {
+      "text": "It added new independent parameters while working on this request.",
+      "weight": 0,
+      "feedback": "More inference time does not establish a larger parameter set. Existing weights can support additional computation."
+    },
+    {
+      "text": "Its printed explanation fully specifies the hidden numerical process.",
+      "weight": 0,
+      "feedback": "A written explanation is not a complete record of internal vector operations. It does not disclose the architecture merely by describing an answer."
+    },
+    {
+      "text": "Its architecture remains uncertain from that behavior alone.",
+      "weight": 100,
+      "feedback": "Longer processing and a better answer are observations of behavior. They do not identify the undisclosed mechanism that produced the result."
+    }
+  ]
+}

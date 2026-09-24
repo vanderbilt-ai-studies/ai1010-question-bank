@@ -1,0 +1,35 @@
+{
+  "id": "q05-repr-21",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "grounding",
+    "context"
+  ],
+  "question": "You need an answer based on a policy document the model has not been given. Which step best follows the lecture's advice?",
+  "options": [
+    {
+      "text": "Supply the relevant text or a way to retrieve it",
+      "weight": 100,
+      "feedback": "The task depends on evidence from this document. Put the relevant material in context or provide access so the model can use it with existing weights."
+    },
+    {
+      "text": "Ask the model to reconstruct it from similar policies",
+      "weight": 0,
+      "feedback": "Learned associations can suggest plausible contents without establishing what this particular document says."
+    },
+    {
+      "text": "Provide its filename and assume that supplies its contents",
+      "weight": 0,
+      "feedback": "Naming a source identifies the material you want. Its relevant contents still need to enter context or be available through retrieval."
+    },
+    {
+      "text": "Request a detailed answer before checking the source",
+      "weight": 0,
+      "feedback": "More detail does not supply the missing evidence. Source access should support the answer, followed by checking how the evidence was used."
+    }
+  ]
+}

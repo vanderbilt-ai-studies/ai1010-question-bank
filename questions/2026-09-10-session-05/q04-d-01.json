@@ -1,0 +1,35 @@
+{
+  "id": "q04-d-01",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-evaluation",
+    "skill-creator"
+  ],
+  "question": "When you improve a skill with artificial intelligence assistance, what does human expertise contribute?",
+  "options": [
+    {
+      "text": "A guarantee that the first draft will work reliably",
+      "weight": 0,
+      "feedback": "Expert guidance improves the requirements, but the procedure still needs testing on actual tasks."
+    },
+    {
+      "text": "Proof that the agent executed every requested step",
+      "weight": 0,
+      "feedback": "A person can specify the steps, but you need evidence of execution to establish that they happened."
+    },
+    {
+      "text": "Requirements about important errors and quality",
+      "weight": 100,
+      "feedback": "Your experience identifies misunderstandings, costly mistakes, and standards that the agent may fail to infer."
+    },
+    {
+      "text": "Automatic installation in every compatible environment",
+      "weight": 0,
+      "feedback": "Human expertise shapes the procedure; installation and environment compatibility require separate checks."
+    }
+  ]
+}

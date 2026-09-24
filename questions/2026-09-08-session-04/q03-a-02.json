@@ -1,0 +1,34 @@
+{
+  "id": "q03-a-02",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "class-demo"
+  ],
+  "question": "How do students check in with seat-minder at the start of class?",
+  "options": [
+    {
+      "text": "They scan a QR code and tap their seat on a chart of the room",
+      "weight": 100,
+      "feedback": "That is the flow the notes describe: scan the QR code, tap the seat you are sitting in on the seating chart, and you are checked in."
+    },
+    {
+      "text": "They type their VUnetID into a web form",
+      "weight": 0,
+      "feedback": "Typing an identifier is not part of the flow described in the notes; check-in runs through a QR scan and a seat tap instead."
+    },
+    {
+      "text": "They raise their hand and the instructor marks them present",
+      "weight": 0,
+      "feedback": "Raising a hand belongs to the later cold-calling view, not to how the initial check-in happens."
+    },
+    {
+      "text": "They swipe a student ID card at the door",
+      "weight": 0,
+      "feedback": "No card swipe appears in the notes; the described entry point is the QR code and the seating chart."
+    }
+  ]
+}

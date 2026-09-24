@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-04",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "What should you inspect alongside a skill's main procedure to understand the package?",
+  "options": [
+    {
+      "text": "The model's learned parameter arrays",
+      "weight": 0,
+      "feedback": "Those arrays concern the model's training. The skill-inspection workflow focuses on the instructions and supporting files you can revise."
+    },
+    {
+      "text": "The agent's latest completion message",
+      "weight": 0,
+      "feedback": "A completion message describes what the agent says it did. It does not replace reading the resources that belong to the skill."
+    },
+    {
+      "text": "The editor's document appearance settings",
+      "weight": 0,
+      "feedback": "Appearance can help you read a file, but understanding the skill requires looking at its procedure and supporting materials."
+    },
+    {
+      "text": "The procedure's supporting files",
+      "weight": 100,
+      "feedback": "A skill includes instructions and supporting resources. Read both, then compare the package with your intended task and criteria."
+    }
+  ]
+}

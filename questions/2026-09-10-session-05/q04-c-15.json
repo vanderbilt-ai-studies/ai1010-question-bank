@@ -1,0 +1,35 @@
+{
+  "id": "q04-c-15",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "context-management",
+    "memory"
+  ],
+  "question": "Why should important original evidence remain available after conversation compaction?",
+  "options": [
+    {
+      "text": "The summary guarantees that every source will be reopened automatically.",
+      "weight": 0,
+      "feedback": "A summary does not guarantee later retrieval. Keeping source locations and originals available makes reopening possible when a detail is needed."
+    },
+    {
+      "text": "The summary turns earlier tentative claims into verified project facts.",
+      "weight": 0,
+      "feedback": "Summarizing a claim does not validate it. Original evidence may be needed to check whether a tentative statement was established."
+    },
+    {
+      "text": "The summary can omit details that later become relevant.",
+      "weight": 100,
+      "feedback": "Compaction selects what to preserve in a shorter account. Original evidence lets you recover a detail that the summary did not retain."
+    },
+    {
+      "text": "The summary requires all originals to be pasted into every later request.",
+      "weight": 0,
+      "feedback": "Sources can remain accessible without being included in every input. Reopen the evidence needed for the next step."
+    }
+  ]
+}

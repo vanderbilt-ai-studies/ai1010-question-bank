@@ -1,0 +1,34 @@
+{
+  "id": "q01-d-17",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "sampling-and-temperature"
+  ],
+  "question": "A student asks a model for ten slogan ideas, runs the same prompt several times, and keeps getting nearly the same list. Based on the lecture, what would give more variety between runs?",
+  "options": [
+    {
+      "text": "Start each attempt in a new chat, so the model has a clean slate",
+      "weight": 0,
+      "feedback": "A fresh chat changes what is in the context, which can change the answer, but from the same prompt the model would still take much the same path. What varies a run is the noise added when each token is chosen."
+    },
+    {
+      "text": "Lower the temperature, so the model weighs more options before choosing",
+      "weight": 0,
+      "feedback": "Lower temperature does the opposite: with less noise the top token wins nearly every time and the model retraces the same path. That is what you want for a form letter, not for brainstorming."
+    },
+    {
+      "text": "Raise the temperature, so more noise is added when each token is chosen",
+      "weight": 100,
+      "feedback": "With more noise at the choice step, a token that was not quite the top choice sometimes wins, and because each chosen token becomes context, the paths diverge from there. That is the exploring the lecture described."
+    },
+    {
+      "text": "Ask for fifty slogans instead of ten, so the model has to reach further",
+      "weight": 0,
+      "feedback": "A longer list does push past the most obvious ideas within one answer, but nothing in the mechanism changes. How much the model wanders between runs is set by the noise at the choice step."
+    }
+  ]
+}

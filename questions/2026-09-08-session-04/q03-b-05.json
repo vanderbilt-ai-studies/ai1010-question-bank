@@ -1,0 +1,35 @@
+{
+  "id": "q03-b-05",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "thinking-budget",
+    "agent"
+  ],
+  "question": "A student uses a top-tier reasoning model for a single quick factual question and is annoyed that it still 'thinks' for several seconds before answering, even though the question needs no multi-step work. Based on the lecture, which explanation best accounts for this?",
+  "options": [
+    {
+      "text": "It is built mainly to work as an agent on long tasks, so reasoning stays on.",
+      "weight": 100,
+      "feedback": "A model designed to sustain multi-step agent work keeps reasoning available even when a particular request is short and simple. The lecture offered this as its own reading of the design choice, not as a documented setting."
+    },
+    {
+      "text": "It is deliberately slowed down so that people will not overuse it.",
+      "weight": 0,
+      "feedback": "The notes describe no such throttling. The explanations given are about training and intended use, not about rate limiting."
+    },
+    {
+      "text": "Quick factual questions need more computation to answer than complex ones do.",
+      "weight": 0,
+      "feedback": "This reverses the usual relationship, and nothing in the notes supports it. A short factual question does not inherently demand more computation than a hard one."
+    },
+    {
+      "text": "Looping forces every answer to pass through the decoder stack a second time.",
+      "weight": 0,
+      "feedback": "Looping is a separate architectural idea about refining a representation inside a stack. The lecture never offered it as the reason reasoning cannot be turned off."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "q04-b-22",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "Your skill needs a blank notes layout and a program that repeatedly extracts text. How should you organize these supporting files?",
+  "options": [
+    {
+      "text": "Place the layout in scripts/ and the program in references/",
+      "weight": 0,
+      "feedback": "This treats a template as code and executable code as detailed guidance. The file roles point to assets and scripts respectively."
+    },
+    {
+      "text": "Place the layout in assets/ and the program in scripts/",
+      "weight": 100,
+      "feedback": "The layout is a reusable template, while the extraction program performs an executable operation."
+    },
+    {
+      "text": "Place both in the description so they determine the skill's name",
+      "weight": 0,
+      "feedback": "The description communicates purpose and applicability. It is not where templates and executable routines take the place of supporting files."
+    },
+    {
+      "text": "Place both among finished outputs for the most recent task run",
+      "weight": 0,
+      "feedback": "These files support future runs. Treating them as one run's outputs confuses reusable resources with generated results."
+    }
+  ]
+}

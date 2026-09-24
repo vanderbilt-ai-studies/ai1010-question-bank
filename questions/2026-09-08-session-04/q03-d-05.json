@@ -1,0 +1,34 @@
+{
+  "id": "q03-d-05",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-structure"
+  ],
+  "question": "In the lecture-notes skill, some work is done by its bundled scripts and some by the model's own judgment. Which task belongs to the scripts rather than to the model?",
+  "options": [
+    {
+      "text": "Pulling a frame out of an .mp4 video file at a specific timestamp",
+      "weight": 100,
+      "feedback": "That is ordinary, mechanical software: give it a file and a time and it returns the same image every time. The model's share is deciding which moment matters and reading what the frame shows."
+    },
+    {
+      "text": "Working out what a speaker means by \"look here\" or \"as you can see\"",
+      "weight": 0,
+      "feedback": "Resolving a vague phrase to the thing on screen takes judgment about context, which is the model's half of the pairing. No script can tell which slide \"look here\" points at."
+    },
+    {
+      "text": "Judging which moments in a session are worth a screenshot at all",
+      "weight": 0,
+      "feedback": "Choosing what deserves a picture is an interpretive decision, so it sits on the model's side. The script only runs once a moment has been chosen for it."
+    },
+    {
+      "text": "Deciding whether the finished notes read as narrative or as expository prose",
+      "weight": 0,
+      "feedback": "Style comes from the skill's written instructions and the model's reading of them -- that is the very instruction the class proposed rewording. Scripts do not weigh in on prose style."
+    }
+  ]
+}

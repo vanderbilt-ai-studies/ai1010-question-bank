@@ -1,0 +1,35 @@
+{
+  "id": "q01-a-24",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "class-demo",
+    "next-token-prediction"
+  ],
+  "question": "Hurston's actual word was \"board.\" Why did the lecture single out that guess as demanding more than the others?",
+  "options": [
+    {
+      "text": "Because \"board\" is the only noun that fits grammatically after \"on\"",
+      "weight": 0,
+      "feedback": "Syntax allows 'deck,' 'shore,' and 'star' just as well. What set 'board' apart was not grammar but the kind of knowledge it took to reach it."
+    },
+    {
+      "text": "Because \"board\" has more meanings than any of the other guesses",
+      "weight": 0,
+      "feedback": "How many meanings a word has was not the point. 'Board' stood out for being the choice a particular writer would make, not for being ambiguous."
+    },
+    {
+      "text": "Because \"board\" was the only guess that had anything to do with ships",
+      "weight": 0,
+      "feedback": "Every guess was about ships or wishing: deck, shore, sail, star. Semantics got everyone that far; it did not separate 'board' from the rest."
+    },
+    {
+      "text": "Because reaching \"board\" takes a sense of style and world knowledge",
+      "weight": 100,
+      "feedback": "'Board' is the more poetic choice, and it fits Hurston. To land on it you need to know something about how authors write and about the world, the third kind of knowledge a model has to learn."
+    }
+  ]
+}

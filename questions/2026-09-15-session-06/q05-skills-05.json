@@ -1,0 +1,34 @@
+{
+  "id": "q05-skills-05",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "Which information helps Claude Code decide which skill to load for your task?",
+  "options": [
+    {
+      "text": "The skill's name and description",
+      "weight": 100,
+      "feedback": "The name and description help identify a relevant skill. Detailed instructions are loaded when needed."
+    },
+    {
+      "text": "The full text of every available skill",
+      "weight": 0,
+      "feedback": "The notes say that the name and description help decide what to load, with detailed instructions loaded when needed. Reading all skill instructions first reverses that distinction."
+    },
+    {
+      "text": "The output from the most recent skill run",
+      "weight": 0,
+      "feedback": "A past output can help you evaluate a procedure, but the notes identify the skill name and description as information used for discovery."
+    },
+    {
+      "text": "The model's size and training objective",
+      "weight": 0,
+      "feedback": "These describe the model, rather than which skill matches your task. A skill's name and description help with that selection."
+    }
+  ]
+}

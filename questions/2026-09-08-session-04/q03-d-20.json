@@ -1,0 +1,34 @@
+{
+  "id": "q03-d-20",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "context-management"
+  ],
+  "question": "A classmate keeps one long chat running all week, working three unrelated projects inside it, and finds that by Thursday the answers have gone vague and keep drifting off the task at hand. Which idea from the lecture names what is happening?",
+  "options": [
+    {
+      "text": "A naming collision between two similarly named skills",
+      "weight": 0,
+      "feedback": "A naming collision is about the model having no reliable way to pick between two skills whose names are too alike. No skills are involved here; the trouble is in what one conversation has accumulated."
+    },
+    {
+      "text": "Context rot",
+      "weight": 100,
+      "feedback": "Three unrelated projects in one window is exactly the condition the lecture names: too much, and too loosely related, material carried in a single context, with focus and quality falling off as a result. This is also why a skill keeps its body out of context until it is needed, and why an agent puts work into files instead of holding it all in the conversation."
+    },
+    {
+      "text": "A contradiction between two installed skills",
+      "weight": 0,
+      "feedback": "Contradictory skills are two sets of instructions that disagree when both apply to the same request, like one demanding orange and another banning it. Nothing here is giving the model conflicting instructions."
+    },
+    {
+      "text": "The model's post-training wearing off over a long session",
+      "weight": 0,
+      "feedback": "Post-training happens once, before the model is ever deployed, and nothing about a long conversation undoes it. What changes across a week-long chat is what the context window is carrying, not the model."
+    }
+  ]
+}

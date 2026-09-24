@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-01",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "tokenization"
+  ],
+  "question": "What does tokenization do to text before a decoder transformer processes it?",
+  "options": [
+    {
+      "text": "Assigns a probability to each complete answer.",
+      "weight": 0,
+      "feedback": "Next-token probabilities come later in the pipeline. Tokenization prepares the text for numerical processing."
+    },
+    {
+      "text": "Splits text into pieces with vocabulary identifiers.",
+      "weight": 100,
+      "feedback": "A token can be a word or a piece of a word. Its identifier lets the model map that piece to a numerical representation."
+    },
+    {
+      "text": "Converts each sentence into a verified factual claim.",
+      "weight": 0,
+      "feedback": "Tokenization handles the representation of text. It does not check whether a sentence is true."
+    },
+    {
+      "text": "Stores each paragraph as an independent learned weight.",
+      "weight": 0,
+      "feedback": "Learned weights are model parameters. Input paragraphs become token sequences rather than new weights."
+    }
+  ]
+}

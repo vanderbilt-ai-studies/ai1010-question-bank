@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-06",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "agent-skill",
+    "tool"
+  ],
+  "question": "Which item supplies reusable guidance rather than external access?",
+  "options": [
+    {
+      "text": "An available file-reading tool",
+      "weight": 0,
+      "feedback": "A tool provides an action that can be invoked. Reusable procedural guidance has a different role."
+    },
+    {
+      "text": "A skill with task instructions",
+      "weight": 100,
+      "feedback": "A skill describes how to approach the work. Tools and permissions are still needed to execute its action steps."
+    },
+    {
+      "text": "A granted file-reading permission",
+      "weight": 0,
+      "feedback": "Permission authorizes access to a resource. It does not itself provide the procedure for doing the task."
+    },
+    {
+      "text": "A connector to an outside service",
+      "weight": 0,
+      "feedback": "A connector exposes an integration. Guidance for using it can be supplied by a skill."
+    }
+  ]
+}

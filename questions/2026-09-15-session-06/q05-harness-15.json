@@ -1,0 +1,35 @@
+{
+  "id": "q05-harness-15",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "tool",
+    "context"
+  ],
+  "question": "Why should a file operation return its result to the model?",
+  "options": [
+    {
+      "text": "The returned text serves as proof that the full task is finished",
+      "weight": 0,
+      "feedback": "A tool result reports one operation. The model may need further steps, and the final work still needs checking against the task."
+    },
+    {
+      "text": "The result grants permission for the next requested operation",
+      "weight": 0,
+      "feedback": "An observation supplies information. Permission for another action remains a matter for the surrounding controls."
+    },
+    {
+      "text": "The next decision should reflect the actual outcome",
+      "weight": 100,
+      "feedback": "The observation lets the model adapt its next step to what happened rather than continue from an unverified expectation."
+    },
+    {
+      "text": "The returned text permanently revises the model's knowledge",
+      "weight": 0,
+      "feedback": "The model can use a tool result in its current context. This is different from changing learned weights through training."
+    }
+  ]
+}

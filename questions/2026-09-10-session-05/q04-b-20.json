@@ -1,0 +1,36 @@
+{
+  "id": "q04-b-20",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "permissions-and-safety",
+    "harness",
+    "agent-skill"
+  ],
+  "question": "Why does a skill instruction allowing file edits fail to establish that an agent can edit a particular file?",
+  "options": [
+    {
+      "text": "The instruction changes model weights before the file operation is attempted.",
+      "weight": 0,
+      "feedback": "Loading a skill supplies guidance rather than retraining weights. Whether an operation can run depends on the tools and permissions in the environment."
+    },
+    {
+      "text": "The file becomes editable when its path is mentioned in the instructions.",
+      "weight": 0,
+      "feedback": "A path identifies a possible target; mentioning it does not grant access. The operating environment must supply a permitted way to edit that target."
+    },
+    {
+      "text": "The instruction transfers the skill author's file access to the current agent.",
+      "weight": 0,
+      "feedback": "Sharing a procedure does not transfer the author's permissions. Access must be available in the environment carrying out this run."
+    },
+    {
+      "text": "The operating environment must supply the necessary tool and permission.",
+      "weight": 100,
+      "feedback": "A skill describes intended behavior, but instructions do not grant access or create a secure sandbox. The harness operates under the current environment's execution constraints."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "q05-repr-25",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "activation-space",
+    "training-vs-inference",
+    "decoder-stack"
+  ],
+  "question": "While tracing one response, you observe a token's numerical representation changing across several blocks while learned weights stay fixed. How should you interpret this?",
+  "options": [
+    {
+      "text": "The blocks are processing context with the trained model",
+      "weight": 100,
+      "feedback": "Changing intermediate representations is expected during inference. The weights can remain fixed while attention and feed-forward transformations alter those representations."
+    },
+    {
+      "text": "Each changed representation is a newly created vocabulary entry",
+      "weight": 0,
+      "feedback": "The cat-star example uses multiple stages for the same token. A changed vector is not evidence of an expanded vocabulary."
+    },
+    {
+      "text": "Each block has completed a fresh round of model training",
+      "weight": 0,
+      "feedback": "Training updates parameters. Your observation describes changing representations with fixed weights, which fits ordinary inference."
+    },
+    {
+      "text": "The trace is showing finished answer words between the blocks",
+      "weight": 0,
+      "feedback": "The values moving through blocks are numerical representations. Finished output tokens are selected near the end of the processing."
+    }
+  ]
+}

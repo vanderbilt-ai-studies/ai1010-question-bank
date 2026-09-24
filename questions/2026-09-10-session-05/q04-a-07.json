@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-07",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "sampling-and-temperature"
+  ],
+  "question": "Which aspect of generation does the temperature setting directly adjust?",
+  "options": [
+    {
+      "text": "The number of independent weights in the trained network.",
+      "weight": 0,
+      "feedback": "Changing temperature does not rebuild the network. Parameter count concerns the model architecture and its learned values."
+    },
+    {
+      "text": "The maximum amount of text that fits into the context.",
+      "weight": 0,
+      "feedback": "Context capacity and temperature are separate settings. Temperature changes how token choices are distributed."
+    },
+    {
+      "text": "The amount of computation allowed before an answer begins.",
+      "weight": 0,
+      "feedback": "That describes a thinking budget. Temperature can affect sampled paths, but it is not itself a compute budget."
+    },
+    {
+      "text": "The concentration of the distribution used for token sampling.",
+      "weight": 100,
+      "feedback": "Lower temperature favors higher-scoring choices more strongly. Higher temperature spreads probability more broadly."
+    }
+  ]
+}

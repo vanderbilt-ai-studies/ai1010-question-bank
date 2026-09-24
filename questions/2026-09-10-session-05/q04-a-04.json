@@ -1,0 +1,34 @@
+{
+  "id": "q04-a-04",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "mlp"
+  ],
+  "question": "What does an MLP (multi-layer perceptron) do inside a decoder block?",
+  "options": [
+    {
+      "text": "It picks the next output token from the final distribution.",
+      "weight": 0,
+      "feedback": "Output selection is a later step. The multi-layer perceptron transforms representations used to compute that distribution."
+    },
+    {
+      "text": "It assigns a vocabulary identifier to each input fragment.",
+      "weight": 0,
+      "feedback": "Vocabulary identifiers are assigned during tokenization. The multi-layer perceptron acts on representations inside the model."
+    },
+    {
+      "text": "It applies learned transformations at each token position.",
+      "weight": 100,
+      "feedback": "The multi-layer perceptron uses trained weights to transform the representation at each position. Learned knowledge is distributed through the network."
+    },
+    {
+      "text": "It retrieves an exact source sentence for each requested fact.",
+      "weight": 0,
+      "feedback": "The world-knowledge metaphor does not make this layer a literal database. A learned transformation can produce plausible output without finding a source sentence."
+    }
+  ]
+}

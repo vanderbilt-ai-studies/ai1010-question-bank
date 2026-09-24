@@ -1,0 +1,35 @@
+{
+  "id": "q03-c-04",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "multimodality",
+    "sampling-and-temperature"
+  ],
+  "question": "A student uses a GPT-style tool to generate an image, then asks for 'one more small tweak' ten times in a row on the same picture. By the tenth tweak, the image looks quite different from the first version. Which idea from the lecture best explains this drift?",
+  "options": [
+    {
+      "text": "The model's image training data goes stale after repeated edits",
+      "weight": 0,
+      "feedback": "Training data does not change during a conversation. The drift the lecture describes comes from something that happens each time an image is generated, not from the training data degrading."
+    },
+    {
+      "text": "Each edit wipes out the model's understanding of the original image and starts over",
+      "weight": 0,
+      "feedback": "If the model started over each time, there would be no continuity at all between edits, which is not what is observed. The drift is gradual, which points to something accumulating rather than resetting."
+    },
+    {
+      "text": "The projection layer wears down a little each time an image passes through it",
+      "weight": 0,
+      "feedback": "Projection layers belong to the other, Anthropic-style approach in the lecture, and are not described as degrading with use. This mixes up the two approaches the lecture is contrasting."
+    },
+    {
+      "text": "Small sampling randomness in the token-by-token image generation compounds a little more with each round",
+      "weight": 100,
+      "feedback": "Because a picture is produced with the same temperature-like randomness as a sentence, a small random change early in one round's token sequence can shift the result, and repeating this lets those small shifts add up into a visibly different image."
+    }
+  ]
+}

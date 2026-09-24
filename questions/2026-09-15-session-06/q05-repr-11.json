@@ -1,0 +1,36 @@
+{
+  "id": "q05-repr-11",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "tokenization",
+    "token-embedding",
+    "semantic-space"
+  ],
+  "question": "Why should you avoid treating a token ID as the token's meaning?",
+  "options": [
+    {
+      "text": "It changes into a written definition when attention runs",
+      "weight": 0,
+      "feedback": "Attention transforms numerical representations. It does not turn the index into dictionary text."
+    },
+    {
+      "text": "It is learned again whenever the token enters a prompt",
+      "weight": 0,
+      "feedback": "Processing a prompt uses the token ID to select a representation. Ordinary inference does not relearn the model's weights on every token."
+    },
+    {
+      "text": "It indexes an entry with a numerical representation",
+      "weight": 100,
+      "feedback": "The index performs a lookup role. The selected numerical representation, and its later transformations, support interpretation."
+    },
+    {
+      "text": "It contains the final representation after all blocks run",
+      "weight": 0,
+      "feedback": "The ID is used at the start to select an embedding. It is not the final result of the model's processing."
+    }
+  ]
+}

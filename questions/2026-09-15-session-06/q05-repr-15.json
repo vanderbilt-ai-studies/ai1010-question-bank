@@ -1,0 +1,36 @@
+{
+  "id": "q05-repr-15",
+  "type": "MC",
+  "date": "2026-09-15",
+  "date_basis": "discussed",
+  "session": 6,
+  "source": "Quiz 5 - Sessions 1-6: Model Training, Alignment, and the Agent Harness",
+  "concepts": [
+    "context",
+    "grounding",
+    "training-vs-inference"
+  ],
+  "question": "Why can adding relevant material to context improve an answer without further training?",
+  "options": [
+    {
+      "text": "The material becomes a new vocabulary entry before generation",
+      "weight": 0,
+      "feedback": "Providing a document supplies tokens in context. It does not require adding a vocabulary entry for the document."
+    },
+    {
+      "text": "The material converts internal representations into written rules",
+      "weight": 0,
+      "feedback": "The internal computation still transforms numerical representations. Context provides evidence without changing that process into rule text."
+    },
+    {
+      "text": "The model can use that evidence with its existing weights",
+      "weight": 100,
+      "feedback": "Context gives the model information to use in the current generation. Improved performance does not by itself imply changed parameters."
+    },
+    {
+      "text": "The material replaces the parameter arrays for that response",
+      "weight": 0,
+      "feedback": "The arrays still supply learned parameters. New context influences the representations processed using those parameters."
+    }
+  ]
+}

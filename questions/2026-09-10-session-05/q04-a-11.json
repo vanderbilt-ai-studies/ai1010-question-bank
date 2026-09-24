@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-11",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "sampling-and-temperature",
+    "thinking-budget"
+  ],
+  "question": "Why is raising temperature different from giving a model a larger thinking budget?",
+  "options": [
+    {
+      "text": "Temperature changes context capacity; a budget changes weights.",
+      "weight": 0,
+      "feedback": "Temperature does not set context capacity, and an inference budget does not retrain weights. They concern sampling and available computation."
+    },
+    {
+      "text": "Temperature adds layers; a budget enlarges token embeddings.",
+      "weight": 0,
+      "feedback": "These are architectural changes. Neither follows merely from adjusting a sampling setting or inference budget."
+    },
+    {
+      "text": "Temperature checks facts; a budget chooses more varied words.",
+      "weight": 0,
+      "feedback": "Temperature is not a truth-checking mechanism. A thinking budget allocates computation rather than defining sampling variety."
+    },
+    {
+      "text": "Temperature reshapes sampling; a budget allocates computation.",
+      "weight": 100,
+      "feedback": "The settings affect different mechanisms. Sampling can change a reasoning path and its length, but it does not directly specify a time or token budget."
+    }
+  ]
+}

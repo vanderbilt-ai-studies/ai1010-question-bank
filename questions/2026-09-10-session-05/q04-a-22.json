@@ -1,0 +1,35 @@
+{
+  "id": "q04-a-22",
+  "type": "MC",
+  "date": "2026-09-10",
+  "date_basis": "discussed",
+  "session": 5,
+  "source": "Quiz 4 - Sessions 1-5: Building and Improving Agent Skills",
+  "concepts": [
+    "sampling-and-temperature",
+    "probability-distribution-over-tokens"
+  ],
+  "question": "A token has a 30% probability in the sampling distribution, while another has 60%. The sampler chooses the 30% token. What does that show?",
+  "options": [
+    {
+      "text": "A sample can select an option other than the most probable one.",
+      "weight": 100,
+      "feedback": "Thirty percent is a nonzero chance of selection. Sampling does not require picking the highest-probability token on every step."
+    },
+    {
+      "text": "The model must have changed its weights during the selection step.",
+      "weight": 0,
+      "feedback": "The distribution can remain unchanged while different samples are drawn. A less probable selection is not evidence of a weight update."
+    },
+    {
+      "text": "The 30% token must be more factually accurate than the 60% token.",
+      "weight": 0,
+      "feedback": "Sampling probability is not a guarantee or ranking of factual correctness. The selected token still contributes to a claim that may need checking."
+    },
+    {
+      "text": "The model has increased its maximum available context window.",
+      "weight": 0,
+      "feedback": "Selecting a token does not expand the system's context capacity. It extends the current sequence within that capacity."
+    }
+  ]
+}

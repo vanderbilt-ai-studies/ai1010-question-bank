@@ -1,0 +1,34 @@
+{
+  "id": "q03-d-13",
+  "type": "MC",
+  "date": "2026-09-08",
+  "date_basis": "discussed",
+  "session": 4,
+  "source": "Quiz 3 - Sessions 1-4: Model Size, Thinking, and Skills",
+  "concepts": [
+    "skill-selection"
+  ],
+  "question": "What specific problem was described with two similarly named skills, and how was it fixed?",
+  "options": [
+    {
+      "text": "Two very similarly named skills served the same purpose, with no reliable way to know which one the model would pick; the fix was to remove the duplicate",
+      "weight": 100,
+      "feedback": "This matches what was described: an \"AI class lecture recording to lecture notes\" skill and \"lecture recording to lecture notes\" were similar enough that the model could not reliably tell them apart, so the duplicate was simply deleted."
+    },
+    {
+      "text": "Two skills used incompatible file formats, so one was rewritten from scratch in a different format",
+      "weight": 0,
+      "feedback": "No format incompatibility was described -- the problem was about the model choosing between two similarly named skills, not about the skills being unable to run at all."
+    },
+    {
+      "text": "Two skills both tried to write to the same output file, causing a crash, so the output files were renamed",
+      "weight": 0,
+      "feedback": "A file-write crash is a different kind of bug than the one described. The actual issue was ambiguous selection between two skills with near-identical names and purposes, not a technical collision while running."
+    },
+    {
+      "text": "Two skills produced identical output every time, so their instructions were combined into a single longer file",
+      "weight": 0,
+      "feedback": "The problem was not that the two skills produced the same output -- it was that their names were similar enough that the model had no reliable way to choose between them for a given request."
+    }
+  ]
+}

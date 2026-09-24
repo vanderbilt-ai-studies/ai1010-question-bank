@@ -1,0 +1,36 @@
+{
+  "id": "q01-b-22",
+  "type": "MC",
+  "date": "2026-09-01",
+  "date_basis": "discussed",
+  "session": 2,
+  "source": "Quiz 1 - Sessions 1-2: The Decoder Transformer",
+  "concepts": [
+    "semantic-space",
+    "pre-training",
+    "self-supervised-learning"
+  ],
+  "question": "Nobody sat down and decided that \"queen\" should sit near \"king.\" So how did the embedding space come to be arranged by meaning?",
+  "options": [
+    {
+      "text": "Linguists supplied a map of which words mean similar things, and the space was built from it",
+      "weight": 0,
+      "feedback": "Hand-built resources like that do exist, but a model does not use one. Nobody writes anything down for it: it has to work out what words mean in order to guess the next one well."
+    },
+    {
+      "text": "The positions were copied out of a dictionary, one entry at a time",
+      "weight": 0,
+      "feedback": "A dictionary explains words with other words, which is no use to a network that can only take numbers. The positions have to be numbers that already carry meaning."
+    },
+    {
+      "text": "The model arranged it during training, because grouping similar words made its guesses better",
+      "weight": 100,
+      "feedback": "Training is nothing but hide the next word, guess, adjust. Words that behave alike have to end up in the same region for those guesses to improve, so the arrangement is a by-product of the guessing rather than a design."
+    },
+    {
+      "text": "The words start at random positions, and attention spreads them out during the response",
+      "weight": 0,
+      "feedback": "Attention does move a token's meaning, but only within one sentence and only after the embedding is in place. \"King\" starts among monarchs every time, which it could not do if the positions were random."
+    }
+  ]
+}
