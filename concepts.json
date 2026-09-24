@@ -1,0 +1,363 @@
+{
+  "about": "The controlled list of concept tags. Every question's `concepts:` list must use ids from here. To add a concept, add an entry (id in lowercase-with-hyphens) and run `python3 tools/build.py`.",
+  "groups": [
+    {
+      "id": "inside-the-model",
+      "label": "Inside the model",
+      "concepts": [
+        {
+          "id": "transformer-pipeline",
+          "label": "Decoder transformer pipeline",
+          "definition": "The end-to-end path from context to next token: tokenize, embed, pass through the decoder stacks, produce probabilities, pick a token. The same basic architecture sits under Claude, ChatGPT and Gemini."
+        },
+        {
+          "id": "tokenization",
+          "label": "Tokenization",
+          "definition": "Splitting text into tokens drawn from a fixed vocabulary and replacing each with its token ID (a number)."
+        },
+        {
+          "id": "token",
+          "label": "Token",
+          "definition": "The unit a model reads and writes: a whole word, a piece of a word, or a symbol. Models predict tokens, not words."
+        },
+        {
+          "id": "token-embedding",
+          "label": "Token embedding",
+          "definition": "The learned vector (a long list of numbers) that a token ID is mapped to before the decoder stacks. One fixed embedding per token, whatever the sentence."
+        },
+        {
+          "id": "semantic-space",
+          "label": "Semantic space",
+          "definition": "The high-dimensional space embeddings live in, where location is meaning: related tokens sit near each other and directions can carry relationships (king - man + woman lands near queen)."
+        },
+        {
+          "id": "attention",
+          "label": "Attention",
+          "definition": "The part of each decoder stack that lets a token gather information from the other tokens in the context, moving its representation toward its meaning in this particular sentence."
+        },
+        {
+          "id": "mlp",
+          "label": "MLP (multi-layer perceptron)",
+          "definition": "The feed-forward part of each decoder stack. Its learned weights hold a compressed, lossy picture of the world (the \"fuzzy JPEG\") that it applies to each token's representation."
+        },
+        {
+          "id": "decoder-stack",
+          "label": "Decoder stack",
+          "definition": "One block of attention followed by an MLP. A model runs many stacks in sequence, each refining the representation further."
+        },
+        {
+          "id": "activation-space",
+          "label": "Activation space",
+          "definition": "The changing internal representations (activations) of tokens as they move through the stacks. Unlike the fixed token embedding, these depend on the context."
+        },
+        {
+          "id": "recurrent-depth",
+          "label": "Recurrent depth (looping)",
+          "definition": "Running the same decoder stack or block more than once so a representation gets another pass (\"a second bite of the apple\"), adding computation without adding parameters."
+        },
+        {
+          "id": "probability-distribution-over-tokens",
+          "label": "Probability distribution over tokens",
+          "definition": "The model's output at each step: a probability for every token in its vocabulary (the softmax at the end of the pipeline)."
+        },
+        {
+          "id": "next-token-prediction",
+          "label": "Next-token prediction",
+          "definition": "The single job a language model is trained to do and does at run time: predict what token comes next given the context."
+        },
+        {
+          "id": "sampling-and-temperature",
+          "label": "Sampling and temperature",
+          "definition": "How one token is chosen from the probability distribution. Temperature reshapes the distribution: higher means more varied, lower means more predictable."
+        },
+        {
+          "id": "autoregression",
+          "label": "Autoregression",
+          "definition": "Generating one token at a time and feeding each chosen token back into the context for the next step, so every choice shapes what follows."
+        },
+        {
+          "id": "parameter",
+          "label": "Parameter",
+          "definition": "A single learned number (weight) in the model. The parameter count is how many there are; they are fixed once training ends."
+        },
+        {
+          "id": "model-size",
+          "label": "Model size",
+          "definition": "How big a model is (parameter count, width of the embedding space, number of decoder stacks) and what bigger does and does not buy you."
+        },
+        {
+          "id": "learned-knowledge",
+          "label": "Learned knowledge",
+          "definition": "What a model knows from training and how it is stored: compressed and approximate, not a searchable database of facts or a copy of its sources."
+        },
+        {
+          "id": "hallucination",
+          "label": "Hallucination",
+          "definition": "Fluent output that is wrong. The model always produces the likely-sounding continuation; sometimes likely-sounding is not true."
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Context",
+      "concepts": [
+        {
+          "id": "context",
+          "label": "Context",
+          "definition": "Everything the model sees for a given step: system instructions, the conversation so far, uploaded files, tool results and its own output so far. The most important lever you have."
+        },
+        {
+          "id": "context-length",
+          "label": "Context length",
+          "definition": "The maximum number of tokens a model can hold in its context at once (the context window), and what happens as you approach it."
+        },
+        {
+          "id": "grounding",
+          "label": "Grounding with documents",
+          "definition": "Putting the relevant source material into the context so the answer draws on it rather than on the model's lossy memory, and why irrelevant material does not help."
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "label": "Training",
+      "concepts": [
+        {
+          "id": "pre-training",
+          "label": "Pre-training",
+          "definition": "The first, largest training stage: next-token prediction over a huge body of text (and sometimes images), producing a base model."
+        },
+        {
+          "id": "self-supervised-learning",
+          "label": "Self-supervised learning",
+          "definition": "Training where the answer key comes from the data itself, such as hiding the next token and asking the model to guess it."
+        },
+        {
+          "id": "post-training",
+          "label": "Post-training",
+          "definition": "Training after pre-training that turns a base model into an assistant: supervised fine-tuning on example responses, reinforcement learning from human feedback (RLHF) and similar methods."
+        },
+        {
+          "id": "alignment",
+          "label": "Alignment",
+          "definition": "Work to make a model's behavior helpful, honest and safe, such as refusing harmful requests, and why that behavior is never perfectly reliable."
+        },
+        {
+          "id": "training-vs-inference",
+          "label": "Training vs. inference",
+          "definition": "Training changes the weights; inference (using the model) does not. A model can respond differently to new context without learning anything."
+        }
+      ]
+    },
+    {
+      "id": "reasoning-and-choice",
+      "label": "Reasoning and choosing a model",
+      "concepts": [
+        {
+          "id": "thinking-reasoning",
+          "label": "Thinking / reasoning",
+          "definition": "A model generating hidden tokens that work through a problem before its visible answer. Same architecture and same next-token mechanism, just more tokens spent first."
+        },
+        {
+          "id": "thinking-budget",
+          "label": "Thinking budget and effort",
+          "definition": "The limit on how many thinking tokens a model may spend (the effort setting in Claude), and matching that budget to the task."
+        },
+        {
+          "id": "model-selection",
+          "label": "Choosing a model",
+          "definition": "Picking a model tier (Haiku, Sonnet, Opus, Fable, or another vendor's equivalents): the smallest model that does the job correctly."
+        },
+        {
+          "id": "inference-speed",
+          "label": "Inference speed and hardware",
+          "definition": "How fast tokens are produced (GPUs, specialized chips, local laptops) and why taking in a prompt is faster than writing an answer."
+        },
+        {
+          "id": "kv-cache",
+          "label": "KV cache",
+          "definition": "The stored attention keys and values for tokens already processed, so each new token does not recompute the whole context."
+        },
+        {
+          "id": "cost-and-usage",
+          "label": "Cost, usage and footprint",
+          "definition": "Usage limits and credits, and the energy and environmental cost of bigger models and bigger budgets."
+        },
+        {
+          "id": "multimodality",
+          "label": "Multimodality",
+          "definition": "Models that work with images, audio or video as well as text, whether trained jointly (native) or given a separate adapter."
+        },
+        {
+          "id": "ai-history",
+          "label": "History of AI",
+          "definition": "The eras of AI (problem solvers, expert systems, machine learning, deep learning) and where transformers, generative AI and agents fit."
+        },
+        {
+          "id": "agi",
+          "label": "AGI (artificial general intelligence)",
+          "definition": "What AGI has been taken to mean, how definitions and levels frameworks differ, and the argument about whether a milestone has passed."
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "label": "Agents",
+      "concepts": [
+        {
+          "id": "agent",
+          "label": "Agent",
+          "definition": "A model plus tools plus autonomy: a system that can take actions in a loop toward a goal, not just reply once."
+        },
+        {
+          "id": "chat-vs-agent",
+          "label": "Chat vs. agent",
+          "definition": "The difference between a plain chat and an agent surface (Cowork, Claude Code): same model, different access, tools and ability to act."
+        },
+        {
+          "id": "harness",
+          "label": "Harness",
+          "definition": "The software around the model that manages context, carries out tool calls, enforces permissions and returns results. The model proposes; the harness executes."
+        },
+        {
+          "id": "tool",
+          "label": "Tool",
+          "definition": "A capability the harness can run on the model's behalf, such as reading a file, running a command or searching, with the result returned into context."
+        },
+        {
+          "id": "connector",
+          "label": "Connector (MCP)",
+          "definition": "An add-on that gives an agent access to an outside system, often through the Model Context Protocol (MCP)."
+        },
+        {
+          "id": "file-system",
+          "label": "File system",
+          "definition": "The folders and files an agent can read and write, and why working through files lets an agent handle projects bigger than its context."
+        },
+        {
+          "id": "memory",
+          "label": "Memory",
+          "definition": "How information persists beyond one context window: notes, working records, remembered preferences and project files, and keeping them accurate."
+        },
+        {
+          "id": "context-management",
+          "label": "Context management",
+          "definition": "Keeping a long task's context useful: compaction and summaries, starting fresh chats, and keeping original evidence available."
+        },
+        {
+          "id": "subagent",
+          "label": "Subagent",
+          "definition": "A fresh agent given a focused assignment and just the background it needs, so it starts with a clean context."
+        },
+        {
+          "id": "permissions-and-safety",
+          "label": "Permissions and safety",
+          "definition": "What an agent is allowed to do (access controls, sandboxes, approvals) and judging whether shared code or broad access is safe."
+        },
+        {
+          "id": "computer-use",
+          "label": "Computer use",
+          "definition": "Agents that operate a computer's screen, mouse and keyboard, and why that remains hard."
+        },
+        {
+          "id": "task-specification",
+          "label": "Directing an agent",
+          "definition": "Telling an agent what you need: stating the problem and goal (a \"North Star\"), constraints and acceptance criteria rather than step-by-step instructions."
+        },
+        {
+          "id": "verification",
+          "label": "Verification",
+          "definition": "Checking that work actually happened and is correct (reading back the result, inspecting the file) rather than trusting a claim that it did."
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Agent skills",
+      "concepts": [
+        {
+          "id": "agent-skill",
+          "label": "Agent skill",
+          "definition": "A folder of reusable instructions (and optionally scripts and references) that an agent loads when a task calls for it."
+        },
+        {
+          "id": "skill-structure",
+          "label": "Skill structure",
+          "definition": "What goes in a skill folder: SKILL.md with its name and description, references/, scripts/, assets/, and what stays loaded versus loaded on demand."
+        },
+        {
+          "id": "skill-selection",
+          "label": "Skill selection",
+          "definition": "How an agent decides which skill to use from its name and description, and how vague, overlapping or conflicting skills go wrong."
+        },
+        {
+          "id": "skill-scope",
+          "label": "Skill scope",
+          "definition": "Where a skill lives and who can use it: a personal skill that follows you across projects versus a project skill tied to one project's conventions."
+        },
+        {
+          "id": "skill-creator",
+          "label": "Skill Creator",
+          "definition": "The skill for building, improving and testing other skills."
+        },
+        {
+          "id": "skill-evaluation",
+          "label": "Evaluating a skill",
+          "definition": "Testing whether a skill helps: comparing runs with and without it on the same inputs, criteria set in advance, varied test cases, the cheaper model it will run on."
+        },
+        {
+          "id": "skill-sharing",
+          "label": "Sharing skills",
+          "definition": "Moving skills between people and hosts: repositories, READMEs, portability across providers, and what breaks when a skill is copied."
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "label": "Decisions, evaluation and feedback",
+      "concepts": [
+        {
+          "id": "classification",
+          "label": "Classification and decision models",
+          "definition": "Choosing among fixed options (labels) rather than writing open-ended text, and when a specialized decision model fits better."
+        },
+        {
+          "id": "calibration",
+          "label": "Calibration",
+          "definition": "Whether stated probabilities match how often things actually happen: of events given 80%, about 80% should occur."
+        },
+        {
+          "id": "decision-under-risk",
+          "label": "Decisions under risk",
+          "definition": "Combining probabilities with costs (false alarms, misses, what each outcome costs) to choose an action, not just the most likely outcome."
+        },
+        {
+          "id": "feedback-and-rubrics",
+          "label": "Feedback and rubrics",
+          "definition": "Grading against a rubric and writing feedback that names what was missed and how to fix it."
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "label": "Practice and course context",
+      "concepts": [
+        {
+          "id": "data-privacy",
+          "label": "Data privacy",
+          "definition": "Keeping personal and student data out of code, prompts and repositories, and building tools that look it up only when needed."
+        },
+        {
+          "id": "class-demo",
+          "label": "Class demonstration",
+          "definition": "Questions about a specific in-class demonstration or case study (for example seat-minder or the grading demo) rather than a general concept."
+        },
+        {
+          "id": "course-logistics",
+          "label": "Course logistics",
+          "definition": "How this course runs: quizzes, appeals, labs and exercises."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+*.pyc
+# Personal study history belongs outside this folder, never in the repo.
+progress*.json
